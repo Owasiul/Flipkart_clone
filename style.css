@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+/* nav */
+nav ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* catalog */
+.contain {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.ctl-card {
+  text-align: center;
+}
+
+/* carousel slider */
+.slider {
+  width: 98%;
+  margin: 0 auto;
+}
+
+/* e-itm */
+.cont {
+  width: 82%;
+  margin-left: 15px;
+}
+
+img.e-itm-img {
+  width: 120px;
+  cursor: pointer;
+}
+
+img.e-itm-img:hover {
+  transform: scale(1.1);
+}
+
+/* t-item */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(192, 29, 29);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* w-items */
+.cnt {
+  width: 35%;
+}
+
+.fa-greater-than {
+  background-color: #2a55e5;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.crd-itm img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.w-img {
+  width: 830px;
+  height: 570px;
+}
+
+.crd-itm img:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */
