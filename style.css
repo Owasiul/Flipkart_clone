@@ -71,4 +71,17 @@ img.e-itm-img:hover {
 
 .crd-itm img:hover, img.img-fluid:hover {
   transform: scale(1.1);
+}
+
+footer {
+  background-color: #f5f5f5;
+}
+footer ._2j7a4R a {
+  color: #666;
+  text-decoration: none;
+  font-size: xx-small;
+  line-height: 2px;
+}
+footer ._2HvN4k {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
