@@ -84,4 +84,21 @@ footer ._2j7a4R a {
 }
 footer ._2HvN4k {
   margin-bottom: 30px;
+}
+footer .footer-bottom {
+  background-color: #212121;
+  font-size: x-small;
+}
+footer a.head {
+  color: #696a77;
+  font-weight: 300;
+}
+footer .unl ul li {
+  list-style: none;
+}
+footer .unl ul li a {
+  text-decoration: none;
+}
+footer .Xtae {
+  border-right: 1px solid #454d5e;
 }/*# sourceMappingURL=style.css.map */
