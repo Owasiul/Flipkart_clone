@@ -13,6 +13,14 @@ nav ul li {
   align-items: center;
 }
 
+@media screen and (max-width: 1024px) {
+  span.hid {
+    display: none;
+  }
+  .catalog .van {
+    display: none;
+  }
+}
 /* catalog */
 .contain {
   width: 98%;
