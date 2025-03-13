@@ -110,7 +110,22 @@ footer img.b-icon {
   height: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  * {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar-brand img {
+    width: 100px;
+  }
+  .search-bar div {
+    width: 200px;
+  }
+  .nav-wrap {
+    display: flex;
+    flex-direction: row;
+  }
   span.hid {
     display: none;
   }
