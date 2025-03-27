@@ -6,6 +6,11 @@
   font-family: "Inter", serif;
 }
 
+.contain {
+  width: 98%;
+  margin: 0 auto;
+}
+
 /* nav */
 nav ul li {
   display: flex;
@@ -14,11 +19,6 @@ nav ul li {
 }
 
 /* catalog */
-.contain {
-  width: 98%;
-  margin: 0 auto;
-}
-
 .ctl-card {
   text-align: center;
 }
@@ -29,22 +29,6 @@ nav ul li {
   margin: 0 auto;
 }
 
-/* e-itm */
-.cont {
-  width: 82%;
-  margin-left: 15px;
-}
-
-img.e-itm-img {
-  width: 120px;
-  cursor: pointer;
-}
-
-img.e-itm-img:hover {
-  transform: scale(1.1);
-}
-
-/* t-item */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgb(192, 29, 29);
@@ -52,27 +36,50 @@ img.e-itm-img:hover {
   padding: 10px;
 }
 
-/* w-items */
-.cnt {
-  width: 35%;
+/* e-itm */
+.cont {
+  width: 100%;
+  max-width: 82%;
+  margin-left: 15px;
 }
 
-.crd-itm img, img.img-fluid {
-  width: 150px;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+img.e-itm-img {
+  width: 100%;
+  max-width: 120px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.w-img {
-  width: 830px;
-  height: 570px;
-}
-
-.crd-itm img:hover, img.img-fluid:hover {
+img.e-itm-img:hover {
   transform: scale(1.1);
 }
 
+/* w-items */
+.cnt {
+  width: 100%;
+  max-width: 35%;
+}
+
+.crd-itm img, img.img-fluid {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.crd-itm img, img.img-fluid:hover {
+  transform: scale(1.1);
+}
+
+.w-img {
+  width: 100%;
+  max-width: 830px;
+  height: auto;
+}
+
+/* Footer */
 footer {
   background-color: #f5f5f5;
 }
@@ -104,32 +111,4 @@ footer .Xtae {
 }
 footer .ts {
   font-size: xx-small;
-}
-footer img.b-icon {
-  width: 10px;
-  height: 10px;
-}
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  * {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .navbar-brand img {
-    width: 100px;
-  }
-  .search-bar div {
-    width: 200px;
-  }
-  .nav-wrap {
-    display: flex;
-    flex-direction: row;
-  }
-  span.hid {
-    display: none;
-  }
-  .catalog .van {
-    display: none;
-  }
 }/*# sourceMappingURL=style.css.map */
