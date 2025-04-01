@@ -20,49 +20,75 @@
     <title>Online Shopping site</title>
   </head>
   <body style="background-color: #f1f2f4">
+    <!-- header start -->
     <header>
-      <nav
-        class="bg-white "
-      >
-      <div class="nav-wrap  navbar navbar-expand-lg  shadow-sm w-100 d-md-flex justify-content-md-around align-items-center">
-        <!-- logo -->
-        <a class="navbar-brand ml-5 me-5" href="#">
-          <img src="img/fkheaderlogo_exploreplus-44005d.svg" alt="logo" />
-        </a>
-        <!-- search bar -->
-
-        <form action="" class="search-bar w-100">
-          <div class="input-group d-flex flex-grow-1 mx-2">
-            <span class="input-group-text bg-light border-end-0">
-              <i class="fa-solid fa-magnifying-glass text-secondary"></i>
-            </span>
-            <input
-              type="search"
-              class="form-control border-start-0 bg-light p-2"
-              placeholder="Search for Products, Brands and More"
-              aria-label="Search"
+      <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="img/fkheaderlogo_exploreplus-44005d.svg"
+              alt="logo"
+              class=""
+              style="max-width: 120px"
             />
-          </div>
-        </form>
+          </a>
 
-        <!-- nav item -->
-        <ul
-          class="list-unstyled d-flex align-items-center justify-content-center"
-        >
-          <li class="fs-5 mx-4">
-            <a href="#"></a><i class="fa-solid fa-user mx-2"></i>Login
-          </li>
-          <li class="fs-5 mx-4">
-            <a href="#"></a><i class="fa-solid fa-cart-shopping mx-2"></i> <span class="hid">Cart</span> 
-          </li>
-          <li class="fs-5 mx-4">
-            <a href="#"></a><i class="fa-solid fa-shop mx-2"></i> <span class="hid">Become a Seller</span> 
-          </li>
-          <li class="fs-5 mx-4">
-            <a href="#"></a><i class="fa-solid fa-ellipsis-vertical mx-4"></i>
-          </li>
-        </ul>
-      </div>
+          <!-- Toggler for small screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Search Bar -->
+            <form action="" class="d-flex flex-grow-1 mx-2">
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0">
+                  <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+                </span>
+                <input
+                  type="search"
+                  class="form-control border-start-0"
+                  placeholder="Search for Products, Brands and More"
+                  aria-label="Search"
+                />
+              </div>
+            </form>
+
+            <!-- Nav Items -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-user me-1"></i> Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-cart-shopping me-1"></i> Cart</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-shop me-1"></i> Become a Seller</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-ellipsis-vertical"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- header-end -->
@@ -186,81 +212,83 @@
       </section>
       <!-- Electronics product-section-start -->
       <section class="E-product mt-5">
-        <div class="p-wrap d-flex">
-          <div class="cont p-2 mx-3 bg-white">
-            <h1 class="mx-2 my-2">Best of Electronics</h1>
-            <!-- product card -->
-            <div class="e-product-crd row mx-4">
-              <!-- card 1 -->
+        <div class="d-flex align-items-center ms-md-4">
+          <div class="row contains">
+            <div class="col-lg-10 bg-white p-3">
+              <h1 class="mb-4">Best of Electronics</h1>
               <div
-                class="crd-itm me-4 col-2 border-bottom d-flex flex-column align-items-center justify-content-center"
+                class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 mt-md-4"
               >
-                <img
-                  class="e-itm-img my-2"
-                  src="img/E-item/e3 (2).jpg"
-                  alt=""
-                />
-                <h6 class="fw-semibold my-2">Best Truewireless He...</h6>
-                <p class="fs-5 fw-bold d-flex">Grab Now</p>
-              </div>
-              <!-- card 2 -->
-              <div
-                class="crd-itm me-4 col-2 border-bottom d-flex flex-column align-items-center justify-content-center"
-              >
-                <img
-                  class="e-itm-img my-2"
-                  src="img/E-item/e7 (4).jpg"
-                  alt=""
-                />
-                <h6 class="fw-semibold my-2">Monitor</h6>
-                <p class="fs-5 fw-bold d-flex">form $1,999</p>
-              </div>
-              <!-- card 3 -->
-              <div
-                class="crd-itm me-4 col-2 border-bottom d-flex flex-column align-items-center justify-content-center"
-              >
-                <img
-                  class="e-itm-img my-2"
-                  src="img/E-item/e2 (1).webp"
-                  alt=""
-                />
-                <h6 class="fw-semibold my-2">Fastrak Smartwat..</h6>
-                <p class="fs-5 fw-bold d-flex">form $1,100</p>
-              </div>
-              <!-- card 4 -->
-              <div
-                class="crd-itm me-4 col-2 border-bottom d-flex flex-column align-items-center justify-content-center"
-              >
-                <img
-                  class="e-itm-img my-2"
-                  src="img/E-item/e6 (3).jpg"
-                  alt=""
-                />
-                <h6 class="fw-semibold my-2">Printer</h6>
-                <p class="fs-5 fw-bold d-flex">form $2,000</p>
-              </div>
-              <!-- card 5 -->
-              <div
-                class="crd-itm me-4 col-2 border-bottom d-flex flex-column align-items-center justify-content-center"
-              >
-                <img
-                  class="e-itm-img my-2"
-                  src="img/E-item/e1 (1).jpg"
-                  alt=""
-                />
-                <h6 class="fw-semibold my-2">Noice Smartwatch</h6>
-                <p class="fs-5 fw-bold d-flex">form $900</p>
+                <!-- Card 1 -->
+                <div
+                  class="col d-flex flex-column align-items-center text-center e-product-card p-3"
+                >
+                  <img
+                    src="img/E-item/e3 (2).jpg"
+                    class="img-fluid e-itm-img mb-2"
+                    alt="Best Truewireless Headphones"
+                  />
+                  <h6 class="fw-semibold mb-1">Best Truewireless He...</h6>
+                  <p class="fs-5 fw-bold text-success">Grab Now</p>
+                </div>
+                <!-- Card 2 -->
+                <div
+                  class="col d-flex flex-column align-items-center text-center e-product-card p-3"
+                >
+                  <img
+                    src="img/E-item/e7 (4).jpg"
+                    class="img-fluid e-itm-img mb-2"
+                    alt="Monitor"
+                  />
+                  <h6 class="fw-semibold mb-1">Monitor</h6>
+                  <p class="fs-5 fw-bold text-success">From $1,999</p>
+                </div>
+                <!-- Card 3 -->
+                <div
+                  class="col d-flex flex-column align-items-center text-center e-product-card p-3"
+                >
+                  <img
+                    src="img/E-item/e2 (1).webp"
+                    class="img-fluid e-itm-img mb-2"
+                    alt="Fastrak Smartwatch"
+                  />
+                  <h6 class="fw-semibold mb-1">Fastrak Smartwat...</h6>
+                  <p class="fs-5 fw-bold text-success">From $1,100</p>
+                </div>
+                <!-- Card 4 -->
+                <div
+                  class="col d-flex flex-column align-items-center text-center e-product-card p-3"
+                >
+                  <img
+                    src="img/E-item/e6 (3).jpg"
+                    class="img-fluid e-itm-img mb-2"
+                    alt="Printer"
+                  />
+                  <h6 class="fw-semibold mb-1">Printer</h6>
+                  <p class="fs-5 fw-bold text-success">From $2,000</p>
+                </div>
+                <!-- Card 5 -->
+                <div
+                  class="col d-flex flex-column align-items-center text-center e-product-card p-3"
+                >
+                  <img
+                    src="img/E-item/e1 (1).jpg"
+                    class="img-fluid e-itm-img mb-2"
+                    alt="Noice Smartwatch"
+                  />
+                  <h6 class="fw-semibold mb-1">Noice Smartwatch</h6>
+                  <p class="fs-5 fw-bold text-success">From $900</p>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- other card -->
-          <div class="other-card">
-            <img
-              class="bg-white"
-              src="img/E-item/e4 (2).webp"
-              style="width: 200px"
-              alt=""
-            />
+            <div class="col-lg-2 d-none d-lg-block">
+              <img
+                src="img/E-item/e4 (2).webp"
+                class=""
+                alt="Sidebar Image"
+                style="width: 250px"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -455,7 +483,7 @@
       </section>
       <!-- wedding & Gifting items -->
       <section class="w-items mt-5">
-        <div class="w-wraper d-flex flex-row">
+        <div class="w-wraper d-flex flex-row align-items-center justify-content-center">
           <div class="cnt px-2 py-1 mx-3 bg-white d-block">
             <div
               class="d-flex flex-row align-items-center justify-content-between"
@@ -466,10 +494,12 @@
               <span><i class="fa-solid fa-greater-than mx-2"></i></span>
             </div>
             <!-- cards -->
-            <div class="w-product-crd p-3 row mt-3">
+            <div
+              class="w-product-crd p-3 row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 mt-3 d-flex justify-content-center align-items-center"
+            >
               <!-- card 1 -->
               <div
-                class="crd-itm mx-4 my-2 col border d-flex flex-column align-items-center"
+                class="crd-itm mx-4 my-2 col-lg-4 col-md-2 border d-flex flex-column align-items-center"
               >
                 <img
                   class="w-itm-img my-2 p-2"
@@ -481,7 +511,7 @@
               </div>
               <!-- card 2 -->
               <div
-                class="crd-itm me-2 my-2 col border d-flex flex-column align-items-center"
+                class="crd-itm me-2 my-2 col-lg-4 col-md-2 border d-flex flex-column align-items-center"
               >
                 <img
                   class="w-itm-img my-2 p-2"
@@ -493,7 +523,7 @@
               </div>
               <!-- card 3 -->
               <div
-                class="crd-itm mx-4 my-2 col border d-flex flex-column align-items-center"
+                class="crd-itm mx-4 my-2 col-lg-4 col-md-2 border d-flex flex-column align-items-center"
               >
                 <img
                   class="w-itm-img my-2 p-2"
@@ -505,7 +535,7 @@
               </div>
               <!-- card 4 -->
               <div
-                class="crd-itm me-2 my-2 col border d-flex flex-column align-items-center"
+                class="crd-itm me-2 my-2 col-lg-4 col-md-2 border d-flex flex-column align-items-center"
               >
                 <img
                   class="w-itm-img my-2 p-2"
@@ -517,7 +547,7 @@
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="d-none d-md-none d-lg-block">
             <img
               class="w-img d-flex align-items-center justify-content-center"
               src="img/Wedding & Gifting/big.jpeg"

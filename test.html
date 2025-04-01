@@ -16,515 +16,121 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
     <style>
-      /* Minimal custom CSS for elements that Bootstrap can't handle directly */
-      .category-item:hover {
-        color: #2874f0;
-        cursor: pointer;
-      }
+      .e-product-card {
+  padding-bottom: 15px; /* Adds space below each card */
+  border-bottom: 1px solid #e0e0e0; /* Light gray border-bottom */
+}
 
-      .dropdown-toggle::after {
-        vertical-align: middle;
-        margin-left: 0.25rem;
-      }
+.e-itm-img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
 
-      .nav-link:hover {
-        color: #2874f0 !important;
-      }
-
-      .category-image {
-        width: 64px;
-        height: 64px;
-        object-fit: contain;
-      }
-      .container {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding-bottom: 50px;
-      }
-      .product-card {
-            text-align: center;
-            padding: 15px;
-            height: 100%;
-        }
-        
-        .product-image {
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15px;
-        }
-        
-        .product-image img {
-            max-height: 100%;
-            max-width: 100%;
-            object-fit: contain;
-        }
-        
-        .product-title {
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-        
-        .product-discount {
-            font-size: 14px;
-            color: #666;
-        }
-        
-        .section-title {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
-        
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 40px;
-            height: 40px;
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 50%;
-            top: 50%;
-            transform: translateY(-50%);
-            opacity: 1;
-        }
-        
-        .carousel-control-prev {
-            left: -20px;
-        }
-        
-        .carousel-control-next {
-            right: -20px;
-        }
-        
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            width: 20px;
-            height: 20px;
-            background-size: 100%;
-            filter: none;
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
-        }
-        
-        .carousel-control-next-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23333'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-        }
-        
-        /* Make carousel pause on hover */
-        .carousel:hover .carousel-control-prev,
-        .carousel:hover .carousel-control-next {
-            opacity: 1;
-        }
-        
-        .bottom-divider {
-            margin-top: 20px;
-        }
+/* Remove border-bottom on smaller screens for cleaner stacking */
+@media (max-width: 767.98px) {
+  .e-product-card {
+    border-bottom: none;
+  }
+}
 
     </style>
     <title>Online Shopping Site</title>
   </head>
-  <body class="bg-light">
+  <body class="bg-dark">
     <!-- Header -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-white shadow-sm py-2">
-        <div class="container-fluid px-lg-5">
-          <!-- Logo -->
-          <a class="navbar-brand me-4" href="#">
-            <img src="/api/placeholder/120/40" alt="Logo" />
-          </a>
-
-          <!-- Search Bar -->
-          <div class="d-flex flex-grow-1 mx-lg-4 mx-2">
-            <div class="input-group">
-              <span class="input-group-text bg-white border-end-0">
-                <i class="fa-solid fa-magnifying-glass text-secondary"></i>
-              </span>
-              <input
-                type="search"
-                class="form-control border-start-0 shadow-none"
-                placeholder="Search for Products, Brands and More"
-                aria-label="Search"
-              />
-            </div>
-          </div>
-
-          <!-- Navigation Items -->
-          <ul class="navbar-nav align-items-center ms-auto gap-4">
-            <li class="nav-item">
-              <a
-                class="nav-link text-dark d-flex align-items-center gap-2"
-                href="#"
-              >
-                <i class="fa-solid fa-user"></i>
-                <span>Login</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-dark d-flex align-items-center gap-2"
-                href="#"
-              >
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span>Cart</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-dark d-flex align-items-center gap-2"
-                href="#"
-              >
-                <i class="fa-solid fa-shop"></i>
-                <span>Become a Seller</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main>
-      <!-- corocel -->
-      <section>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/slider/1.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/slider/2.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/slider/3.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/slider/4.webp" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/slider/5.webp" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </section>
-      <!-- product slider -->
-      <div class="container mb-5 py-5">
-        <h2 class="section-title">Beauty, Food, Toys & more</h2>
-        
-        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-inner">
-                <!-- First slide -->
-                <div class="carousel-item active">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3">
-                        <!-- Product 1 -->
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Coffee+Powder" alt="Coffee Powder">
-                                </div>
-                                <h5 class="product-title">Coffee Powder</h5>
-                                <p class="product-discount">Upto 80% Off</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Product 2 -->
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Dry+Fruits" alt="Dry Fruits">
-                                </div>
-                                <h5 class="product-title">Dry Fruits</h5>
-                                <p class="product-discount">Upto 75% Off</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Product 3 -->
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Geared+Cycles" alt="Geared Cycles">
-                                </div>
-                                <h5 class="product-title">Geared Cycles</h5>
-                                <p class="product-discount">Up to 70% Off</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Product 4 -->
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Action+Toys" alt="Best of Action Toys">
-                                </div>
-                                <h5 class="product-title">Best of Action Toys</h5>
-                                <p class="product-discount">Up to 70% Off</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Product 5 -->
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Electric+Cycle" alt="Electric Cycle">
-                                </div>
-                                <h5 class="product-title">Electric Cycle</h5>
-                                <p class="product-discount">Up to 40% Off</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Product 6 -->
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Remote+Control+Toys" alt="Remote Control Toys">
-                                </div>
-                                <h5 class="product-title">Remote Control Toys</h5>
-                                <p class="product-discount">Up to 80% Off</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- You can add more slides here if needed -->
-                <div class="carousel-item">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6 g-3">
-                        <!-- Additional products would go here -->
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Skincare" alt="Skincare">
-                                </div>
-                                <h5 class="product-title">Skincare</h5>
-                                <p class="product-discount">Up to 60% Off</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Chocolates" alt="Chocolates">
-                                </div>
-                                <h5 class="product-title">Chocolates</h5>
-                                <p class="product-discount">Up to 55% Off</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Add more products as needed to fill the row -->
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Baby+Toys" alt="Baby Toys">
-                                </div>
-                                <h5 class="product-title">Baby Toys</h5>
-                                <p class="product-discount">Up to 65% Off</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Books" alt="Books">
-                                </div>
-                                <h5 class="product-title">Books</h5>
-                                <p class="product-discount">Up to 50% Off</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Gaming" alt="Gaming">
-                                </div>
-                                <h5 class="product-title">Gaming</h5>
-                                <p class="product-discount">Up to 45% Off</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col">
-                            <div class="product-card">
-                                <div class="product-image">
-                                    <img src="https://via.placeholder.com/150x150?text=Kitchen" alt="Kitchen Items">
-                                </div>
-                                <h5 class="product-title">Kitchen Items</h5>
-                                <p class="product-discount">Up to 70% Off</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Carousel Controls -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-        </div>
-        
-        <hr class="bottom-divider">
-    </div>
-    <section class="triple-section mt-5">
+    <section class="catalog mt-4">
       <div class="container">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 row-cols-lg-9 g-3 bg-white p-3">
+          <!-- Card 1 -->
+          <div class="col text-center">
+            <img src="img/catagoris/1k (1).webp" class="img-fluid mb-2" alt="Kilos">
+            <h5 class="fs-6 fw-semibold">Kilos</h5>
+          </div>
+          <!-- Card 2 -->
+          <div class="col text-center">
+            <img src="img/catagoris/2k (1).webp" class="img-fluid mb-2" alt="Mobiles">
+            <h5 class="fs-6 fw-semibold">Mobiles</h5>
+          </div>
+          <!-- Card 3 -->
+          <div class="col text-center">
+            <img src="img/catagoris/3k.png" class="img-fluid mb-2" alt="Laptops">
+            <h5 class="fs-6 fw-semibold">Fashion</h5>
+          </div>
+          <!-- Card 4 -->
+          <div class="col text-center">
+            <img src="img/catagoris/4k.png" class="img-fluid mb-2" alt="Laptops">
+            <h5 class="fs-6 fw-semibold">Electronics</h5>
+          </div>
+          <!-- Card 5 -->
+          <div class="col text-center">
+            <img src="img/catagoris/5k.png" class="img-fluid mb-2" alt="Laptops">
+            <h5 class="fs-6 fw-semibold">Home & Furniture</h5>
+          </div>
+          <!-- Card 6 -->
+          <div class="col text-center">
+            <img src="img/catagoris/6k.png" class="img-fluid mb-2" alt="Laptops">
+            <h5 class="fs-6 fw-semibold">Appliences</h5>
+          </div>
+          <!-- Card 7 -->
+          <div class="col text-center">
+            <img src="img/catagoris/7k (1).webp" class="img-fluid mb-2" alt="Laptops">
+            <h5 class="fs-6 fw-semibold">Flight Booking</h5>
+          </div>
+          <!-- Card 8 -->
+          <div class="col text-center">
+            <img src="img/catagoris/8k.png" class="img-fluid mb-2" alt="Laptops">
+            <h5 class="fs-6 fw-semibold">Beauty,Toys & More</h5>
+          </div>
+          <!-- Card 9 -->
+          <div class="col text-center">
+            <img src="img/catagoris/9k.png" class="img-fluid mb-2" alt="Laptops">
+            <h5 class="fs-6 fw-semibold">Two Wheelers</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="E-product mt-5">
+      <div class="cont">
         <div class="row">
-          <!-- Season's Top Picks -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-              <div class="card-header bg-white d-flex justify-content-between align-items-center">
-                <h2 class="fs-4 fw-semibold mb-0">Season's Top Picks</h2>
-                <span class="text-primary"><i class="fa-solid fa-chevron-right"></i></span>
+          <div class="col-lg-10 bg-white p-3">
+            <h1 class="mb-4">Best of Electronics</h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4 mt-5">
+              <!-- Card 1 -->
+              <div class="col d-flex flex-column align-items-center text-center e-product-card p-md-3  ">
+                <img src="img/E-item/e3 (2).jpg" class="img-fluid e-itm-img mb-2" alt="Best Truewireless Headphones">
+                <h6 class="fw-semibold mb-1">Best Truewireless He...</h6>
+                <p class="fs-5 fw-bold text-success">Grab Now</p>
               </div>
-              <div class="card-body">
-                <div class="row row-cols-2 g-3">
-                  <!-- Item 1 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/dry-fruit-nuts.jpg" class="img-fluid mb-2" alt="Dry Fruit, Nut & Seed">
-                      <h6 class="fw-semibold">Dry Fruit, Nut & Seed</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
-                    </div>
-                  </div>
-                  <!-- Item 2 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/clocks.jpg" class="img-fluid mb-2" alt="Clocks">
-                      <h6 class="fw-semibold">Clocks</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
-                    </div>
-                  </div>
-                  <!-- Item 3 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/ethnic-wear.jpg" class="img-fluid mb-2" alt="Women's Ethnic">
-                      <h6 class="fw-semibold">Women's Ethnic</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
-                    </div>
-                  </div>
-                  <!-- Item 4 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/sarees.jpg" class="img-fluid mb-2" alt="Sarees">
-                      <h6 class="fw-semibold">Sarees</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 70% Off</p>
-                    </div>
-                  </div>
-                </div>
+              <!-- Card 2 -->
+              <div class="col d-flex flex-column align-items-center text-center e-product-card p-md-3 ">
+                <img src="img/E-item/e7 (4).jpg" class="img-fluid e-itm-img mb-2" alt="Monitor">
+                <h6 class="fw-semibold mb-1">Monitor</h6>
+                <p class="fs-5 fw-bold text-success">From $1,999</p>
+              </div>
+              <!-- Card 3 -->
+              <div class="col d-flex flex-column align-items-center text-center e-product-card p-md-3 ">
+                <img src="img/E-item/e2 (1).webp" class="img-fluid e-itm-img mb-2" alt="Fastrak Smartwatch">
+                <h6 class="fw-semibold mb-1">Fastrak Smartwat...</h6>
+                <p class="fs-5 fw-bold text-success">From $1,100</p>
+              </div>
+              <!-- Card 4 -->
+              <div class="col d-flex flex-column align-items-center text-center e-product-card p-md-3 ">
+                <img src="img/E-item/e6 (3).jpg" class="img-fluid e-itm-img mb-2" alt="Printer">
+                <h6 class="fw-semibold mb-1">Printer</h6>
+                <p class="fs-5 fw-bold text-success">From $2,000</p>
+              </div>
+              <!-- Card 5 -->
+              <div class="col d-flex flex-column align-items-center text-center e-product-card p-md-3 ">
+                <img src="img/E-item/e1 (1).jpg" class="img-fluid e-itm-img mb-2" alt="Noice Smartwatch">
+                <h6 class="fw-semibold mb-1">Noice Smartwatch</h6>
+                <p class="fs-5 fw-bold text-success">From $900</p>
               </div>
             </div>
           </div>
-    
-          <!-- Travel Essential Picks -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-              <div class="card-header bg-white d-flex justify-content-between align-items-center">
-                <h2 class="fs-4 fw-semibold mb-0">Travel Essential Picks</h2>
-                <span class="text-primary"><i class="fa-solid fa-chevron-right"></i></span>
-              </div>
-              <div class="card-body">
-                <div class="row row-cols-2 g-3">
-                  <!-- Item 1 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/mens-casual-shoes.jpg" class="img-fluid mb-2" alt="Men's Casual Shoes">
-                      <h6 class="fw-semibold">Men's Casual Shoes</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 70% Off</p>
-                    </div>
-                  </div>
-                  <!-- Item 2 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/mens-slippers.jpg" class="img-fluid mb-2" alt="Men's Slippers & Flip">
-                      <h6 class="fw-semibold">Men's Slippers & Flip</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 70% Off</p>
-                    </div>
-                  </div>
-                  <!-- Item 3 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/trimmers.jpg" class="img-fluid mb-2" alt="Trimmers">
-                      <h6 class="fw-semibold">Trimmers</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
-                    </div>
-                  </div>
-                  <!-- Item 4 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/mens-jeans.jpg" class="img-fluid mb-2" alt="Men's Jeans">
-                      <h6 class="fw-semibold">Men's Jeans</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-    
-          <!-- Make Your Home Stylish (renamed from Home Decor & Furnishings) -->
-          <div class="col-md-4 mb-4">
-            <div class="card shadow-sm">
-              <div class="card-header bg-white d-flex justify-content-between align-items-center">
-                <h2 class="fs-4 fw-semibold mb-0">Make Your Home Stylish</h2>
-                <span class="text-primary"><i class="fa-solid fa-chevron-right"></i></span>
-              </div>
-              <div class="card-body">
-                <div class="row row-cols-2 g-3">
-                  <!-- Item 1 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/mosquito-nets.jpg" class="img-fluid mb-2" alt="Mosquito Nets">
-                      <h6 class="fw-semibold">Mosquito Nets</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
-                    </div>
-                  </div>
-                  <!-- Item 2 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/pillows.jpg" class="img-fluid mb-2" alt="Pillows">
-                      <h6 class="fw-semibold">Pillows</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
-                    </div>
-                  </div>
-                  <!-- Item 3 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/clothes-rack.jpg" class="img-fluid mb-2" alt="Clothes Rack">
-                      <h6 class="fw-semibold">Clothes Rack</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
-                    </div>
-                  </div>
-                  <!-- Item 4 -->
-                  <div class="col">
-                    <div class="border rounded p-2 text-center h-100">
-                      <img src="img/bedsheets.jpg" class="img-fluid mb-2" alt="Bedsheets">
-                      <h6 class="fw-semibold">Bedsheets</h6>
-                      <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-2 d-none d-lg-block">
+            <img src="img/E-item/e4 (2).webp" class="" style=" width: 250px;" alt="Sidebar Image">
           </div>
         </div>
       </div>
