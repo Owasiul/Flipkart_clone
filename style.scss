@@ -52,29 +52,126 @@ img.e-itm-img:hover {
   transform: scale(1.1);
 }
 /* w-items */
-.cnt {
-  width: 35%;
-  max-width: 100%;
-}
-.w-product-crd{
-  width: 100%;
-}
-.crd-itm img,
-img.img-fluid,img.w-itm-img {
-  width: 100%;
-  max-width: 150px;
-  height: 150px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-.crd-itm img:hover,
-img.img-fluid:hover,img.w-itm-img:hover {
-  transform: scale(1.1);
-}
-.w-img {
-  width: 100%;
-  max-width: 830px;
-  height: auto;
+.wedding-section {
+  // Base styles for all screen sizes
+  .content-wrapper {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  h1.fs-2 {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+    color: #212121;
+  }
+
+  .fa-greater-than {
+    color: #2874f0;
+    font-size: 1.2rem;
+  }
+
+  .card-item {
+    border: none !important;
+    text-align: center;
+    padding: 0.5rem;
+
+    img.w-item-img {
+      width: 100%;
+      max-width: 150px;
+      height: 150px;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    h6 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #212121;
+    }
+
+    p {
+      font-size: 0.85rem !important;
+      font-weight: 600;
+    }
+  }
+
+  .w-big-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  // Small devices (320px and up)
+  @media (min-width: 320px) and (max-width: 767px) {
+    .content-wrapper {
+      width: 100%;
+      max-width: 100%;
+      padding: 0.5rem;
+    }
+
+    .row {
+      flex-direction: column;
+    }
+
+    .row-cols-2 > * {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .card-item {
+      .w-item-img {
+        max-width: 150px;
+        height: 150px;
+      }
+    }
+  }
+
+  // Medium devices (768px to 991px)
+  @media (min-width: 768px) and (max-width: 991px) {
+    .content-wrapper {
+      width: 100%;
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .row-cols-2 > * {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .card-item {
+      .w-item-img {
+        max-width: 120px;
+        height: 120px;
+      }
+    }
+  }
+
+  // Large devices (992px and up)
+  @media (min-width: 992px) {
+    .content-wrapper {
+      width: 35%;
+      max-width: 450px;
+      padding: 1rem;
+    }
+
+    .row-cols-2 > * {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .w-big-img {
+      width: 100%;
+      max-width: 900px;
+      height: max-content;
+    }
+  }
 }
 // footer
 /* Footer */
