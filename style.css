@@ -14,10 +14,24 @@
 /* nav */
 nav ul li {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
 }
 
+.nav-item {
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+.Search_Bar {
+  height: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  span.hide {
+    display: none !important;
+  }
+}
 /* catalog */
 .ctl-card {
   text-align: center;
