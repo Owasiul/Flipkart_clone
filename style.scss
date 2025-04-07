@@ -37,7 +37,6 @@ nav ul li {
 
 /* catalog */
 .catalog {
-  background-color: #f8f9fa; /* Light background similar to the second image */
   padding: 20px 0;
 }
 .ctl-item {
@@ -51,8 +50,8 @@ nav ul li {
   transition: transform 0.2s; /* Optional hover effect */
 }
 .ctl-card img {
-  width: 80px; /* Adjust size to match the second image */
-  height: 80px;
+  width: 85px; /* Adjust size to match the second image */
+  height: 85px;
   object-fit: contain; /* Ensure images scale properly */
 }
 .ctl-card h6 {

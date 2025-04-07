@@ -37,7 +37,6 @@ nav ul li {
 }
 /* catalog */
 .catalog {
-  background-color: #f8f9fa; /* Light background similar to the second image */
   padding: 20px 0;
 }
 
@@ -54,8 +53,8 @@ nav ul li {
 }
 
 .ctl-card img {
-  width: 80px; /* Adjust size to match the second image */
-  height: 80px;
+  width: 85px; /* Adjust size to match the second image */
+  height: 85px;
   -o-object-fit: contain;
      object-fit: contain; /* Ensure images scale properly */
 }
