@@ -25,7 +25,10 @@ nav ul li {
 }
 @media screen and (max-width: 1024px) {
   span.hide{
-    display: none!important;
+    display: none;
+  }
+  .ctl-card.hide{
+    display: none;
   }
 }
 
@@ -33,9 +36,37 @@ nav ul li {
   
 
 /* catalog */
+.catalog {
+  background-color: #f8f9fa; /* Light background similar to the second image */
+  padding: 20px 0;
+}
+.ctl-item {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .ctl-card {
   text-align: center;
+  margin: 10px;
+  transition: transform 0.2s; /* Optional hover effect */
 }
+.ctl-card img {
+  width: 80px; /* Adjust size to match the second image */
+  height: 80px;
+  object-fit: contain; /* Ensure images scale properly */
+}
+.ctl-card h6 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #333; /* Darker text color */
+  text-transform: uppercase; /* Match the second image's text style */
+}
+.ctl-card a {
+  text-decoration: none;
+}
+.ctl-card:hover {
+  transform: scale(1.05); /* Optional hover effect */}
 /* carousel slider */
 .slider {
   width: 98%;

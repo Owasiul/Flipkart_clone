@@ -24,73 +24,108 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-white shadow-sm p-2">
         <div class="container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="img/fkheaderlogo_exploreplus-44005d.svg" alt="logo" class="img-fluid" style="max-width: 200px;">
-            </a>
-    
-            <!-- Toggler for small screens -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- Collapsible content -->
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <!-- Search Bar -->
-                <form class="d-flex align-items-center w-50 mx-4">
-                    <div class="input-group">
-                        <span class="input-group-text bg-light border-end-0">
-                            <i class="fa-solid fa-magnifying-glass text-secondary"></i>
-                        </span>
-                        <input type="search" class="form-control border-start-0" 
-                               placeholder="Search for Products, Brands and More" aria-label="Search">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img
+              src="img/fkheaderlogo_exploreplus-44005d.svg"
+              alt="logo"
+              class="img-fluid"
+              style="max-width: 200px"
+            />
+          </a>
+
+          <!-- Toggler for small screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Search Bar -->
+            <form class="d-flex align-items-center w-50 mx-4">
+              <div class="input-group">
+                <span class="input-group-text bg-light border-end-0">
+                  <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+                </span>
+                <input
+                  type="search"
+                  class="form-control border-start-0"
+                  placeholder="Search for Products, Brands and More"
+                  aria-label="Search"
+                />
+              </div>
+            </form>
+
+            <!-- Nav Items -->
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle nav-link"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-user me-1"></i> Login
+                  </button>
+                  <ul class="dropdown-menu" style="width: 250px">
+                    <div
+                      class="d-md-flex border-bottom align-items-center justify-content-between px-3 py-2"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">New Customer?</a>
+                      </li>
+                      <button class="btn">
+                        <span class="text-info">Sign up</span>
+                      </button>
                     </div>
-                </form>
-    
-                <!-- Nav Items -->
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle nav-link" type="button" 
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-user me-1"></i> Login
-                            </button>
-                            <ul class="dropdown-menu" style="width: 250px;">
-                                <div class="d-md-flex border-bottom align-items-center justify-content-between px-3 py-2">
-                                    <li><a class="dropdown-item" href="#">New Customer?</a></li>
-                                    <button class="btn"><span class="text-info">Sign up</span></button>
-                                </div>
-                                <li><a class="dropdown-item my-2 " href="#">My profile</a></li>
-                                <li><a class="dropdown-item my-2" href="#">Flipkart Plus Zone</a></li>
-                                <li><a class="dropdown-item my-2" href="#">Orders</a></li>
-                                <li><a class="dropdown-item my-2" href="#">Wishlist</a></li>
-                                <li><a class="dropdown-item my-2" href="#">Rewards</a></li>
-                                <li><a class="dropdown-item my-2" href="#">Gift Cards</a></li>
-                            </ul>
-                        </div>
+                    <li>
+                      <a class="dropdown-item my-2" href="#">My profile</a>
                     </li>
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fa-solid fa-cart-shopping me-1"></i><span class="hide">Cart</span> 
-                        </a>
+                    <li>
+                      <a class="dropdown-item my-2" href="#"
+                        >Flipkart Plus Zone</a
+                      >
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fa-solid fa-shop me-1"></i> <span class="hide">Become a Seller</span> 
-                        </a>
+                    <li><a class="dropdown-item my-2" href="#">Orders</a></li>
+                    <li><a class="dropdown-item my-2" href="#">Wishlist</a></li>
+                    <li><a class="dropdown-item my-2" href="#">Rewards</a></li>
+                    <li>
+                      <a class="dropdown-item my-2" href="#">Gift Cards</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-cart-shopping me-1"></i
+                  ><span class="hide">Cart</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-shop me-1"></i>
+                  <span class="hide">Become a Seller</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-      
+      </nav>
     </header>
     <!-- header-end -->
     <!-- main-start -->
@@ -98,70 +133,69 @@
       <!-- hero/catalog -->
       <section class="catalog mt-4">
         <div class="contain p-2 bg-white">
-          <div class="ctl-item row align-items-center">
+          <div class="ctl-item">
             <!-- card-1 -->
-            <div class="ctl-card col-1 mx-4">
-              <img
-                class="my-2"
-                src="img/catagoris/1k (1).webp"
-                alt=""
-                srcset=""
-              />
-              <h5 class="fs-5 fw-semibold">Kilos</h5>
+            <div class="ctl-card">
+              <a href="#" class="text-decoration-none text-dark">
+                <img class="my-2" src="img/catagoris/1k (1).webp" alt="Kilos" />
+                <h6>Kilos</h6>
+              </a>
             </div>
             <!-- card-2 -->
-            <div class="ctl-card col-1 mx-4">
-              <img
-                class="my-2"
-                src="img/catagoris/2k (1).webp"
-                alt=""
-                srcset=""
-              />
-              <h5 class="fs-5 fw-semibold">Mobiles</h5>
+            <div class="ctl-card">
+              <a href="#" class="text-decoration-none text-dark">
+                <img class="my-2" src="img/catagoris/2k (1).webp" alt="Mobiles" />
+                <h6>Mobiles</h6>
+              </a>
             </div>
             <!-- card-3 -->
-            <div class="ctl-card col-1 mx-4">
-              <img class="my-2" src="img/catagoris/3k.png" alt="" srcset="" />
-              <h5 class="fs-5 fw-semibold">Fashion</h5>
+            <div class="ctl-card">
+              <a href="#" class="text-decoration-none text-dark">
+                <img class="my-2" src="img/catagoris/3k.png" alt="Fashion" />
+                <h6>Fashion</h6>
+              </a>
             </div>
             <!-- card-4 -->
-            <div class="ctl-card col-1 mx-4">
-              <img class="my-2" src="img/catagoris/4k.png" alt="" srcset="" />
-              <h5 class="fs-5 fw-semibold">Electronics</h5>
+            <div class="ctl-card">
+              <a href="#" class="text-decoration-none text-dark">
+                <img class="my-2" src="img/catagoris/4k.png" alt="Electronics" />
+                <h6>Electronics</h6>
+              </a>
             </div>
             <!-- card-5 -->
-            <div class="ctl-card col-1 mx-4">
-              <img class="my-2" src="img/catagoris/5k.png" alt="" srcset="" />
-              <h5 class="fs-5 fw-semibold">Home & Furniture</h5>
+            <div class="ctl-card">
+              <a href="#" class="text-decoration-none text-dark">
+                <img class="my-2" src="img/catagoris/5k.png" alt="Home & Furniture" />
+                <h6>Home & Furniture</h6>
+              </a>
             </div>
             <!-- card-6 -->
-            <div class="ctl-card col-1">
-              <img class="my-2" src="img/catagoris/6k.png" alt="" srcset="" />
-              <h5
-                class="fs-5 fw-semibold d-flex text-center align-items-center"
-              >
-                Appliences
-              </h5>
+            <div class="ctl-card">
+              <a href="#" class="text-decoration-none text-dark">
+                <img class="my-2" src="img/catagoris/6k.png" alt="Appliances" />
+                <h6>Appliances</h6>
+              </a>
             </div>
             <!-- card-7 -->
-            <div class="ctl-card col-1 mx-4">
-              <img
-                class="my-2"
-                src="img/catagoris/7k (1).webp"
-                alt=""
-                srcset=""
-              />
-              <h5 class="fs-5 fw-semibold">Flight Booking</h5>
+            <div class="ctl-card">
+              <a href="#" class="text-decoration-none text-dark">
+                <img class="my-2" src="img/catagoris/7k (1).webp" alt="Flight Booking" />
+                <h6>Flight Booking</h6>
+              </a>
             </div>
             <!-- card-8 -->
-            <div class="ctl-card col-1 mx-4">
-              <img class="my-2" src="img/catagoris/8k.png" alt="" srcset="" />
-              <h5 class="fs-5 fw-semibold">Beauty,Toys & More</h5>
+            <div class="ctl-card hide">
+              <a href="#" class="text-decoration-none text-dark">
+                <img class="my-2" src="img/catagoris/8k.png" alt="Beauty, Toys & More" />
+                <h6>Beauty, Toys & More</h6>
+              </a>
             </div>
             <!-- card-9 -->
-            <div class="ctl-card col-1 mx-4 van">
-              <img class="my-2" src="img/catagoris/9k.png" alt="" srcset="" />
-              <h5 class="fs-5 fw-semibold">Two Wheelers</h5>
+            <div class="ctl-card hide">
+              <a href="#" class="text-decoration-none text-dark">
+                <img class="my-2" src="img/catagoris/9k.png" alt="Two Wheelers" />
+                <h6>Two Wheelers</h6>
+              </a>
             </div>
           </div>
         </div>
@@ -485,40 +519,70 @@
       <!-- wedding & Gifting items -->
       <section class="wedding-section mt-5">
         <div class="contain d-flex flex-row">
-          <div class="row row-cols-md-12 align-items-center justify-content-center">
+          <div
+            class="row row-cols-md-12 align-items-center justify-content-center"
+          >
             <!-- Wedding & Gifting Specials Section -->
             <div class="content-wrapper col-12 col-lg-6 px-2 py-1 bg-white">
-              <div class="d-flex flex-row align-items-center justify-content-between">
+              <div
+                class="d-flex flex-row align-items-center justify-content-between"
+              >
                 <h1 class="mx-2 my-2 fs-2 fw-semibold">
                   Wedding & Gifting Specials
                 </h1>
                 <span><i class="fa-solid fa-greater-than mx-2"></i></span>
               </div>
-              <div class="row row-cols-2 row-cols-md-2 d-md-flex align-items-center justify-content-center g-3 mt-3">
+              <div
+                class="row row-cols-2 row-cols-md-2 d-md-flex align-items-center justify-content-center g-3 mt-3"
+              >
                 <div class="col">
-                  <div class="card-item border d-flex flex-column align-items-center">
-                    <img class="w-item-img my-2 p-2" src="img/Wedding & Gifting/w-1.jpeg" alt="Neckband">
+                  <div
+                    class="card-item border d-flex flex-column align-items-center"
+                  >
+                    <img
+                      class="w-item-img my-2 p-2"
+                      src="img/Wedding & Gifting/w-1.jpeg"
+                      alt="Neckband"
+                    />
                     <h6 class="fw-semibold my-1">Neckband</h6>
                     <p class="fs-6 text-success mb-2">Special offer</p>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card-item border d-flex flex-column align-items-center">
-                    <img class="w-item-img my-2 p-2" src="img/Wedding & Gifting/w-2.jpeg" alt="Speakers">
+                  <div
+                    class="card-item border d-flex flex-column align-items-center"
+                  >
+                    <img
+                      class="w-item-img my-2 p-2"
+                      src="img/Wedding & Gifting/w-2.jpeg"
+                      alt="Speakers"
+                    />
                     <h6 class="fw-semibold my-1">Speakers</h6>
                     <p class="fs-6 text-success mb-2">Special offer</p>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card-item border d-flex flex-column align-items-center">
-                    <img class="w-item-img my-2 p-2" src="img/Wedding & Gifting/w-3.jpeg" alt="Smart Watches">
+                  <div
+                    class="card-item border d-flex flex-column align-items-center"
+                  >
+                    <img
+                      class="w-item-img my-2 p-2"
+                      src="img/Wedding & Gifting/w-3.jpeg"
+                      alt="Smart Watches"
+                    />
                     <h6 class="fw-semibold my-1">Smart Watches</h6>
                     <p class="fs-6 text-success mb-2">Min. 40% Off</p>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card-item border d-flex flex-column align-items-center">
-                    <img class="w-item-img my-2 p-2" src="img/Wedding & Gifting/w-4.jpeg" alt="Wall Clocks">
+                  <div
+                    class="card-item border d-flex flex-column align-items-center"
+                  >
+                    <img
+                      class="w-item-img my-2 p-2"
+                      src="img/Wedding & Gifting/w-4.jpeg"
+                      alt="Wall Clocks"
+                    />
                     <h6 class="fw-semibold my-1">Wall Clocks</h6>
                     <p class="fs-6 text-success mb-2">Special offer</p>
                   </div>
@@ -527,7 +591,11 @@
             </div>
             <!-- Banner Image (Visible only on large screens) -->
             <div class="col-lg-6 d-none d-lg-block">
-              <img class="w-big-img img-fluid" src="img/Wedding & Gifting/big.jpeg" alt="Top Selling Smartphones">
+              <img
+                class="w-big-img img-fluid"
+                src="img/Wedding & Gifting/big.jpeg"
+                alt="Top Selling Smartphones"
+              />
             </div>
           </div>
         </div>
