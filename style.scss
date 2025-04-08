@@ -32,9 +32,6 @@ nav ul li {
   }
 }
 
-
-  
-
 /* catalog */
 .catalog {
   padding: 20px 0;
@@ -47,25 +44,21 @@ nav ul li {
 .ctl-card {
   text-align: center;
   margin: 10px;
-  transition: transform 0.2s; /* Optional hover effect */
 }
 .ctl-card img {
-  width: 85px; /* Adjust size to match the second image */
-  height: 85px;
-  object-fit: contain; /* Ensure images scale properly */
+  width: 90px; 
+  height: 90px;
+  object-fit: contain; 
 }
 .ctl-card h6 {
   font-size: 14px;
   font-weight: 500;
   margin-top: 10px;
-  color: #333; /* Darker text color */
-  text-transform: uppercase; /* Match the second image's text style */
+  color: #333; 
 }
 .ctl-card a {
   text-decoration: none;
 }
-.ctl-card:hover {
-  transform: scale(1.05); /* Optional hover effect */}
 /* carousel slider */
 .slider {
   width: 98%;
@@ -89,8 +82,9 @@ nav ul li {
   border-bottom: 1px solid #e0e0e0; 
 }
 img.e-itm-img {
-  width: 100%;
-  max-width: 120px;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -217,6 +211,14 @@ img.e-itm-img:hover {
       max-width: 900px;
       height: max-content;
     }
+  }
+}
+// triple-section
+.triple-section , .double-section{
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
   }
 }
 // footer
