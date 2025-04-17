@@ -109,100 +109,18 @@ img.e-itm-img:hover {
 }
 
 /* w-items */
-.wedding-section .content-wrapper {
-  background-color: #fff;
+.ds-img img {
+  width: 250px;
+  height: 250px;
+}
+
+.banner-part img {
+  width: 350px;
+  height: -moz-max-content;
+  height: max-content;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-.wedding-section h1.fs-2 {
-  font-size: 1.5rem !important;
-  font-weight: 700;
-  color: #212121;
-}
-.wedding-section .fa-greater-than {
-  color: #2874f0;
-  font-size: 1.2rem;
-}
-.wedding-section .card-item {
-  border: none !important;
-  text-align: center;
-  padding: 0.5rem;
-}
-.wedding-section .card-item img.w-item-img {
-  width: 100%;
-  max-width: 150px;
-  height: 150px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  transition: transform 0.3s ease;
-}
-.wedding-section .card-item img.w-item-img:hover {
-  transform: scale(1.1);
-}
-.wedding-section .card-item h6 {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #212121;
-}
-.wedding-section .card-item p {
-  font-size: 0.85rem !important;
-  font-weight: 600;
-}
-.wedding-section .w-big-img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .wedding-section .content-wrapper {
-    width: 100%;
-    max-width: 100%;
-    padding: 0.5rem;
-  }
-  .wedding-section .row {
-    flex-direction: column;
-  }
-  .wedding-section .row-cols-2 > * {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .wedding-section .card-item .w-item-img {
-    max-width: 150px;
-    height: 150px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .wedding-section .content-wrapper {
-    width: 100%;
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-  .wedding-section .row-cols-2 > * {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .wedding-section .card-item .w-item-img {
-    max-width: 120px;
-    height: 120px;
-  }
-}
-@media (min-width: 992px) {
-  .wedding-section .content-wrapper {
-    width: 35%;
-    max-width: 450px;
-    padding: 1rem;
-  }
-  .wedding-section .row-cols-2 > * {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .wedding-section .w-big-img {
-    width: 100%;
-    max-width: 900px;
-    height: -moz-max-content;
-    height: max-content;
-  }
 }
 
 .triple-section img, .double-section img {
