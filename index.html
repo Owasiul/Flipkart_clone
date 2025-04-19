@@ -22,9 +22,10 @@
   <body style="background-color: #f1f2f4">
     <!-- header start -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-white shadow-sm p-2">
+      <nav
+        class="navbar navbar-expand-lg bg-white shadow-sm p-2 position-sticky top-0"
+      >
         <div class="container-fluid">
-          <!-- Logo -->
           <a class="navbar-brand" href="#">
             <img
               src="img/fkheaderlogo_exploreplus-44005d.svg"
@@ -33,8 +34,6 @@
               style="max-width: 200px"
             />
           </a>
-
-          <!-- Toggler for small screens -->
           <button
             class="navbar-toggler"
             type="button"
@@ -46,26 +45,23 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <!-- Collapsible content -->
           <div class="collapse navbar-collapse" id="navbarContent">
-            <!-- Search Bar -->
-            <form class="d-flex align-items-center w-50 mx-4">
+            <form
+              class="d-flex align-items-center flex-grow-1 mx-lg-4 my-3 my-lg-0"
+            >
               <div class="input-group">
                 <span class="input-group-text bg-light border-end-0">
                   <i class="fa-solid fa-magnifying-glass text-secondary"></i>
                 </span>
                 <input
                   type="search"
-                  class="form-control border-start-0"
+                  class="form-control border-start-0 Search_Bar"
                   placeholder="Search for Products, Brands and More"
                   aria-label="Search"
                 />
               </div>
             </form>
-
-            <!-- Nav Items -->
-            <ul class="navbar-nav  mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <div class="dropdown">
                   <button
@@ -76,9 +72,12 @@
                   >
                     <i class="fa-solid fa-user me-1"></i> Login
                   </button>
-                  <ul class="dropdown-menu" style="width: 250px">
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    style="width: 250px"
+                  >
                     <div
-                      class="d-md-flex border-bottom align-items-center justify-content-between px-3 py-2"
+                      class="d-flex border-bottom align-items-center justify-content-between px-3 py-2"
                     >
                       <li>
                         <a class="dropdown-item" href="#">New Customer?</a>
@@ -104,20 +103,19 @@
                   </ul>
                 </div>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="#">
-                  <i class="fa-solid fa-cart-shopping me-1"></i
-                  ><span class="hide">Cart</span>
+                  <i class="fa-solid fa-cart-shopping me-1"></i>
+                  <span class="d-none d-lg-inline">Cart</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <i class="fa-solid fa-shop me-1"></i>
-                  <span class="hide">Become a Seller</span>
+                  <span class="d-none d-lg-inline">Become a Seller</span>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-none d-lg-inline">
                 <a class="nav-link" href="#">
                   <i class="fa-solid fa-ellipsis-vertical"></i>
                 </a>
@@ -132,8 +130,8 @@
     <main>
       <!-- hero/catalog -->
       <section class="catalog mt-4">
-        <div class="contain p-2 bg-white">
-          <div class="ctl-item p-3">
+        <div class="contain bg-white">
+          <div class="ctl-item">
             <!-- card-1 -->
             <div class="ctl-card">
               <a href="#" class="text-decoration-none text-dark">
@@ -144,7 +142,11 @@
             <!-- card-2 -->
             <div class="ctl-card">
               <a href="#" class="text-decoration-none text-dark">
-                <img class="my-2" src="img/catagoris/2k (1).webp" alt="Mobiles" />
+                <img
+                  class="my-2"
+                  src="img/catagoris/2k (1).webp"
+                  alt="Mobiles"
+                />
                 <h6>Mobiles</h6>
               </a>
             </div>
@@ -158,14 +160,22 @@
             <!-- card-4 -->
             <div class="ctl-card">
               <a href="#" class="text-decoration-none text-dark">
-                <img class="my-2" src="img/catagoris/4k.png" alt="Electronics" />
+                <img
+                  class="my-2"
+                  src="img/catagoris/4k.png"
+                  alt="Electronics"
+                />
                 <h6>Electronics</h6>
               </a>
             </div>
             <!-- card-5 -->
             <div class="ctl-card">
               <a href="#" class="text-decoration-none text-dark">
-                <img class="my-2" src="img/catagoris/5k.png" alt="Home & Furniture" />
+                <img
+                  class="my-2"
+                  src="img/catagoris/5k.png"
+                  alt="Home & Furniture"
+                />
                 <h6>Home & Furniture</h6>
               </a>
             </div>
@@ -179,21 +189,33 @@
             <!-- card-7 -->
             <div class="ctl-card">
               <a href="#" class="text-decoration-none text-dark">
-                <img class="my-2" src="img/catagoris/7k (1).webp" alt="Flight Booking" />
+                <img
+                  class="my-2"
+                  src="img/catagoris/7k (1).webp"
+                  alt="Flight Booking"
+                />
                 <h6>Flight Booking</h6>
               </a>
             </div>
             <!-- card-8 -->
             <div class="ctl-card hide">
               <a href="#" class="text-decoration-none text-dark">
-                <img class="my-2" src="img/catagoris/8k.png" alt="Beauty, Toys & More" />
+                <img
+                  class="my-2"
+                  src="img/catagoris/8k.png"
+                  alt="Beauty, Toys & More"
+                />
                 <h6>Beauty, Toys & More</h6>
               </a>
             </div>
             <!-- card-9 -->
             <div class="ctl-card hide">
               <a href="#" class="text-decoration-none text-dark">
-                <img class="my-2" src="img/catagoris/9k.png" alt="Two Wheelers" />
+                <img
+                  class="my-2"
+                  src="img/catagoris/9k.png"
+                  alt="Two Wheelers"
+                />
                 <h6>Two Wheelers</h6>
               </a>
             </div>
@@ -521,7 +543,7 @@
         <div class="contain">
           <div class="row">
             <!-- wedding & gifting -->
-            <div class="col-md-4">
+            <div class="col-md-4 mt-lg-0 mt-md-4 mt-2">
               <div class="box p-4 shadow-sm bg-white">
                 <div
                   class="box-header mb-4 d-flex justify-content-between align-items-center"
@@ -581,18 +603,44 @@
                         <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
                       </div>
                     </div>
+                    <!-- Item 5 -->
+                    <div class="col">
+                      <div class="border rounded p-2 text-center h-100">
+                        <img
+                          src="img/Wedding & Gifting/w-5 (1).jpeg"
+                          class="img-fluid ds-img mb-2 p-2"
+                          alt="Sarees"
+                        />
+                        <h6 class="fw-semibold">Sports Shoes</h6>
+                        <p class="mb-0 text-success fw-bold">Min. 25% Off</p>
+                      </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="col">
+                      <div class="border rounded p-2 text-center h-100">
+                        <img
+                          src="img/Wedding & Gifting/w-6.jpeg"
+                          class="img-fluid ds-img mb-2 p-2"
+                          alt="Sarees"
+                        />
+                        <h6 class="fw-semibold">kitchen utensils</h6>
+                        <p class="mb-0 text-success fw-bold">Min. 30% Off</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- summer beauty and fashion -->
-            <div class="col-md-4">
+            <div class="col-md-4 mt-lg-0 mt-md-4 mt-2">
               <div class="box p-4 shadow-sm bg-white">
                 <div
                   class="box-header mb-4 d-flex justify-content-between align-items-center"
                 >
-                  <h2 class="fs-4 fw-semibold mb-0">Summer beauty and fashion</h2>
+                  <h2 class="fs-4 fw-semibold mb-0">
+                    Summer beauty and fashion
+                  </h2>
                   <span class="text-primary"
                     ><i class="fa-solid fa-chevron-right"></i
                   ></span>
@@ -604,7 +652,7 @@
                       <div class="border rounded p-2 text-center h-100">
                         <img
                           src="img/Summer_Beauty/img-1.jpeg"
-                          class="img-fluid mb-2 p-2"
+                          class="img-fluid ds-img mb-2 p-2"
                           alt="Men's Casual Shoes"
                         />
                         <h6 class="fw-semibold">Men's Casual Shoes</h6>
@@ -616,7 +664,7 @@
                       <div class="border rounded p-2 text-center h-100">
                         <img
                           src="img/Summer_Beauty/img-2.jpeg"
-                          class="img-fluid mb-2 p-2"
+                          class="img-fluid ds-img mb-2 p-2"
                           alt="mens-shirts"
                         />
                         <h6 class="fw-semibold">Mens T-shirts</h6>
@@ -628,7 +676,7 @@
                       <div class="border rounded p-2 text-center h-100">
                         <img
                           src="img/Summer_Beauty/img-3.jpeg"
-                          class="img-fluid mb-2 p-2"
+                          class="img-fluid ds-img mb-2 p-2"
                           alt="Watches"
                         />
                         <h6 class="fw-semibold">Watches</h6>
@@ -640,11 +688,35 @@
                       <div class="border rounded p-2 text-center h-100">
                         <img
                           src="img/Summer_Beauty/img-4.jpeg"
-                          class="img-fluid mb-2 p-2"
+                          class="img-fluid ds-img mb-2 p-2"
                           alt="Men's sports shoes"
                         />
                         <h6 class="fw-semibold">Men's sports shoes</h6>
                         <p class="mb-0 text-success fw-bold">Min. 70% Off</p>
+                      </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="col">
+                      <div class="border rounded p-2 text-center h-100">
+                        <img
+                          src="img/Summer_Beauty/img-5.jpeg"
+                          class="img-fluid ds-img mb-2 p-2"
+                          alt="Sarees"
+                        />
+                        <h6 class="fw-semibold">Men's T-shirts</h6>
+                        <p class="mb-0 text-success fw-bold">Grab Now</p>
+                      </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="col">
+                      <div class="border rounded p-2 text-center h-100">
+                        <img
+                          src="img/Summer_Beauty/img-6.jpeg"
+                          class="img-fluid ds-img mb-2 p-2"
+                          alt="Sarees"
+                        />
+                        <h6 class="fw-semibold">Men Track Pants</h6>
+                        <p class="mb-0 text-success fw-bold">Min. 50% Off</p>
                       </div>
                     </div>
                   </div>
@@ -653,14 +725,14 @@
             </div>
 
             <!-- banner -->
-             <div class="banner-part col-md-4 d-lg-block d-none">
-              <img class="" src="img/Wedding & Gifting/b3.jpeg" alt="">
-             </div>
+            <div class="banner-part col-md-4 d-lg-block d-none">
+              <img class="" src="img/Wedding & Gifting/b3.jpeg" alt="" />
+            </div>
           </div>
         </div>
       </section>
       <!-- triple section - 1 -->
-      <section class="triple-section mt-5">
+      <section class="triple-section mt-lg-5 mt-md-4 mt-2">
         <div class="contain">
           <div class="row">
             <!-- Trending Gadgets -->
@@ -732,7 +804,7 @@
             </div>
 
             <!-- Travel Essential Picks -->
-            <div class="col-md-4">
+            <div class="col-md-4 mt-lg-0 mt-md-4 mt-2">
               <div class="box p-4 shadow-sm bg-white">
                 <div
                   class="box-header mb-4 d-flex justify-content-between align-items-center"
@@ -798,7 +870,7 @@
             </div>
 
             <!-- Home Decor & Furnishings  -->
-            <div class="col-md-4">
+            <div class="col-md-4 mt-lg-0 mt-md-4 mt-2">
               <div class="box shadow-sm p-4 bg-white">
                 <div
                   class="box-header mb-4 d-flex justify-content-between align-items-center"
@@ -868,7 +940,7 @@
         </div>
       </section>
       <!-- triple section - 2 -->
-      <section class="triple-section mt-5">
+      <section class="triple-section mt-lg-5 mt-md-4 mt-2">
         <div class="contain">
           <div class="row">
             <!-- Season's Top Picks -->
@@ -938,7 +1010,7 @@
             </div>
 
             <!-- Make your home stylish -->
-            <div class="col-md-4">
+            <div class="col-md-4 mt-lg-0 mt-md-4 mt-2">
               <div class="box p-4 shadow-sm bg-white">
                 <div
                   class="box-header mb-4 d-flex justify-content-between align-items-center"
@@ -1004,7 +1076,7 @@
             </div>
 
             <!-- Winter Essentials  -->
-            <div class="col-md-4">
+            <div class="col-md-4 mt-lg-0 mt-md-4 mt-2">
               <div class="box shadow-sm p-4 bg-white">
                 <div
                   class="box-header mb-4 d-flex justify-content-between align-items-center"
@@ -1074,11 +1146,11 @@
         </div>
       </section>
       <!-- double section -->
-      <section class="double-section mt-5">
+      <section class="double-section mt-lg-5 mt-md-4 mt-2">
         <div class="contain">
           <div class="row">
             <!-- Holi Essentials -->
-            <div class="col-md-4">
+            <div class="col-md-4 mt-lg-0 mt-md-4 mt-2">
               <div class="box p-4 shadow-sm bg-white">
                 <div
                   class="box-header mb-4 d-flex justify-content-between align-items-center"
@@ -1144,7 +1216,7 @@
             </div>
 
             <!-- Travel Essentials picks -->
-            <div class="col-md-4">
+            <div class="col-md-4 mt-lg-0 mt-md-4 mt-2">
               <div class="box p-4 shadow-sm bg-white">
                 <div
                   class="box-header mb-4 d-flex justify-content-between align-items-center"
@@ -1212,7 +1284,7 @@
         </div>
       </section>
       <!-- furniture Deals  -->
-      <section class="F-product mt-5">
+      <section class="F-product mt-lg-5 mt-md-4 mt-2">
         <div class="contain p-2 mx-3 bg-white">
           <h1 class="mx-2 my-2">Furniture Deals</h1>
           <!-- carousel furniture -->
@@ -1353,7 +1425,7 @@
         </div>
       </section>
       <!-- books & toys -->
-      <section class="F-product mt-5">
+      <section class="F-product mt-lg-5 mt-md-4 mt-2">
         <div class="contain p-2 mx-3 bg-white">
           <h1 class="mx-2 my-2">Books , Toys & More</h1>
           <!-- carousel furniture -->
@@ -1484,7 +1556,7 @@
     </main>
     <!-- main end -->
     <!-- footer start -->
-    <footer class="TKplD7 mt-5">
+    <footer class="TKplD7 mt-lg-5 mt-md-4 mt-2">
       <!-- fotter top -->
       <div class="_2j7a4R p-5">
         <div class="_15e_hF fw-bold text-secondary">
@@ -1494,481 +1566,223 @@
         </div>
         <div class="_3xGbi- mt-2">
           <span class="idEVeE fw-semibold">Most searched for on Flipkart:</span>
-          <a
-            class="_2HvN4k"
-            href="/mobile-phones-store?otracker=undefined_footer"
-            title="Mobile"
-            >Mobile</a
-          >
+          <a class="_2HvN4k" href="#" title="Mobile">Mobile</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/poco-m7-5g/p/itmf030852464eef?otracker=undefined_footer"
-            title="POCO M7"
-            >POCO M7</a
-          >
+          <a class="_2HvN4k" href="#" title="POCO M7">POCO M7</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/nothing-phone-3a-black-128-gb/p/itm49557c5a65f9c?otracker=undefined_footer"
-            title="Nothing Phone 3a"
+          <a class="_2HvN4k" href="#" title="Nothing Phone 3a"
             >Nothing Phone 3a</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/apple-iphone-16e-white-128-gb/p/itm7971f594b0906?otracker=undefined_footer"
-            title="iPhone 16e"
-            >iPhone 16e</a
-          >
+          <a class="_2HvN4k" href="#" title="iPhone 16e">iPhone 16e</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/samsung-galaxy-s25-ultra-5g-titanium-silverblue-512-gb/p/itm2ce28bbf75993?otracker=undefined_footer"
-            title="SAMSUNG Galaxy S25 Ultra"
+          <a class="_2HvN4k" href="#" title="SAMSUNG Galaxy S25 Ultra"
             >SAMSUNG Galaxy S25 Ultra</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/samsung-galaxy-s25-plus-5g-silver-shadow-256-gb/p/itm8d76a9b476932?otracker=undefined_footer"
-            title="SAMSUNG Galaxy S25 Plus"
+          <a class="_2HvN4k" href="#" title="SAMSUNG Galaxy S25 Plus"
             >SAMSUNG Galaxy S25 Plus</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/samsung-galaxy-s25-5g-icyblue-256-gb/p/itm3c1e495903acc?otracker=undefined_footer"
-            title="SAMSUNG Galaxy S25"
+          <a class="_2HvN4k" href="#" title="SAMSUNG Galaxy S25"
             >SAMSUNG Galaxy S25</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/apple-iphone-16-white-128-gb/p/itm7c0281cd247be?otracker=undefined_footer"
-            title="iPhone 16"
-            >iPhone 16</a
-          >
+          <a class="_2HvN4k" href="#" title="iPhone 16">iPhone 16</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/apple-iphone-16-plus-teal-128-gb/p/itmfa939eebe8adf?otracker=undefined_footer"
-            title="iPhone 16 Plus"
-            >iPhone 16 Plus</a
-          >
+          <a class="_2HvN4k" href="#" title="iPhone 16 Plus">iPhone 16 Plus</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/apple-iphone-16-pro-white-titanium-128-gb/p/itm50f720fdcec51?otracker=undefined_footer"
-            title="iPhone 16 Pro"
-            >iPhone 16 Pro</a
-          >
+          <a class="_2HvN4k" href="#" title="iPhone 16 Pro">iPhone 16 Pro</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/apple-iphone-16-pro-max-black-titanium-256-gb/p/itm7e75db4f27bd5?otracker=undefined_footer"
-            title="iPhone 16 Pro Max"
+          <a class="_2HvN4k" href="#" title="iPhone 16 Pro Max"
             >iPhone 16 Pro Max</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/helpcentre?otracker=undefined_footer"
-            title="Help Centre"
-            >Help Centre</a
-          >
+          <a class="_2HvN4k" href="#" title="Help Centre">Help Centre</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/helpcentre/trackOrder/i/2?otracker=undefined_footer"
-            title="Track Orders"
-            >Track Orders</a
-          >
+          <a class="_2HvN4k" href="#" title="Track Orders">Track Orders</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/helpcentre/manageOrder/i/3?otracker=undefined_footer"
-            title="Manage Orders"
-            >Manage Orders</a
-          >
+          <a class="_2HvN4k" href="#" title="Manage Orders">Manage Orders</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/helpcentre/returnOrder/i/4?otracker=undefined_footer"
-            title="Return Orders"
-            >Return Orders</a
-          >
+          <a class="_2HvN4k" href="#" title="Return Orders">Return Orders</a>
           |
         </div>
 
         <div class="_3xGbi- mt-2">
-          <a href="/mobiles" class="idEVeE fw-semibold" title="Mobiles"
-            >Mobiles</a
-          >
+          <a href="#" class="idEVeE fw-semibold" title="Mobiles">Mobiles</a>
           |
-          <a
-            class="_2HvN4k"
-            href="https://www.flipkart.com/motorola-g64-5g-ambrosia-128-gb/p/itm6dfa6fef0e50a?otracker=undefined_footer"
-            title="Motorola g64 5G"
+          <a class="_2HvN4k" href="#" title="Motorola g64 5G"
             >Motorola g64 5G</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/oppo-reno-12-5g-astro-silver-256-gb/p/itmaa6baddef2662?otracker=undefined_footer"
-            title="OPPO Reno 12"
-            >OPPO Reno 12</a
-          >
+          <a class="_2HvN4k" href="#" title="OPPO Reno 12">OPPO Reno 12</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/motorola-edge-50-fusion/p/itm7d39b15599c7e?otracker=undefined_footer"
-            title="Motorola Edge 50 Fusion"
+          <a class="_2HvN4k" href="#" title="Motorola Edge 50 Fusion"
             >Motorola Edge 50 Fusion</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/redmi-12-5g-pastel-blue-128-gb/p/itm71f3d06ed5235?otracker=undefined_footer"
-            title="REDMI 12 5G"
-            >REDMI 12 5G</a
-          >
+          <a class="_2HvN4k" href="#" title="REDMI 12 5G">REDMI 12 5G</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/redmi-note-13-5g-arctic-white-256-gb/p/itm82475e073eb2e?otracker=undefined_footer"
-            title="REDMI Note 13 5G"
+          <a class="_2HvN4k" href="#" title="REDMI Note 13 5G"
             >REDMI Note 13 5G</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/realme-12-5g-navigator-beige-128-gb/p/itmaf084e49c78e2?otracker=undefined_footer"
-            title="Realme 12+ 5G"
-            >Realme 12+ 5G</a
-          >
+          <a class="_2HvN4k" href="#" title="Realme 12+ 5G">Realme 12+ 5G</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/poco-c65-matte-black-128-gb/p/itm8ea3d87aa6c0c?otracker=undefined_footer"
-            title="POCO C65"
-            >POCO C65</a
-          >
+          <a class="_2HvN4k" href="#" title="POCO C65">POCO C65</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/motorola-g84-5g-marshmallow-blue-256-gb/p/itm7807a599d2202?otracker=undefined_footer"
-            title="Motorola G84"
-            >Motorola G84</a
-          >
+          <a class="_2HvN4k" href="#" title="Motorola G84">Motorola G84</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/realme-c53-champion-gold-128-gb/p/itm5df90168ecd05?otracker=undefined_footer"
-            title="Realme C53"
-            >Realme C53</a
-          >
+          <a class="_2HvN4k" href="#" title="Realme C53">Realme C53</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/infinix-smart-8-rainbow-blue-64-gb/p/itmb5696a34ad441?otracker=undefined_footer"
-            title="Infinix Smart 8"
+          <a class="_2HvN4k" href="#" title="Infinix Smart 8"
             >Infinix Smart 8</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/samsung-galaxy-s23-5g-phantom-black-256-gb/p/itm347e695feffe7?otracker=undefined_footer"
-            title="Samsung Galaxy S23 5G"
+          <a class="_2HvN4k" href="#" title="Samsung Galaxy S23 5G"
             >Samsung Galaxy S23 5G</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/samsung-galaxy-s21-fe-5g-snapdragon-888-olive-256-gb/p/itmb3a0b1e650a0e?otracker=undefined_footer"
-            title="Samsung Galaxy S21 FE 5G Qualcomm"
+          <a class="_2HvN4k" href="#" title="Samsung Galaxy S21 FE 5G Qualcomm"
             >Samsung Galaxy S21 FE 5G Qualcomm</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/vivo-v30-5g-peacock-green-256-gb/p/itme3a94b78a025f?otracker=undefined_footer"
-            title="vivo V30"
-            >vivo V30</a
-          >
+          <a class="_2HvN4k" href="#" title="vivo V30">vivo V30</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/samsung-galaxy-s24-5g-amber-yellow-256-gb/p/itmebc700bb8d159?otracker=undefined_footer"
-            title="Samsung Galaxy S24 5G"
+          <a class="_2HvN4k" href="#" title="Samsung Galaxy S24 5G"
             >Samsung Galaxy S24 5G</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/samsung-galaxy-s24-5g-cobalt-violet-512-gb/p/itmdbe5ac49590db?otracker=undefined_footer"
-            title="Samsung Galaxy S24+ 5G"
+          <a class="_2HvN4k" href="#" title="Samsung Galaxy S24+ 5G"
             >Samsung Galaxy S24+ 5G</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/apple-iphone-12-white-64-gb/p/itm8b88bdc03cd79?otracker=undefined_footer"
-            title="iPhone 12 64GB"
-            >iPhone 12 64GB</a
-          >
+          <a class="_2HvN4k" href="#" title="iPhone 12 64GB">iPhone 12 64GB</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/apple-iphone-12-pro-graphite-512-gb/p/itmdf0ffb4f2150f?otracker=undefined_footer"
-            title="iPhone 12 Pro 512GB"
+          <a class="_2HvN4k" href="#" title="iPhone 12 Pro 512GB"
             >iPhone 12 Pro 512GB</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/apple-iphone-12-blue-128-gb/p/itm02853ae92e90a?otracker=undefined_footer"
-            title="iPhone 12 128GB"
+          <a class="_2HvN4k" href="#" title="iPhone 12 128GB"
             >iPhone 12 128GB</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/vivo-y15-aqua-blue-64-gb/p/itmfgadf77s87w8x?otracker=undefined_footer"
-            title="Vivo Y15"
-            >Vivo Y15</a
-          >
+          <a class="_2HvN4k" href="#" title="Vivo Y15">Vivo Y15</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/samsung-galaxy-s21-fe-5g-snapdragon-888-lavender-256-gb/p/itmb457a6d3826ee?pid=MOBGSXD7TV34MYXX&amp;otracker=undefined_footer"
-            title="SAMSUNG Galaxy S21 FE 5G"
+          <a class="_2HvN4k" href="#" title="SAMSUNG Galaxy S21 FE 5G"
             >SAMSUNG Galaxy S21 FE 5G</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/infinix-hot-30i-diamond-white-64-gb/p/itm8b42a43b35895?otracker=undefined_footer"
-            title="Infinix HOT 30i"
+          <a class="_2HvN4k" href="#" title="Infinix HOT 30i"
             >Infinix HOT 30i</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/realme-10-pro-5g-dark-matter-128-gb/p/itm1e672d12a252e?otracker=undefined_footer"
-            title="Realme 10 Pro 5G"
+          <a class="_2HvN4k" href="#" title="Realme 10 Pro 5G"
             >Realme 10 Pro 5G</a
           >
           |
         </div>
 
         <div class="_3xGbi- mt-2">
-          <a href="/cameras" class="idEVeE fw-semibold" title="Camera"
-            >Camera</a
-          >
+          <a href="#" class="idEVeE fw-semibold" title="Camera">Camera</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/gopro-hero-sports-action-camera/p/itmf3s4abpfgawhc?otracker=undefined_footer"
-            title="GoPro Action Camera"
+          <a class="_2HvN4k" href="#" title="GoPro Action Camera"
             >GoPro Action Camera</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/cameras/nikon~brand/pr?sid=jek,p31&amp;otracker=undefined_footer"
-            title="Nikon Camera"
-            >Nikon Camera</a
-          >
+          <a class="_2HvN4k" href="#" title="Nikon Camera">Nikon Camera</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/cameras/canon~brand/pr?sid=jek,p31&amp;otracker=undefined_footer"
-            title="Canon Camera"
-            >Canon Camera</a
-          >
+          <a class="_2HvN4k" href="#" title="Canon Camera">Canon Camera</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/q/sony-cameras?otracker=undefined_footer"
-            title="Sony Camera"
-            >Sony Camera</a
-          >
+          <a class="_2HvN4k" href="#" title="Sony Camera">Sony Camera</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/q/canon-dslr-cameras?otracker=undefined_footer"
-            title="Canon DSLR"
-            >Canon DSLR</a
-          >
+          <a class="_2HvN4k" href="#" title="Canon DSLR">Canon DSLR</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/cameras/dslr-mirrorless/nikon~brand/pr?sid=jek,p31,trv&amp;otracker=undefined_footer"
-            title="Nikon DSLR"
-            >Nikon DSLR</a
-          >
+          <a class="_2HvN4k" href="#" title="Nikon DSLR">Nikon DSLR</a>
           |
         </div>
 
         <div class="_3xGbi- mt-2">
-          <a
-            href="/brands/laptops?sid=6bo,b5g"
-            class="idEVeE fw-semibold"
-            title="Laptops"
-            >Laptops</a
-          >
+          <a href="#" class="idEVeE fw-semibold" title="Laptops">Laptops</a>
+          |
+          <a class="_2HvN4k" href="#" title="Asus ROG Ally">Asus ROG Ally</a>
+          |
+          <a class="_2HvN4k" href="#" title="MacBook Pro M2">MacBook Pro M2</a>
+          |
+          <a class="_2HvN4k" href="#" title="Premium Laptop">Premium Laptop</a>
           |
           <a
             class="_2HvN4k"
-            href="/avita-liber-core-i7-10th-gen-16-gb-1-tb-ssd-windows-10-home-ns14a8inr671-pag-thin-light-laptop/p/itmbe8a49652ca6f?pid=COMGQKQ7GGNFR8N4&amp;otracker=undefined_footer"
-            title="Asus ROG Ally"
-            >Asus ROG Ally</a
-          >
-          |
-          <a
-            class="_2HvN4k"
-            href="/apple-2022-macbook-pro-m2-8-gb-256-gb-ssd-mac-os-monterey-mneh3hn-a/p/itmaea892f7dd66e?otracker=undefined_footer"
-            title="MacBook Pro M2"
-            >MacBook Pro M2</a
-          >
-          |
-          <a
-            class="_2HvN4k"
-            href="/q/premium-laptops?otracker=undefined_footer"
-            title="Premium Laptop"
-            >Premium Laptop</a
-          >
-          |
-          <a
-            class="_2HvN4k"
-            href="/asus-rog-strix-scar-16-2023-core-i9-13th-gen-32-gb-1-tb-ssd-windows-11-home-12-gb-graphics-nvidia-geforce-rtx-4080-g634jz-n4062ws-gaming-laptop/p/itma62818795454d?otracker=undefined_footer"
+            href="#"
             title="ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen"
             >ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/asus-rog-zephyrus-m16-2023-core-i9-13th-gen-32-gb-2-tb-ssd-windows-11-home-16-gb-graphics-nvidia-geforce-rtx-4090-gu604vy-nm058ws-gaming-laptop/p/itm7ad23e5445edf?otracker=undefined_footer"
+            href="#"
             title="ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen"
             >ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/asus-zenbook-14-oled-2022-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-ux3402za-km531ws-thin-light-laptop/p/itm92e2e0518b654?otracker=undefined_footer"
-            title="ASUS Zenbook 14 OLED (2022)"
+          <a class="_2HvN4k" href="#" title="ASUS Zenbook 14 OLED (2022)"
             >ASUS Zenbook 14 OLED (2022)</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/realme-book-prime-core-i5-11th-gen-16-gb-512-gb-ssd-windows-11-home-cloudpro002-thin-light-laptop/p/itm7d1b1a9d3579b?otracker=undefined_footer"
-            title="Realme Book Prime Core i5 11th Gen"
+          <a class="_2HvN4k" href="#" title="Realme Book Prime Core i5 11th Gen"
             >Realme Book Prime Core i5 11th Gen</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/microsoft-surface-go-pentium-gold-8-gb-128-gb-ssd-windows-10-home-s-mode-1824-2-1-laptop/p/itmfb6pyjzy9y8n4?otracker=undefined_footer"
-            title="Microsoft Surface Go Pentium 128GB"
+          <a class="_2HvN4k" href="#" title="Microsoft Surface Go Pentium 128GB"
             >Microsoft Surface Go Pentium 128GB</a
           >
           |
-          <a
-            class="_2HvN4k"
-            href="/laptops/apple~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
-            title="Apple Laptops"
-            >Apple Laptops</a
-          >
+          <a class="_2HvN4k" href="#" title="Apple Laptops">Apple Laptops</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/laptops/acer~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
-            title="Acer Laptops"
-            >Acer Laptops</a
-          >
+          <a class="_2HvN4k" href="#" title="Acer Laptops">Acer Laptops</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/laptops/lenovo~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
-            title="Lenovo Laptops"
-            >Lenovo Laptops</a
-          >
+          <a class="_2HvN4k" href="#" title="Lenovo Laptops">Lenovo Laptops</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/laptops/dell~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
-            title="Dell Laptops"
-            >Dell Laptops</a
-          >
+          <a class="_2HvN4k" href="#" title="Dell Laptops">Dell Laptops</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/laptops/asus~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
-            title="Asus Laptops"
-            >Asus Laptops</a
-          >
+          <a class="_2HvN4k" href="#" title="Asus Laptops">Asus Laptops</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/laptops/hp~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
-            title="HP Laptops"
-            >HP Laptops</a
-          >
+          <a class="_2HvN4k" href="#" title="HP Laptops">HP Laptops</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/gaming-laptops-store?otracker=undefined_footer"
-            title="Gaming Laptops"
-            >Gaming Laptops</a
-          >
+          <a class="_2HvN4k" href="#" title="Gaming Laptops">Gaming Laptops</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/laptops/~2-in-1-laptops/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
-            title="2 in 1 Laptops"
-            >2 in 1 Laptops</a
-          >
+          <a class="_2HvN4k" href="#" title="2 in 1 Laptops">2 in 1 Laptops</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/laptops-store?otracker=undefined_footer"
-            title="Laptops"
-            >Laptops</a
-          >
+          <a class="_2HvN4k" href="#" title="Laptops">Laptops</a>
           |
-          <a
-            class="_2HvN4k"
-            href="/q/dell-latest-laptops-2022?otracker=undefined_footer"
-            title="Dell latest laptops 2022"
+          <a class="_2HvN4k" href="#" title="Dell latest laptops 2022"
             >Dell latest laptops 2022</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/q/hp-latest-laptops-2022?otracker=undefined_footer"
+            href="/q/hp-latest-laptops-2022?otracker=undefined#"
             title="HP latest laptops 2022"
             >HP latest laptops 2022</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/infinix-inbook-y1-plus-intel-core-i3-10th-gen-8-gb-256-gb-ssd-windows-11-home-xl28-thin-light-laptop/p/itm6c066be25ddde?otracker=undefined_footer"
+            href="/infinix-inbook-y1-plus-intel-core-i3-10th-gen-8-gb-256-gb-ssd-windows-11-home-xl28-thin-light-laptop/p/itm6c066be25ddde?otracker=undefined#"
             title="Infinix INBook Y1 Plus"
             >Infinix INBook Y1 Plus</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/samsung-galaxy-book3-core-i7-13th-gen-16-gb-512-gb-ssd-windows-11-home-thin-light-laptop/p/itmf5efb3b1c35fa?otracker=undefined_footer"
+            href="/samsung-galaxy-book3-core-i7-13th-gen-16-gb-512-gb-ssd-windows-11-home-thin-light-laptop/p/itmf5efb3b1c35fa?otracker=undefined#"
             title="SAMSUNG Galaxy Book3"
             >SAMSUNG Galaxy Book3</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/q/12th-gen-intel-core-laptops?otracker=undefined_footer"
+            href="/q/12th-gen-intel-core-laptops?otracker=undefined#"
             title="12th Gen Intel Core Laptops"
             >12th Gen Intel Core Laptops</a
           >
@@ -1985,154 +1799,154 @@
           |
           <a
             class="_2HvN4k"
-            href="/avita-liber-core-i7-10th-gen-16-gb-1-tb-ssd-windows-10-home-ns14a8inr671-pag-thin-light-laptop/p/itmbe8a49652ca6f?pid=COMGQKQ7GGNFR8N4&amp;otracker=undefined_footer"
+            href="/avita-liber-core-i7-10th-gen-16-gb-1-tb-ssd-windows-10-home-ns14a8inr671-pag-thin-light-laptop/p/itmbe8a49652ca6f?pid=COMGQKQ7GGNFR8N4&amp;otracker=undefined#"
             title="Asus ROG Ally"
             >Asus ROG Ally</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/apple-2022-macbook-pro-m2-8-gb-256-gb-ssd-mac-os-monterey-mneh3hn-a/p/itmaea892f7dd66e?otracker=undefined_footer"
+            href="/apple-2022-macbook-pro-m2-8-gb-256-gb-ssd-mac-os-monterey-mneh3hn-a/p/itmaea892f7dd66e?otracker=undefined#"
             title="MacBook Pro M2"
             >MacBook Pro M2</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/q/premium-laptops?otracker=undefined_footer"
+            href="/q/premium-laptops?otracker=undefined#"
             title="Premium Laptop"
             >Premium Laptop</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/asus-rog-strix-scar-16-2023-core-i9-13th-gen-32-gb-1-tb-ssd-windows-11-home-12-gb-graphics-nvidia-geforce-rtx-4080-g634jz-n4062ws-gaming-laptop/p/itma62818795454d?otracker=undefined_footer"
+            href="/asus-rog-strix-scar-16-2023-core-i9-13th-gen-32-gb-1-tb-ssd-windows-11-home-12-gb-graphics-nvidia-geforce-rtx-4080-g634jz-n4062ws-gaming-laptop/p/itma62818795454d?otracker=undefined#"
             title="ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen"
             >ASUS ROG Strix SCAR 16 (2023) Core i9 13th Gen</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/asus-rog-zephyrus-m16-2023-core-i9-13th-gen-32-gb-2-tb-ssd-windows-11-home-16-gb-graphics-nvidia-geforce-rtx-4090-gu604vy-nm058ws-gaming-laptop/p/itm7ad23e5445edf?otracker=undefined_footer"
+            href="/asus-rog-zephyrus-m16-2023-core-i9-13th-gen-32-gb-2-tb-ssd-windows-11-home-16-gb-graphics-nvidia-geforce-rtx-4090-gu604vy-nm058ws-gaming-laptop/p/itm7ad23e5445edf?otracker=undefined#"
             title="ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen"
             >ASUS ROG Zephyrus M16 (2023) Core i9 13th Gen</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/asus-zenbook-14-oled-2022-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-ux3402za-km531ws-thin-light-laptop/p/itm92e2e0518b654?otracker=undefined_footer"
+            href="/asus-zenbook-14-oled-2022-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-ux3402za-km531ws-thin-light-laptop/p/itm92e2e0518b654?otracker=undefined#"
             title="ASUS Zenbook 14 OLED (2022)"
             >ASUS Zenbook 14 OLED (2022)</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/realme-book-prime-core-i5-11th-gen-16-gb-512-gb-ssd-windows-11-home-cloudpro002-thin-light-laptop/p/itm7d1b1a9d3579b?otracker=undefined_footer"
+            href="/realme-book-prime-core-i5-11th-gen-16-gb-512-gb-ssd-windows-11-home-cloudpro002-thin-light-laptop/p/itm7d1b1a9d3579b?otracker=undefined#"
             title="Realme Book Prime Core i5 11th Gen"
             >Realme Book Prime Core i5 11th Gen</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/microsoft-surface-go-pentium-gold-8-gb-128-gb-ssd-windows-10-home-s-mode-1824-2-1-laptop/p/itmfb6pyjzy9y8n4?otracker=undefined_footer"
+            href="/microsoft-surface-go-pentium-gold-8-gb-128-gb-ssd-windows-10-home-s-mode-1824-2-1-laptop/p/itmfb6pyjzy9y8n4?otracker=undefined#"
             title="Microsoft Surface Go Pentium 128GB"
             >Microsoft Surface Go Pentium 128GB</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/laptops/apple~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
+            href="/laptops/apple~brand/pr?sid=6bo,b5g&amp;otracker=undefined#"
             title="Apple Laptops"
             >Apple Laptops</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/laptops/acer~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
+            href="/laptops/acer~brand/pr?sid=6bo,b5g&amp;otracker=undefined#"
             title="Acer Laptops"
             >Acer Laptops</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/laptops/lenovo~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
+            href="/laptops/lenovo~brand/pr?sid=6bo,b5g&amp;otracker=undefined#"
             title="Lenovo Laptops"
             >Lenovo Laptops</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/laptops/dell~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
+            href="/laptops/dell~brand/pr?sid=6bo,b5g&amp;otracker=undefined#"
             title="Dell Laptops"
             >Dell Laptops</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/laptops/asus~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
+            href="/laptops/asus~brand/pr?sid=6bo,b5g&amp;otracker=undefined#"
             title="Asus Laptops"
             >Asus Laptops</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/laptops/hp~brand/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
+            href="/laptops/hp~brand/pr?sid=6bo,b5g&amp;otracker=undefined#"
             title="HP Laptops"
             >HP Laptops</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/gaming-laptops-store?otracker=undefined_footer"
+            href="/gaming-laptops-store?otracker=undefined#"
             title="Gaming Laptops"
             >Gaming Laptops</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/laptops/~2-in-1-laptops/pr?sid=6bo,b5g&amp;otracker=undefined_footer"
+            href="/laptops/~2-in-1-laptops/pr?sid=6bo,b5g&amp;otracker=undefined#"
             title="2 in 1 Laptops"
             >2 in 1 Laptops</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/laptops-store?otracker=undefined_footer"
+            href="/laptops-store?otracker=undefined#"
             title="Laptops"
             >Laptops</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/q/dell-latest-laptops-2022?otracker=undefined_footer"
+            href="/q/dell-latest-laptops-2022?otracker=undefined#"
             title="Dell latest laptops 2022"
             >Dell latest laptops 2022</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/q/hp-latest-laptops-2022?otracker=undefined_footer"
+            href="/q/hp-latest-laptops-2022?otracker=undefined#"
             title="HP latest laptops 2022"
             >HP latest laptops 2022</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/infinix-inbook-y1-plus-intel-core-i3-10th-gen-8-gb-256-gb-ssd-windows-11-home-xl28-thin-light-laptop/p/itm6c066be25ddde?otracker=undefined_footer"
+            href="/infinix-inbook-y1-plus-intel-core-i3-10th-gen-8-gb-256-gb-ssd-windows-11-home-xl28-thin-light-laptop/p/itm6c066be25ddde?otracker=undefined#"
             title="Infinix INBook Y1 Plus"
             >Infinix INBook Y1 Plus</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/samsung-galaxy-book3-core-i7-13th-gen-16-gb-512-gb-ssd-windows-11-home-thin-light-laptop/p/itmf5efb3b1c35fa?otracker=undefined_footer"
+            href="/samsung-galaxy-book3-core-i7-13th-gen-16-gb-512-gb-ssd-windows-11-home-thin-light-laptop/p/itmf5efb3b1c35fa?otracker=undefined#"
             title="SAMSUNG Galaxy Book3"
             >SAMSUNG Galaxy Book3</a
           >
           |
           <a
             class="_2HvN4k"
-            href="/q/12th-gen-intel-core-laptops?otracker=undefined_footer"
+            href="/q/12th-gen-intel-core-laptops?otracker=undefined#"
             title="12th Gen Intel Core Laptops"
             >12th Gen Intel Core Laptops</a
           >
@@ -2144,223 +1958,208 @@
             >Clothing</a
           >
           |
-          <a href="/q/sarees?otracker=undefined_footer" title="Sarees"
-            >Sarees</a
-          >
+          <a href="/q/sarees?otracker=undefined#" title="Sarees">Sarees</a>
           |
           <a
-            href="/q/green-bridal-lehenga?otracker=undefined_footer"
+            href="/q/green-bridal-lehenga?otracker=undefined#"
             title="Green bridal lehenga"
             >Green bridal lehenga</a
           >
           |
           <a
-            href="/womens-tops/pr?sid=clo,ash,ohw,36j&amp;otracker=undefined_footer"
+            href="/womens-tops/pr?sid=clo,ash,ohw,36j&amp;otracker=undefined#"
             title="Tops"
             >Tops</a
           >
           |
           <a
-            href="/q/apron-for-doctors?otracker=undefined_footer"
+            href="/q/apron-for-doctors?otracker=undefined#"
             title="Apron for Doctors"
             >Apron for Doctors</a
           >
           |
           <a
-            href="/mens-footwear/pr?sid=osp,cil&amp;otracker=undefined_footer"
+            href="/mens-footwear/pr?sid=osp,cil&amp;otracker=undefined#"
             title="Shoes"
             >Shoes</a
           >
           |
           <a
-            href="/sunglasses/pr?sid=26x&amp;otracker=undefined_footer"
+            href="/sunglasses/pr?sid=26x&amp;otracker=undefined#"
             title="Sunglasses"
             >Sunglasses</a
           >
           |
-          <a
-            href="/q/bridal-blouse?otracker=undefined_footer"
-            title="Bridal Blouse"
+          <a href="/q/bridal-blouse?otracker=undefined#" title="Bridal Blouse"
             >Bridal Blouse</a
           >|
           <a
-            href="/q/half-saree-blouse-designs?otracker=undefined_footer"
+            href="/q/half-saree-blouse-designs?otracker=undefined#"
             title="Half saree blouse designs"
             >Half saree blouse designs</a
           >
           |
           <a
-            href="/q/designer-blouses?otracker=undefined_footer"
+            href="/q/designer-blouses?otracker=undefined#"
             title="Designer blouses"
             >Designer blouses</a
           >
           |
-          <a
-            href="/q/blouse-designs?otracker=undefined_footer"
-            title="Blouse designs"
+          <a href="/q/blouse-designs?otracker=undefined#" title="Blouse designs"
             >Blouse designs</a
           >
           |
           <a
-            href="/mens-shirts/pr?sid=clo,ash,axc,mmk&amp;otracker=undefined_footer"
+            href="/mens-shirts/pr?sid=clo,ash,axc,mmk&amp;otracker=undefined#"
             title="Shirts"
             >Shirts</a
           >
           |
           <a
-            href="/q/cotton-saree-blouse-designs?otracker=undefined_footer"
+            href="/q/cotton-saree-blouse-designs?otracker=undefined#"
             title="Cotton saree blouse designs"
             >Cotton saree blouse designs</a
           >
           |
           <a
-            href="/mens-tshirts/pr?sid=clo,ash,ank,edy&amp;otracker=undefined_footer"
+            href="/mens-tshirts/pr?sid=clo,ash,ank,edy&amp;otracker=undefined#"
             title="Tshirts"
             >Tshirts</a
           >
           |
           <a
-            href="/mens-jeans/pr?sid=clo,vua,k58,i51&amp;otracker=undefined_footer"
+            href="/mens-jeans/pr?sid=clo,vua,k58,i51&amp;otracker=undefined#"
             title="Jeans"
             >Jeans</a
           >
           |
           <a
-            href="/womens-dresses/pr?sid=clo,odx,maj,jhy&amp;otracker=undefined_footer"
+            href="/womens-dresses/pr?sid=clo,odx,maj,jhy&amp;otracker=undefined#"
             title="Dresses"
             >Dresses</a
           >
           |
-          <a href="/q/one-pieces?otracker=undefined_footer" title="One pieces"
+          <a href="/q/one-pieces?otracker=undefined#" title="One pieces"
             >One pieces</a
           >
           |
           <a
-            href="/q/groom-wedding-sherwani?otracker=undefined_footer"
+            href="/q/groom-wedding-sherwani?otracker=undefined#"
             title="Groom wedding sherwani"
             >Groom wedding sherwani</a
           >
           |
           <a
-            href="/q/designer-salwar-suits?otracker=undefined_footer"
+            href="/q/designer-salwar-suits?otracker=undefined#"
             title="Designer Salwar Suits"
             >Designer Salwar Suits</a
           >
           |
           <a
-            href="/bras/pr?sid=clo,qfl,v5v,kzg&amp;otracker=undefined_footer"
+            href="/bras/pr?sid=clo,qfl,v5v,kzg&amp;otracker=undefined#"
             title="Bra"
             >Bra</a
           >
           |
           <a
-            href="/q/cotton-simple-blouse-designs?otracker=undefined_footer"
+            href="/q/cotton-simple-blouse-designs?otracker=undefined#"
             title="Cotton simple blouse designs"
             >Cotton simple blouse designs</a
           >
           |
           <a
-            href="/q/banarasi-saree-blouse-designs?otracker=undefined_footer"
+            href="/q/banarasi-saree-blouse-designs?otracker=undefined#"
             title="Banarasi saree blouse designs"
             >Banarasi saree blouse designs</a
           >
           |
           <a
-            href="/q/stylish-blouse-astin-design?otracker=undefined_footer"
+            href="/q/stylish-blouse-astin-design?otracker=undefined#"
             title="Stylish blouse astin design"
             >Stylish blouse astin design</a
           >
           |
           <a
-            href="/mens-track-pants/pr?sid=clo,vua,jlk,6ql&amp;otracker=undefined_footer"
+            href="/mens-track-pants/pr?sid=clo,vua,jlk,6ql&amp;otracker=undefined#"
             title="Track Pant"
             >Track Pant</a
           >
           |
           <a
-            href="/q/blouse-neck-designs?otracker=undefined_footer"
+            href="/q/blouse-neck-designs?otracker=undefined#"
             title="Blouse neck designs"
             >Blouse neck designs</a
           >
           |
-          <a href="/q/kurtas?otracker=undefined_footer" title="Kurtas"
-            >Kurtas</a
-          >
+          <a href="/q/kurtas?otracker=undefined#" title="Kurtas">Kurtas</a>
           |
           <a
-            href="/womens-dresses/party~occasion/pr?sid=clo,odx,maj,jhy&amp;otracker=undefined_footer"
+            href="/womens-dresses/party~occasion/pr?sid=clo,odx,maj,jhy&amp;otracker=undefined#"
             title="Party Dresses"
             >Party Dresses</a
           >
           |
           <a
-            href="/womens-ethnic-sets/kurta-and-palazzo-set~type/pr?sid=clo,cfv,itg,tys&amp;otracker=undefined_footer"
+            href="/womens-ethnic-sets/kurta-and-palazzo-set~type/pr?sid=clo,cfv,itg,tys&amp;otracker=undefined#"
             title="Palazzo Suits"
             >Palazzo Suits</a
           >
           |
-          <a href="/q/anarkali?otracker=undefined_footer" title="Anarkali"
+          <a href="/q/anarkali?otracker=undefined#" title="Anarkali"
             >Anarkali</a
           >
           |
           <a
-            href="/womens-gowns/pr?sid=clo,odx,od7,0xx&amp;otracker=undefined_footer"
+            href="/womens-gowns/pr?sid=clo,odx,od7,0xx&amp;otracker=undefined#"
             title="Gowns"
             >Gowns</a
           >
           |
-          <a
-            href="/q/cut-out-dress?otracker=undefined_footer"
-            title="Cut out dress"
+          <a href="/q/cut-out-dress?otracker=undefined#" title="Cut out dress"
             >Cut out dress</a
           >
           |
-          <a
-            href="/q/salwar-suit?otracker=undefined_footer"
-            title="Salwar Suits"
+          <a href="/q/salwar-suit?otracker=undefined#" title="Salwar Suits"
             >Salwar Suits</a
           >
           |
           <a
-            href="/womens-kurtas-kurtis/pr?sid=clo,cfv,cib,rkt&amp;otracker=undefined_footer"
+            href="/womens-kurtas-kurtis/pr?sid=clo,cfv,cib,rkt&amp;otracker=undefined#"
             title="Kurtis"
             >Kurtis</a
           >
           |
           <a
-            href="/q/designer-sarees?otracker=undefined_footer"
+            href="/q/designer-sarees?otracker=undefined#"
             title="Designer Sarees"
             >Designer Sarees</a
           >|
-          <a href="/q/leggings?otracker=undefined_footer" title="Leggings"
-            >Leggings</a
+          <a href="/q/leggings?otracker=undefined#" title="Leggings">Leggings</a
           >|
           <a
-            href="/mens-shorts/pr?sid=clo,vua,e8g,kc7&amp;otracker=undefined_footer"
+            href="/mens-shorts/pr?sid=clo,vua,e8g,kc7&amp;otracker=undefined#"
             title="Shorts"
             >Shorts</a
           >|
           <a
-            href="/q/georgette-sarees?otracker=undefined_footer"
+            href="/q/georgette-sarees?otracker=undefined#"
             title="Georgette Sarees"
             >Georgette Sarees</a
           >|
-          <a href="/q/ethnic-wear?otracker=undefined_footer" title="Ethnic Wear"
+          <a href="/q/ethnic-wear?otracker=undefined#" title="Ethnic Wear"
             >Ethnic Wear</a
           >|
           <a
-            href="/q/uppada-pattu-sarees?otracker=undefined_footer"
+            href="/q/uppada-pattu-sarees?otracker=undefined#"
             title="Uppada Pattu Sarees"
             >Uppada Pattu Sarees</a
           >|
           <a
-            href="/q/blouse-back-design?otracker=undefined_footer"
+            href="/q/blouse-back-design?otracker=undefined#"
             title="Blouse back design"
             >Blouse back design</a
           >|
-          <a
-            href="/q/jodhpur-pants?otracker=undefined_footer"
-            title="Jodhpur pants"
+          <a href="/q/jodhpur-pants?otracker=undefined#" title="Jodhpur pants"
             >Jodhpur pants</a
           >|
         </div>
@@ -2404,7 +2203,7 @@
           Zomato Gold membership<br />An annual Hotstar Premium membership<br />6
           months Gaana plus subscription<br />Rupees 550 instant discount on
           flights on ixigo<br />Check out
-          <a href="https://www.flipkart.com/plus/all-offers">this page</a> for
+          <a href="#">this page</a> for
           the entire list. Termsand conditions apply.<br /><br />
           <h2>No Cost EMI</h2>
           In an attempt to make high-end products accessible to all, our No Cost
@@ -2494,7 +2293,7 @@
           certain product categories, Customers meeting the eligibility criteria
           will have the option to buy larger quantities. To know more on the
           eligibility criteria and terms and conditions, please reach out to
-          <a href="mailto:Purchases.oni@flipkart.com"
+          <a href="#" class="text-decoration-none"
             >Purchases.oni@flipkart.com</a
           >. <br /><br />
           <h2>Small Home Appliances</h2>
@@ -2565,11 +2364,10 @@
         </div>
       </div>
       <!-- footer bottom -->
-      <div
-        class="footer-bottom mt-2 p-4 m-0 m-auto row row-cols-6 justify-content-left"
-      >
-        <div class="col ml-2 unl">
-          <ul>
+      <div class="footer-bottom mt-2 p-4 m-0 m-auto row justify-content-start">
+        <!-- About -->
+        <div class="col-12 col-md-6 col-lg-2 mb-4">
+          <ul class="unl">
             <li><a class="head" href="#">About</a></li>
             <li><a class="text-white" href="#">Contact Us</a></li>
             <li><a class="text-white" href="#">Careers</a></li>
@@ -2579,8 +2377,9 @@
           </ul>
         </div>
 
-        <div class="col unl">
-          <ul>
+        <!-- Group Companies -->
+        <div class="col-12 col-md-6 col-lg-2 mb-4">
+          <ul class="unl">
             <li><a class="head" href="#">GROUP COMPANIES</a></li>
             <li><a class="text-white" href="#">Myntra</a></li>
             <li><a class="text-white" href="#">Cleartrip</a></li>
@@ -2588,8 +2387,9 @@
           </ul>
         </div>
 
-        <div class="col unl">
-          <ul>
+        <!-- Help -->
+        <div class="col-12 col-md-6 col-lg-2 mb-4">
+          <ul class="unl">
             <li><a class="head" href="#">HELP</a></li>
             <li><a class="text-white" href="#">Payments</a></li>
             <li><a class="text-white" href="#">Shipping</a></li>
@@ -2598,8 +2398,9 @@
           </ul>
         </div>
 
-        <div class="col unl Xtae">
-          <ul>
+        <!-- Consumer Policy -->
+        <div class="col-12 col-md-6 col-lg-2 mb-4">
+          <ul class="unl Xtae">
             <li><a class="head" href="#">CONSUMER POLICY</a></li>
             <li><a class="text-white" href="#">Cancellation & Returns</a></li>
             <li><a class="text-white" href="#">Terms Of Use</a></li>
@@ -2611,49 +2412,69 @@
           </ul>
         </div>
 
-        <div class="d-flex flex-column">
-          <div class="col">
-            <ul>
-              <li>
-                <a class="head text-decoration-none" href="#">Mail Us:</a>
-              </li>
+        <!-- Mail Us -->
+        <div class="col-12 col-md-6 col-lg-2 mb-4">
+          <ul class="unl">
+            <li><a class="head text-decoration-none" href="#">Mail Us:</a></li>
+            <li>
               <address class="mt-2 text-white">
-                Flipkart Internet Private Limited, Buildings Alyssa, Begonia
-                &amp; Clove Embassy Tech Village, Outer Ring Road,
-                Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India
+                Flipkart Internet Private Limited, Buildings Alyssa, Begonia &
+                Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli
+                Village, Bengaluru, 560103, Karnataka, India
               </address>
-            </ul>
-          </div>
-          <div class="social fs-5 ms-4">
+            </li>
+          </ul>
+          <div class="social fs-5 mt-3">
             <a href="#"
-              ><i class="fa-brands text-white me-2 fa-facebook"></i
+              ><i
+                class="fa-brands text-white me-2 fa-facebook"
+                aria-label="Facebook"
+              ></i
             ></a>
             <a href="#"
-              ><i class="fa-brands text-white me-2 fa-x-twitter"></i
+              ><i
+                class="fa-brands text-white me-2 fa-x-twitter"
+                aria-label="Twitter"
+              ></i
             ></a>
-            <a href="#"><i class="fa-brands text-white me-2 fa-youtube"></i></a>
             <a href="#"
-              ><i class="fa-brands text-white me-2 fa-instagram"></i
+              ><i
+                class="fa-brands text-white me-2 fa-youtube"
+                aria-label="YouTube"
+              ></i
+            ></a>
+            <a href="#"
+              ><i
+                class="fa-brands text-white me-2 fa-instagram"
+                aria-label="Instagram"
+              ></i
             ></a>
           </div>
         </div>
 
-        <div class="col unl h6">
-          <li>
-            <a href="#" class="head text-decoration-none text-start"
-              >Registered Office Address:</a
-            >
-          </li>
-          <address class="mt-2 text-white">
-            Flipkart Internet Private Limited, Buildings Alyssa, Begonia &amp;
-            Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli
-            Village, Bengaluru, 560103, Karnataka, India
-          </address>
-          <p class="text-white ts">CIN: U51109KA2012PTC066107</p>
-          <p class="text-white ts">
-            Telephone: <span class="text-primary">044-45614700</span> /
-            <span class="text-primary">044-67415800</span>
-          </p>
+        <!-- Registered Office Address -->
+        <div class="col-12 col-md-6 col-lg-2 mb-4">
+          <ul class="unl h6">
+            <li>
+              <a class="head text-decoration-none" href="#"
+                >Registered Office Address:</a
+              >
+            </li>
+            <li>
+              <address class="mt-2 text-white">
+                Flipkart Internet Private Limited, Buildings Alyssa, Begonia &
+                Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli
+                Village, Bengaluru, 560103, Karnataka, India
+              </address>
+            </li>
+            <li><p class="text-white ts">CIN: U51109KA2012PTC066107</p></li>
+            <li>
+              <p class="text-white ts">
+                Telephone: <span class="text-primary">044-45614700</span> /
+                <span class="text-primary">044-67415800</span>
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

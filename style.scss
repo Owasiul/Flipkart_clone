@@ -5,37 +5,53 @@
   box-sizing: border-box;
   font-family: "Inter", serif;
 }
+body{
+  overflow-x: hidden;
+}
 // general container
 .contain {
   width: 98%;
   margin: 0 auto;
 }
 /* nav */
-nav ul li {
-  display: flex;
+.navbar-nav {
   align-items: center;
-  justify-content: center;
-}
-.nav-item{
-  padding: 0 20px;
-  font-size: 16px;
-}
-.Search_Bar{
-  height: 40px;
-}
-@media screen and (max-width: 1024px) {
-  span.hide{
-    display: none;
+  
+  .nav-item {
+    padding: 0 20px;
+    font-size: 16px;
   }
-  .ctl-card.hide{
-    display: none;
+  
+  @media screen and (max-width: 768px) {
+    .nav-item {
+      padding: 10px 20px;
+    }
+  }
+}
+
+.Search_Bar {
+  height: 40px;
+  max-width: 600px;
+  
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+// Additional improvements
+.dropdown-menu-end {
+  right: 0;
+  left: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-collapse {
+    padding: 15px 0;
   }
 }
 
 /* catalog */
-.catalog {
-  padding: 20px 0;
-}
+
 .ctl-item {
   display: flex;
   justify-content: space-around;
@@ -46,8 +62,8 @@ nav ul li {
   margin: 10px;
 }
 .ctl-card img {
-  width: 90px; 
-  height: 90px;
+  width: 64px; 
+  height: 64px;
   object-fit: contain; 
 }
 .ctl-card h6 {
@@ -102,6 +118,20 @@ img.e-itm-img:hover {
     object-fit: cover ;
     border-radius: 8px;
   }
+/*double-section with banner */
+.double-section_with_banner{
+  img.ds-img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+}
+  .banner-part img {
+    width: 88%;
+    margin: auto;
+    object-fit: contain;
+    height: 100%;
+  }
 // triple-section
 .triple-section , .double-section{
   img {
@@ -127,9 +157,47 @@ footer {
   }
 
   .footer-bottom {
-    background-color: #212121;
-    font-size: x-small;
+    background-color: #212121; //  footer background color
+    color: #fff;
+  
+    .unl {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 10px;
+  
+        .head {
+          color: #878787; // heading color for footer
+          font-size: 14px;
+          font-weight: 600;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 15px;
+        }
+  
+        a.text-white {
+          font-size: 14px;
+          text-decoration: none;
+          &:hover {
+            color: #2874f0; 
+          }
+        }
+  
+        address {
+          font-size: 14px;
+          line-height: 1.5;
+          color: #fff;
+        }
+  
+        .ts {
+          font-size: 14px;
+          line-height: 1.5;
+        }
+      }
+    }
   }
+  
 
   a.head {
     color: #696a77;
@@ -146,6 +214,9 @@ footer {
 
   .Xtae {
     border-right: 1px solid #454d5e;
+    @media screen  and (max-width:425px) {
+      border: none;
+    }
   }
 
   .ts {
