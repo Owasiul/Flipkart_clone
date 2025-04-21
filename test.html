@@ -18,45 +18,26 @@
     />
     <link rel="stylesheet" href="style.css">
     <style>
-.e-product-card {
-  padding-bottom: 15px; 
-  border-bottom: 1px solid #e0e0e0;
-  transition: box-shadow 0.3s ease;
-}
-.e-product-card:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-img.e-itm-img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-img.e-itm-img:hover {
-  transform: scale(1.1);
-}
-      .e-product-card {
-  padding-bottom: 15px; /* Adds space below each card */
-  border-bottom: 1px solid #e0e0e0; /* Light gray border-bottom */
-}
-
-.e-itm-img:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s ease-in-out;
-}
-
-/* Remove border-bottom on smaller screens for cleaner stacking */
-@media (max-width: 767.98px) {
-  .e-product-card {
-    border-bottom: none;
-  }
-}
-
+      img.e-img{
+        width: 180px;
+        height: 180px;
+        object-fit: contain;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+      img.e-img:hover {
+        transform: scale(1.1);
+      }
+      .contain{
+        width: 100%;
+        max-width: 98%;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
     </style>
     <title>Online Shopping Site</title>
   </head>
-  <body class="bg-dark">
+  <body class="bg-info">
     <!-- Header -->
     <section class="catalog mt-4">
       <div class="container">
@@ -153,74 +134,78 @@ img.e-itm-img:hover {
         </div>
       </div>
     </section>
-    <section class="E-product mt-5">
-      <div class="contain p-2">
+    <!--  e product recreate -->
+      <section class="Electronics-product">
+    <div class="row mt-5">
+      <div class="contain">
         <div class="row">
-          <div class="col-lg-10 bg-white p-3">
-            <h1 class="mb-4">Best of Electronics</h1>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
-              <!-- Card 1 -->
-              <div class="col d-flex flex-column align-items-center text-center e-product-card p-3">
-                <img
-                  src="img/E-item/e3 (2).jpg"
-                  class="img-fluid e-itm-img mb-2"
-                  alt="Best Truewireless Headphones"
-                />
-                <h6 class="fw-semibold mb-1 fs-6">Best Truewireless Headphones</h6>
-                <p class="fs-5 fw-bold text-success">Grab Now</p>
-              </div>
-              <!-- Card 2 -->
-              <div class="col d-flex flex-column align-items-center text-center e-product-card p-3">
-                <img
-                  src="img/E-item/e7 (4).jpg"
-                  class="img-fluid e-itm-img mb-2"
-                  alt="Monitor"
-                />
-                <h6 class="fw-semibold mb-1">Monitor</h6>
-                <p class="fs-5 fw-bold text-success">From $1,999</p>
-              </div>
-              <!-- Card 3 -->
-              <div class="col d-flex flex-column align-items-center text-center e-product-card p-3">
-                <img
-                  src="img/E-item/e2 (1).webp"
-                  class="img-fluid e-itm-img mb-2"
-                  alt="Fastrak Smartwatch"
-                />
-                <h6 class="fw-semibold mb-1">Fastrak Smartwatch</h6>
-                <p class="fs-5 fw-bold text-success">From $1,100</p>
-              </div>
-              <!-- Card 4 -->
-              <div class="col d-flex flex-column align-items-center text-center e-product-card p-3">
-                <img
-                  src="img/E-item/e6 (3).jpg"
-                  class="img-fluid e-itm-img mb-2"
-                  alt="Printer"
-                />
-                <h6 class="fw-semibold mb-1">Printer</h6>
-                <p class="fs-5 fw-bold text-success">From $2,000</p>
-              </div>
-              <!-- Card 5 -->
-              <div class="col d-flex flex-column align-items-center text-center e-product-card p-3">
-                <img
-                  src="img/E-item/e1 (1).jpg"
-                  class="img-fluid e-itm-img mb-2"
-                  alt="Noice Smartwatch"
-                />
-                <h6 class="fw-semibold mb-1">Noice Smartwatch</h6>
-                <p class="fs-5 fw-bold text-success">From $900</p>
+          <div class="col-lg-10 col-md-12">
+            <div class="bg-white p-3">
+              <h1 class="card-title mb-4">Best of Electronics</h1>
+              <div class="row g-3">
+                <!-- Card 1 - True Wireless -->
+                <div class="col">
+                  <div class="card border-0 p-2">
+                    <img src="img/E-item/img_1.jpg" class="card-img-top e-img img-fluid" alt="wireless earbuds">
+                    <div class="card-body text-center">
+                      <h4 class="card-title fs-5">Best Truewireless He...</h4>
+                      <p class="card-text fs-5 fw-bold text-success">Grab Now</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 - Noise Smartwatches -->
+                <div class="col">
+                  <div class="card border-0 p-2">
+                    <img src="img/E-item/img_2.jpg" class="card-img-top e-img img-fluid" alt="Noise smartwatch">
+                    <div class="card-body text-center">
+                      <h4 class="card-title fs-5">Noise Smartwatches</h4>
+                      <p class="card-text fs-5 fw-bold text-success">From ₹1,099</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 3 - Fastrack Smartwatches -->
+                <div class="col">
+                  <div class="card border-0 p-2">
+                    <img src="img/E-item/img_3.webp" class="card-img-top e-img img-fluid" alt="Fastrack smartwatch">
+                    <div class="card-body text-center">
+                      <h4 class="card-title fs-5">Fastrack Smartwatc...</h4>
+                      <p class="card-text fs-5 fw-bold text-success">From ₹1,399</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 4 - Projectors -->
+                <div class="col">
+                  <div class="card border-0 p-2">
+                    <img src="img/E-item/img_4.jpg" class="card-img-top e-img img-fluid" alt="projector">
+                    <div class="card-body text-center">
+                      <h4 class="card-title fs-5">Projectors</h4>
+                      <p class="card-text fs-5 fw-bold text-success">From ₹9999</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 5 - Women Trimmer -->
+                <div class="col">
+                  <div class="card border-0 p-2">
+                    <img src="img/E-item/img_5.jpg" class="card-img-top e-img img-fluid" alt="women trimmer">
+                    <div class="card-body text-center">
+                      <h4 class="card-title fs-5">Best of Women Trim...</h4>
+                      <p class="card-text fs-5 fw-bold text-success">From ₹599</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!-- Flight Bookings Banner -->
           <div class="col-lg-2 d-none d-lg-block">
-            <img
-              src="img/E-item/e4 (2).webp"
-              class="img-fluid"
-              alt="Sidebar Image"
-            />
+            <div class="card border-0 h-100">
+              <img class="card-img-top img-fluid h-100" src="img/E-item/img_6(side-img).webp" alt="Flight bookings banner">
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>

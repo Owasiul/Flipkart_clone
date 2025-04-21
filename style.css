@@ -11,10 +11,22 @@ body {
 }
 
 .contain {
-  width: 98%;
+  width: 100%;
+  max-width: 98%;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
+@media screen and (max-width: 768px) {
+  .contain {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contain {
+    padding: 0 5px;
+  }
+}
 /* nav */
 .navbar-nav {
   align-items: center;
@@ -31,7 +43,7 @@ body {
 
 .Search_Bar {
   height: 40px;
-  max-width: 600px;
+  max-width: 550px;
 }
 @media screen and (max-width: 768px) {
   .Search_Bar {
@@ -93,28 +105,21 @@ body {
 }
 
 /* e-itm */
-.contains {
-  width: 100%;
-  max-width: 96%;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
 .e-product-card {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   border-bottom: 1px solid #e0e0e0;
 }
 
-img.e-itm-img {
-  width: 150px;
-  height: 150px;
+img.e-img {
+  width: 180px;
+  height: 180px;
   -o-object-fit: contain;
      object-fit: contain;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-img.e-itm-img:hover {
+img.e-img:hover {
   transform: scale(1.1);
 }
 
@@ -141,12 +146,10 @@ img.e-itm-img:hover {
      object-fit: contain;
 }
 
-.banner-part img {
-  width: 88%;
-  margin: auto;
+.banner-part {
+  margin: 0 auto;
   -o-object-fit: contain;
      object-fit: contain;
-  height: 100%;
 }
 
 .triple-section img, .double-section img {
