@@ -252,3 +252,10 @@ footer {
     font-size: xx-small;
   }
 }
+
+// responcive for section of triple and double (small devices)
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .mt2smd{
+    margin-top: 10px!important;
+  }
+}
