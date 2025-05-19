@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f3f6 !important;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .nav_lower_text {
+  font-size: 11px;
+  color: white;
+}
+header nav .nav_lower_text:hover {
+  text-decoration: underline;
+}
+header nav .nav_lower_text img.Plus:hover {
+  text-decoration: none;
+}
+header nav .search_Bar {
+  width: 40%;
+  height: 40px;
+}
+header nav .search_Bar .search-box {
+  height: 100%;
+  border-radius: 4px;
+}
+header nav .search_Bar .search-box .form-control {
+  border-radius: 4px 0 0 4px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+header nav .search_Bar .search-box .form-control:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+header nav .search_Bar .search-box .input-group-text {
+  border-radius: 0 4px 4px 0;
+  padding: 0 10px;
+}
+header nav .navbar-nav .nav-item {
+  font-size: 16px;
+  font-weight: 500;
+}
+header nav .navbar-nav .nav-item.dropdown .btn {
+  padding: 8px 20px;
+  font-weight: 500;
+}
+header nav .navbar-nav .nav-item .nav-link {
+  padding: 8px 15px;
+}
+header nav .navbar-nav .nav-item .nav-link:hover {
+  color: #e0e0e0;
+}
+header .nav-bottom {
+  color: #1d1d1d;
+}
+header:hover {
+  color: #327bf1;
+}
+
+main .hero_area .htoptxt {
+  width: 100%;
+  text-align: justify;
+}
+main .hero_area .htoptxt .spzw {
+  margin-top: 10px;
+  color: #878787;
+  font-size: 12px;
+  line-height: 1.45;
+}
+main .hero_area .htoptxt p.pial74 a {
+  text-decoration: none;
+}
+
+footer {
+  clear: both;
+  background-color: #ffffff;
+  font-size: 11px;
+  line-height: 16px;
+  color: #878787;
+}
+footer .phlink a {
+  text-decoration: none;
+}
+footer .ftmargin {
+  padding: 0 25px;
+  margin: 30px 0 15px;
+}
+footer h2.Qlipc {
+  font-size: 16px;
+  padding: 10px 0 10px 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+footer .qTa {
+  padding: 10px 24px;
+  list-style: none;
+  border-bottom: 1px solid #e0e0e0;
+}
+footer .footer-bottom {
+  background-color: #172337;
+  color: #fff;
+}
+footer .footer-bottom .unl {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-bottom .unl li {
+  margin-bottom: 10px;
+}
+footer .footer-bottom .unl li .head {
+  color: #878787;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+footer .footer-bottom .unl li a.text-white {
+  font-size: 14px;
+  text-decoration: none;
+}
+footer .footer-bottom .unl li a.text-white:hover {
+  color: #2874f0;
+}
+footer .footer-bottom .unl li address {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+footer .footer-bottom .unl li .ts {
+  font-size: 14px;
+  line-height: 1.5;
+}/*# sourceMappingURL=Mobiles.css.map */

@@ -206,6 +206,199 @@
       </div>
     </div>
   </section>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Navigation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .bg-primary {
+      background-color: #2874f0 !important;
+    }
+    
+    header {
+      height: 56px;
+    }
+    
+    #container {
+      height: 100%;
+    }
+    
+    .j1kj6k {
+      max-width: 1248px;
+      margin: 0 auto;
+    }
+    
+    .navbar {
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+    
+    .logo {
+      min-width: 150px;
+    }
+    
+    .navbar-brand {
+      margin-right: 0;
+      padding: 0;
+      line-height: 1;
+    }
+    
+    .nav_lower_text {
+      font-size: 11px;
+      line-height: 1;
+    }
+    
+    .search_Bar {
+      width: 40%;
+    }
+    
+    .search-box {
+      height: 36px;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+    
+    .search-box input {
+      box-shadow: none;
+      font-size: 14px;
+    }
+    
+    .search-box .input-group-text {
+      background-color: white;
+      padding: 6px 12px;
+    }
+    
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-grow: 1;
+    }
+    
+    .nav-item {
+      white-space: nowrap;
+    }
+    
+    .nav-item.dropdown.bg-white {
+      border-radius: 2px;
+      padding: 0 !important;
+      height: 32px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-item .btn.dropdown-toggle.text-primary {
+      padding: 5px 20px;
+      font-weight: 500;
+    }
+    
+    .nav-link {
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header class="sticky-top shadow-sm">
+    <div class="h7ugj d-flex flex-row w-100 bg-primary" id="container">
+      <div class="j1kj6k w-100 h-100 d-flex">
+        <nav class="navbar navbar-expand-lg">
+          <!-- Logo -->
+          <div class="logo d-flex flex-column align-items-center justify-content-center">
+            <a class="navbar-brand text-white text-decoration-none fw-semibold" href="#" aria-label="Flipkart Home">
+              <img src="img_Mb/logo/Name.png" width="75px" alt="Flipkart Logo" class="img-fluid" />
+              <div class="nav_lower_text fst-italic">
+                <span>Explore</span>
+                <span class="f-italic me-1" style="font-weight:500; color: #ffe500;">Plus</span>
+                <img class="img-fluid Plus" width="10px" src="img_Mb/logo/plus_i1.png" alt="">
+              </div>
+            </a>
+          </div>
+
+          <!-- Search Bar -->
+          <form class="d-flex search_Bar ms-3 align-items-center">
+            <div class="input-group search-box bg-white w-100">
+              <input type="search" class="form-control border-0"
+                placeholder="Search for Products, Brands and More" aria-label="Search" />
+              <span class="input-group-text border-0 bg-white">
+                <i class="fa-solid fa-magnifying-glass text-primary" aria-hidden="true"></i>
+              </span>
+            </div>
+          </form>
+
+          <!-- Nav Items -->
+          <ul class="navbar-nav ms-auto">
+            <!-- Login -->
+            <li class="nav-item dropdown bg-white me-3">
+              <button class="btn dropdown-toggle text-primary nav-link" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false" aria-label="Login Dropdown">
+                <span>Login</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" style="width: 250px; font-size: 15px;">
+                <div class="d-wrap border-bottom d-flex justify-content-between">
+                  <li class="dropdown-header text-center fs-5">New Customer?</li>
+                  <li class="text-center">
+                    <button class="btn btn-link text-decoration-none text-info fs-5">Sign up</button>
+                  </li>
+                </div>
+                <li><a class="dropdown-item my-2" href="#">My Profile</a></li>
+                <li><a class="dropdown-item my-2" href="#">Flipkart Plus Zone</a></li>
+                <li><a class="dropdown-item my-2" href="#">Orders</a></li>
+                <li><a class="dropdown-item my-2" href="#">Wishlist</a></li>
+                <li><a class="dropdown-item my-2" href="#">Rewards</a></li>
+                <li><a class="dropdown-item my-2" href="#">Gift Cards</a></li>
+              </ul>
+            </li>
+
+            <!-- Become a Seller -->
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="#" aria-label="Become a Seller">
+                <span>Become a Seller</span>
+              </a>
+            </li>
+
+            <!-- More Options -->
+            <li class="nav-item dropdown me-3">
+              <button class="btn dropdown-toggle nav-link text-white" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false" aria-label="More Options">
+                <span>More</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end" style="width: 250px; font-size: 15px;">
+                <li><a class="dropdown-item my-2 border-bottom" href="#">Notification Preferences</a></li>
+                <li><a class="dropdown-item my-2 border-bottom" href="#">24x7 Customer Care</a></li>
+                <li><a class="dropdown-item my-2 border-bottom" href="#">Advartise</a></li>
+                <li><a class="dropdown-item my-2" href="#">Download App</a></li>
+              </ul>
+            </li>
+
+            <!-- Cart -->
+            <li class="nav-item">
+              <a class="nav-link text-white d-flex align-items-center" href="#" aria-label="Cart">
+                <i class="fa-solid fa-cart-shopping me-2"></i><span>Cart</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
