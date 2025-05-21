@@ -16,14 +16,14 @@
 <body>
   <!-- mobiles section this will be link with index.html  -->
   <!-- mobiles section header -->
-  <header class="sticky-top ">
+  <header class="sticky-top "> <!--Issue in md and sm screens-->
     <!-- Navbar -->
     <!-- nav-top -->
-    <div class="nav-top ">
-      <nav class="navbar navbar-expand-lg bg-primary p-3">
-        <div class="container justify-content-center">
+    <div class="nav-top d-flex flex-row justify-content-center align-items-center bg-primary  ">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-md d-flex flex-row align-items-center justify-content-between">
           <!-- Logo -->
-          <div class="logo d-flex flex-column align-items-center me-2">
+          <div class="logo d-flex flex-column align-items-center ms-5">
             <a class="navbar-brand text-white text-decoration-none fw-semibold" href="#" aria-label="Flipkart Home">
               <img src="img_Mb/logo/Name.png" width="75px" alt="Flipkart Logo" class="img-fluid" />
               <div class="nav_lower_text fst-italic">
@@ -42,7 +42,7 @@
           <!-- Collapsible content -->
           <div class="collapse navbar-collapse" id="navbarContent">
             <!-- Search Bar -->
-            <form class="d-flex search_Bar mt-md-2 align-items-center flex-grow-1 mx-3">
+            <form class="d-flex search_Bar mt-md-2 align-items-center mx-3">
               <div class="input-group search-box bg-white rounded">
                 <input type="search" class="form-control border-0" placeholder="Search for products, brands and more"
                   aria-label="Search" />
@@ -110,12 +110,12 @@
     </div>
   </header>
   <!-- nav-bottom -->
-  <div class="nav_bottom">
-    <nav class="nav_bottom bg-white shadow-sm h-100 w-100">
-      <div class="container gap-1">
-        <div class="row row-cols-9 align-items-center">
+  <div class="nav-bottom bg-white shadow-sm h-100 w-100 d-none d-lg-block">
+    <div class="container ">
+      <nav class="nav_bottom ">
+        <div class=" nvb9t row row-cols-lg-12 row-cols-9 align-items-center justify-content-center ">
           <!-- Electronics dropdown -->
-          <div class="El55op col">
+          <div class="El55op col ">
             <div class="btn-group">
               <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -177,7 +177,7 @@
             </div>
           </div>
           <!-- Tv & Appliances -->
-          <div class="El55op col">
+          <div class="El55op col ">
             <div class="btn-group">
               <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -286,7 +286,7 @@
             </div>
           </div>
           <!-- women -->
-          <div class="El55op col">
+          <div class="El55op col ">
             <div class="btn-group">
               <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -341,7 +341,7 @@
             </div>
           </div>
           <!-- Baby & kids -->
-          <div class="El55op col">
+          <div class="El55op col ">
             <div class="btn-group">
               <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -396,7 +396,7 @@
             </div>
           </div>
           <!-- Home & Furniture -->
-          <div class="El55op col">
+          <div class="El55op col  ">
             <div class="btn-group">
               <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -506,7 +506,7 @@
             </div>
           </div>
           <!-- Flights -->
-          <div class="El55op col">
+          <div class="El55op col ">
             <div class="btn-group">
               <button type="button" class="btn  border-0">
                 <span class="e0phov fw-semibold">Flights</span>
@@ -521,13 +521,14 @@
               </button>
             </div>
           </div>
-    </nav>
+      </nav>
+    </div>
   </div>
   <!-- header end -->
   <main>
     <!-- hero area with a bannner -->
     <section class="hero_area">
-      <div class="container-xxl">
+      <div class="container-fluid">
         <div class="htoptxt">
           <div class="sasale" style="font-weight: 500; font-size: 18px; margin: 8px 0;">
             SASA LELE
@@ -536,9 +537,11 @@
             <p class="sptxt">
               <span>
                 Mobile phones are no more merely a part of our lives. Whether it's to stay connected with friends and
-                family or to keep abreast of important developments around the world, mobiles are no longer for sending
+                family or to keep abreast of important developments around the world, mobiles are no longer for
+                sending
                 a text or making a call. From budget to state-of-the-art smartphones; indigenous names to global
-                big-wigs - a whole universe of mobiles await you on Flipkart. Whether you’re looking for waterdrop notch
+                big-wigs - a whole universe of mobiles await you on Flipkart. Whether you’re looking for waterdrop
+                notch
                 screens, a high screen to body ratio, AI-powered sensational cameras, high storage capacity, blazing
                 quick processing engines or reflective glass designs, rest assured you won't have to venture anywhere
                 else for your smartphone needs.
@@ -586,7 +589,7 @@
     </section>
     <!-- slider -->
     <section class="slider shadow-sm">
-      <div class="container-xxl">
+      <div class="container-fluid">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -626,7 +629,7 @@
     </section>
     <!-- grid section -->
     <section class="mobbrand">
-      <div class="container-xxl">
+      <div class="container-fluid">
         <div class="row row-cols-3">
           <!-- greimg-1 -->
           <div class="mobr1 col-lg-4 col-4">
@@ -705,7 +708,7 @@
     </section>
     <!-- more banners -->
     <section class="more_banner_slider">
-      <div class="container-xxl">
+      <div class="container-fluid">
         <div class="upsale">
           <img class="img-fluid" src="img_Mb/banners/5th_banner.jpg" alt="">
         </div>
@@ -809,7 +812,7 @@
     </section>
     <!-- grid -2 -->
     <section class="mobbrand2">
-      <div class="container-xxl">
+      <div class="container-fluid">
         <div class="row row-cols-3">
           <!-- greimg-1 -->
           <div class="mobr1 col-lg-4 col-4">
@@ -825,7 +828,7 @@
           </div>
           <!-- greimg-4 -->
           <div class="mobr1 col-lg-4 col-4">
-            <img class="img-fluid" src="img_Mb/Grid_img/gre24.jpg" alt="">
+            <img class="img-fluid" src="img_Mb/Grid_img/gre20.jpg" alt="">
           </div>
           <!-- greimg-5 -->
           <div class="mobr1 col-lg-4 col-4">
@@ -841,560 +844,563 @@
   </main>
   <!-- main end -->
   <footer class="">
-      <div class="ftmargin w-100" style="border-top: 1px solid #ddd ;">
-        <div class="footer-top mt-lg-4 mt-lg-3">
-          <div class="ft_hedtxt">
-            <h2 style="font-size: 14px; margin-bottom: 10px;" class="hedtext">Mobile Phones- Buy mobile phones online at
-              best prices in India</h2>
+    <div class="ftmargin w-100" style="border-top: 1px solid #ddd ;">
+      <div class="footer-top mt-lg-4 mt-lg-3">
+        <div class="ft_hedtxt">
+          <h2 style="font-size: 14px; margin-bottom: 10px;" class="hedtext">Mobile Phones- Buy mobile phones online at
+            best prices in India</h2>
 
-            <div></div>
-            <div>
-              Mobile phone, also called a cell phone owing to it using a cellular network architecture, have seen a
-              tremendous growth in terms of technology and size over the years. On Flipkart, we have a diverse
-              collection
-              of
-              iOS and Android mobiles ranging from basic mobiles, low-range and mid-range phones to very high-end
-              smartphones that.
-              <br><br>
+          <div></div>
+          <div>
+            Mobile phone, also called a cell phone owing to it using a cellular network architecture, have seen a
+            tremendous growth in terms of technology and size over the years. On Flipkart, we have a diverse
+            collection
+            of
+            iOS and Android mobiles ranging from basic mobiles, low-range and mid-range phones to very high-end
+            smartphones that.
+            <br><br>
 
-              <div class="phlink">
-                <a href="#">Realme P1 5G</a> | <a href="#">vivo T3 Pro 5G</a> | <a href="#">POCO C75 5G</a> | <a
-                  href="#">Realme 14x 5G</a> |
-                <a href="#"> Realme 12x 5G</a> | <a href="#">Vivo T3 Ultra 5G</a> | <a href="#">POCO M7 Pro 5G</a>
-                | <a href="#">Motorola G64 5G</a>
-                <p class="mt-3">
-                  Discover unbeatable deals on top smartphones during the <a href="#">Flipkart Sale</a>.
-                </p>
+            <div class="phlink">
+              <a href="#">Realme P1 5G</a> | <a href="#">vivo T3 Pro 5G</a> | <a href="#">POCO C75 5G</a> | <a
+                href="#">Realme 14x 5G</a> |
+              <a href="#"> Realme 12x 5G</a> | <a href="#">Vivo T3 Ultra 5G</a> | <a href="#">POCO M7 Pro 5G</a>
+              | <a href="#">Motorola G64 5G</a>
+              <p class="mt-3">
+                Discover unbeatable deals on top smartphones during the <a href="#">Flipkart Sale</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footmid">
+        <div class="footmd1">
+          <div class="fotmdtxt">
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 16</h2>
+            Enjoy the blend of smooth performance and stylish designs with the iPhone 16. This device comes with an
+            A18 chip that features smart camera control. It also has an action button that provides seamless access
+            to
+            useful features, making your work easier. Whether you are in an important meeting or frequently
+            travelling, this device can come in handy. The iPhone 16 in India helps you to enjoy the easy-to-use
+            artificial intelligence system. Built for Apple Intelligence, the device can appeal to the tech-head in
+            you. Additionally, the iPhone 16 offers a 48 MP + 12 MP primary camera so that you can click vibrant
+            photos and record engaging videos. You also get a 12 MP front camera, allowing you to click selfies and
+            group pictures. The camera of the iPhone 16 can, thus, enable you to relive life’s precious memories.
+            Moreover, with systemwide writing tools built into the iOS, you can rewrite, proofread, and summarise
+            text
+            with ease. These tools help you with mail, notes, and third-party apps. Before adding this device to
+            your
+            shopping cart, check the iPhone 16’s price and the unique features it offers. Buy the iPhone 16 online
+            with a few clicks and make a secure payment to get doorstep delivery.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 16 Plus</h2>
+            Enjoy the seamless performance of the iPhone 16 Plus while playing games or multitasking on several
+            applications. It has features with advanced technology to deliver exceptional experience while
+            navigating
+            through it. Equipped with an A18 chip and a 6-core processor, this iPhone 16 Plus offers seamless
+            performance whether you are working or streaming. You can also enjoy watching videos on its wide 17.02
+            cm
+            screen. The screen has a Super Retina XDR Display that makes the visuals appealing with stunning colour
+            schemes and exceptional clarity. You can have a cinematic experience while watching videos or playing
+            games on the phone. Additionally, this iPhone 16 Plus in India has a built-in stereo speaker that
+            produces
+            high-quality audio that elevates your media experience. You can also enjoy your passion for photography
+            and videography on the iPhone 16 Plus with its dual camera setup. It has an ultra-wide 48 MP lens on the
+            front camera and a 12 MP secondary camera. You can capture macro shots and intimate moments in the
+            selfie
+            mode with family and friends. The iPhone 16 Plus price is also an attractive feature, considering its
+            advanced features. Check out the iPhone 16 Plus online and order it for a hassle-free delivery.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 16 Pro</h2>
+            Shake up your tech life and day-to-day style with the stunning Apple iPhone 16 Pro. This smartphone's
+            gorgeous 16 cm (6.3) Super Retina XDR display performs an amazing job of preserving all the colours and
+            intricacies of the images displayed on the screen. This smartphone has a three-camera set-up: a 48 MP
+            Ultra Wide camera, a 48 MP Fusion Camera, and a 12 MP 5X telephoto camera. Its fun three-camera setup is
+            ideal for capturing the minute details in the images you click. Additionally, a 12 MP front camera is
+            included for taking selfies, making calls, and other activities. There is dual SIM functionality
+            available
+            with the iPhone 16 Pro (India). Depending on your mode of payment you can get access to additional
+            iPhone
+            16 Pro offers while purchasing your iPhone 16 Pro online. You can also trade in your old to make the
+            iPhone 16 Pro’s price more favourable. You can also check out the ratings and reviews left by other
+            customers to help you make up your mind. Shop now for the iPhone 16 Pro and get it delivered straight to
+            your home.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 16 Pro Max</h2>
+            With the Apple iPhone 16 Pro Max, you can get your hands on the next generation of smartphones. The
+            phone
+            has a 17.53 cm (6.9) Super Retina XDR display, which provides clear details and realistic colors. The
+            iPhone 16 Pro Max (India) comes with Dual SIM support to let you stay connected wherever you are.
+            Additionally, it has a three-camera configuration that produces incredibly detailed images with a
+            resolution of up to 4K. With ease, high-resolution images and films may be captured with the three
+            cameras
+            in this setup: a 12 MP 5X telephoto, a 48 MP Ultra Wide, and a 48 MP Fusion camera. It also has a 12 MP
+            front camera, which allows you to take pictures and participate in calls. The phone's 256 GB of internal
+            storage, which makes it simple to save movies, images, and any other data you would want to keep
+            private,
+            is also helpful. Flipkart offers a price check for the iPhone 16 Pro Max online. A wide range of iPhone
+            16
+            Pro Max deals and discounts are available to you, contingent upon your preferred payment method.
+            Purchasing an iPhone 16 Pro Max online is made simple by all of these deals and the availability of free
+            EMIs.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 16e</h2>
+            Get your hands on one of Apple’s latest offerings the iPhone 16e to upgrade your phone. The iPhone 16e
+            (India) comes with a large 15.49 cm (6.1) Super Retina XDR display that lets you view visuals and images
+            in crystal clear clarity. It also comes with a 48 MP + 12 MP camera to capture images and videos in high
+            resolution. The phone also features a 12 MP front camera to enable video calls and capturing selfies.
+            The
+            A18 chip that powers this phone is more than enough when it comes to handling multiple processes and
+            tasks, making this phone ideal for people who tend to get a lot done while they're on the move. The
+            iPhone
+            16e prices can vary slightly depending on your method of payment. You can get various iPhone 16e offers
+            and discounts depending on the card you are paying with. You can also exchange your old phone in return
+            for a new one to get an additional discount on your new phone.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">CMF by Nohing Phone 2 Pro</h2>
+            Have a look at the CMF Phone 2 Pro that can appeal to the tech enthusiast in you. Powered by a MediaTek
+            Dimensity 7300 Pro 5G processor, the mobile offers accelerated CPU performance and improved graphics
+            output. Moreover, the processor also supports enhanced AI computing. Therefore, the phone can utilise
+            artificial intelligence to organise your notes, voice notes, reminders, and even offer personalised
+            summaries. Moreover, this device is also notable for its camera setup. Its triple rear-camera design
+            allows you to click stunning pictures to capture the special moments of your life. With a 50 MP main
+            camera, a 50 MP telephoto camera, and an 8 MP ultra-wide camera, the CMF Phone 2 Pro can redefine how
+            you
+            take your shots. Thanks to the AI-driven image processing system called TrueLens Engine 3, the camera’s
+            performance can be elevated to a new level. In addition to that, the phone also has a 16 MP front
+            camera.
+            Therefore, you can click spontaneous self-portraits in style. Moreover, the phone also allows you to
+            record videos in Full HD resolution. Thus, the captured footage can get a professional and cinematic
+            touch.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Nothing 3a</h2>
+            With its sleek design and numerous user-friendly features, the Nothing Phone (3a) is a useful
+            combination
+            of fashionability and functionality. Due to its 50 MP + 50 MP + 8 MP primary camera setup, you can get
+            stunning snaps with ease. The camera also supports 30x zoom, helping you to capture your subjects in
+            vivid
+            detail. In addition, the phone is also equipped with a 32 MP front camera. As a result, you can take
+            selfies and group photos to keep the special moments alive. Moreover, the Snapdragon chipset of this
+            device ensures efficient performance and improved responsiveness of your phone. The processor can also
+            increase the power efficiency of the Nothing Phone (3a). Furthermore, this device is also equipped with
+            Qualcomm Adreno 810 GPU. Therefore, it can offer immersive visuals and increased clarity when you play
+            games on it. The 17.2 cm (6.77) screen size also makes the phone suitable for streaming films and series
+            or making video calls. With its Full HD+ resolution and AMOLED display, the phone can redefine how you
+            consume multimedia content. Refer to the product description to learn more about Nothing Phone (3a)
+            price
+            and other features.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Samsung Galaxy S25</h2>
+            Are you looking for a new smartphone to cater to your diverse needs? If so, you can have a look at the
+            Samsung Galaxy S25. With its sleek look and numerous practical features, this device effectively
+            combines
+            style with substance. The 15.75 cm (6.2) screen size ensures that you can stream your favourite films or
+            play online games on your mobile with ease. The Full HD+ display can provide crystal-clear visuals,
+            making
+            the viewing experience even more immersive. So, check out the Samsung Galaxy S25 online and read the
+            product description carefully to learn more about its specifications. Equipped with Galaxy AI, the
+            smartphone can streamline your professional and personal projects. Moreover, the device also has an
+            Audio
+            Eraser, helping you to remove unwanted noise from your videos. With a 4000 mAh battery capacity, the
+            mobile can ensure hours of screen-on time. Therefore, you do not have to worry about unwarranted
+            interruptions or the need for frequent recharging. Thanks to the aluminium frame and Corning Gorilla
+            Glass, the Samsung Galaxy S25 can also stay protected from rapid wear. So, check the Samsung Galaxy S25
+            price and attributes, and add it to your virtual cart. With a few simple clicks, you can buy Samsung
+            Galaxy S25s online and get them delivered to your doorstep.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Samsung Galaxy S25 Plus</h2>
+            Are you looking for a smartphone that can help you get stunning pictures and videos? If s, you can have
+            a
+            look at the Samsung Galaxy S25 Plus. This mobile phone is equipped with a 50 MP + 10 MP + 12 MP rear
+            camera setup, helping you get crystal-clear clicks. Moreover, the device also has a 12 MP front camera
+            so
+            that you can get spontaneous self-portraits. You can refer to the specifications of the Samsung Galaxy
+            S25
+            Plus online to learn more about its photography and videography capabilities. The ultra-wide angle and
+            optical zooming feature of the device can provide a professional touch to your pictures. Moreover, the
+            device is also powered by the ProVisual Engine. As a result, you can click and edit pictures with
+            enhanced
+            precision. Furthermore, the Samsung Galaxy S25 Plus allows you to shoot in an improved 10-bit HDR to
+            capture lifelike footage. In addition, the phone also has an advanced AP that can remove excess noise
+            from
+            the footage and improve nighttime videography. Moreover, you can also use the Audio Eraser feature,
+            which
+            utilises artificial intelligence to remove unwanted background sound from the recorded videos. So, check
+            the Samsung Galaxy S25 Plus’s price and attributes at your convenience. Buy Samsung Galaxy S25 Plus
+            online
+            for hassle-free doorstep delivery.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Samsung Galaxy S25 Ultra</h2>
+            If you are considering buying a new smartphone, the Samsung Galaxy S25 Ultra can come in handy for you.
+            The 17.53 cm (6.9) display size of the device can offer an engaging feel, whether you are gaming online
+            or
+            streaming a series. With a significantly higher primary clock speed of 4.47 GHz, this phone can process
+            and execute instructions seamlessly. When you are shopping for the Samsung Galaxy S25 Ultra online, you
+            can check the specifications to learn more about the device’s attributes. If you use graphics-intensive
+            applications, then this device can have an additional appeal to you. Equipped with an Adreno 830 GPU,
+            the
+            Samsung Galaxy S25 Ultra can ensure an enhanced user experience. The device is also powered by Galaxy
+            AI,
+            helping you with everyday tasks. Moreover, the device also has an S-pen, so you can take notes or draw
+            with ease. In addition, If you edit videos on your phone, this device’s Audio Eraser feature can be
+            especially useful. It uses artificial intelligence to detect unwanted noise in your video and can remove
+            it adequately. So, check the Samsung Galaxy S25 Ultra’s price and features, and place your order. Buy
+            Samsung Galaxy S25 Ultra online and get it delivered to your doorstep.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">OPPO Reno 12</h2>
+            Are you looking for a new smartphone to suit all your tech needs and requirements? If yes, then the OPPO
+            Reno 12 can be an ideal option for you. The smartphone is available with expandable memory of upto 1 TB
+            to
+            fit all your files and memories safely. Additionally, it is also enabled with BeaconLink. This feature
+            allows you to make voice calls even when there's no mobile signal. Also, the smart technology used in
+            this
+            phone boosts Bluetooth power, so you can still reach out to those nearby. Moreover, this smartphone is
+            incorporated with 5G as well as a 5000 mAh battery to add functionality. If you are a photography lover,
+            the device with a 50 MP main camera OIS and a 32 MP selfie camera will be an ideal option. In addition,
+            the smartphone’s exterior body has a 3D fluid design that mimics the look of waves, giving it a stellar
+            appearance. To add more to the device’s neverending features, the smartphone also has various AI
+            functions. It includes AI Eraser 2.0, AI Best Face, AI Clear Face, AI Studio, AI Smart Image Matting
+            2.0,
+            AI Recording Summary, and more. Buy OPPO Reno 12 online and enjoy its various futuristic features and
+            benefits.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 15</h2>
+            Are you looking to buy a new phone from Apple? If yes, then you can have a look at the iPhone 15. Made
+            of
+            aerospace-grade aluminium and infused glass, the design of this phone has a robust finish, ensuring you
+            can use the device securely. Featuring 128 GB ROM, the device can offer faster response and processing
+            capacity, ensuring you have a smooth and hassle-free digital experience. The iPhone is also
+            well-equipped
+            with a 15.49 cm (6.1) Super Retina XDR display that can ensure an immersive experience when watching a
+            film or series or participating in an online gaming session. If you are interested in photography, this
+            phone can also become your go-to choice. With a 48 MP main camera, the device allows you to click
+            crystal-clear pictures with absolute ease. The device also has a 12 MP front camera that makes sure that
+            you can click stunning selfies that can capture your special moments. This device is also compatible
+            with
+            USB-C, ensuring that phone charging becomes a breeze. So, read the product descriptions of the iPhone 15
+            carefully and confirm your order to get hassle-free delivery.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 15 Plus</h2>
+            Ready to elevate your smartphone еxpеriеncе with thе Apple iPhonе 15 Plus? Equippеd with fеaturеs like
+            face ID, baromеtеr, and high dynamic rangе gyro, it ensures a seamless and sеcurе usеr еxpеriеncе.
+            Morеovеr, with proximity sеnsor, dual ambiеnt light sеnsors, and high-G accеlеromеtеr, еvеry interaction
+            becomes intuitivе and еffortlеss. Dual ambiеnt light sеnsors continuously monitor thе surrounding light
+            conditions, allowing the dеvicе to dynamically adjust thе scrееn brightnеss for optimal visibility. In
+            addition to its imprеssivе tеchnical spеcifications, thе device offеrs you a world of options online.
+            Whether you prefer thе sleek sophistication of black or thе vibrant allurе of bluе, this dеvicе is
+            designed to cater to your prеfеrеncеs. Look into thе storagе capacity, еnsuring that you havе amplе
+            spacе
+            for all your photos, vidеos, and apps. Morеovеr, look into thе advanced sensors and functionalitiеs that
+            elevate your smartphone еxpеriеncе to new heights. With doorstеp dеlivеry service, you can enjoy the
+            еasе
+            of having your nеw dеvicе arrivе right at your preferred location. Additionally, you can enjoy the
+            sеcurе
+            paymеnt options for a hasslе-frее shopping еxpеriеncе. Shop Applе iPhonе 15 Plus now and еxpеriеncе thе
+            futurе of mobilе tеchnology firsthand.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 15 Pro</h2>
+            Explorе thе nеw еra in mobilе tеchnology with thе iPhonе 15 Pro. With its sleek appearance and advancеd
+            fеaturеs, this dеvicе stands as a tеstamеnt to sophistication and pеrformancе. Thе dеvicе allows you to
+            toggle between ring and silеnt modеs еffortlеssly with thе action button. With a control cеntrе, you can
+            swiftly accеss vital functions to customisе your dеvicе. This puts the power of customisation directly
+            into your hands. Additionally, take advantage of USB 3 support for lightning-fast data transfer spееds
+            and
+            seamless connеctivity across your Applе systеm. With Dual SIM (Nano + еSIM) capability and thе
+            convеniеncе
+            of a supеr rеtina XDR display, thе dеvicе offеrs unparalleled versatility and functionality. Whеthеr
+            you'rе drawn to thе classic allurе of black or thе striking vibrancy of bluе, thе iPhonе 15 Pro offеrs a
+            palеttе of options to suit your stylе. In addition to its impressive fеaturеs, consider the еasе and
+            convenience of doorstep delivery. Simply check the various payment options available online. Enjoy thе
+            pеacе of mind knowing that your dеvicе will be delivered directly to your prеfеrrеd location. Elеvatе
+            your
+            mobilе еxpеriеncе today with thе iPhonе 15 Pro. Shop now and embrace the future of technology with
+            confidence.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 15 Pro Max</h2>
+            Stеp into thе futurе with thе all-new iPhone 15 Pro Max, where innovation meets elegancе. With its sleek
+            titanium dеsign and cеramic shiеld front, this dеvicе is engineered to imprеss. Thе tеxturеd matte glass
+            back adds a premium touch to your device. Additionally, it еnsurеs a sеcurе grip in your hand. In
+            addition, this device supports MagSafe wireless charging technology for seamless charging еxpеriеncеs.
+            It
+            dеlivеrs up to 15W of power. Whеrеas, Qi wirеlеss charging providеs up to 7.5 W. Morеovеr, its fast
+            chargе
+            capability еnsurеs that you can gеt up to 50% chargе in around 30 minutes. Whеn you chеck out thе
+            options
+            availablе onlinе, you will find thе iPhonе in stunning shadеs of black and bluе. It offers you thе
+            freedom
+            to choose a shadе that matchеs your stylе. Explorе other features like advanced camеra capabilities and
+            immеrsivе display. By purchasing iPhonе 15 Pro Max online, you can enjoy the ease of doorstеp dеlivеry
+            service. Simply place your order onlinе, and your chosen dеvicе will be delivered to your prеfеrrеd
+            location. Additionally, onlinе shopping offеrs you a sеcurе paymеnt option. Shop now and stеp into a
+            world
+            of innovation and sophistication.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Redmi Note 13 Pro Plus</h2>
+            Redefine your photography skills with the help of Redmi Note 13 Pro+. With the help of the stunning
+            camera
+            settings of the device, you can capture the special moments of your life with absolute ease. The phone
+            is
+            well-equipped with a rear camera setting of 200 MP (OIS) + 8 MP + 2 MP that allows you to take crystal
+            clear photos without any additional hassle. Features like depth control and long exposure can also help
+            you to get sharp clicks with your smartphone. Moreover, if you are someone who enjoys taking
+            self-portraits, this device can also come in handy for you. With its 16 MP front camera, you can click
+            remarkable selfies. In addition to photography, the device might have added appeal to you if you also
+            enjoy videography. The camera settings of the phone allow video recording up to 4 K resolution, giving
+            them an unmatched cinematic feel. You also do not have to worry about running out of phone memory when
+            it
+            comes to storing these videos and photos taken. The mobile has a storage capacity of 256 GB, ensuring
+            that
+            your multimedia files can be saved easily. So, place your order for the Redmi Note 13 Pro+ online and
+            enjoy the benefits of getting it delivered right to your doorstep.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Samsung Galaxy Z Flip 5</h2>
+            Explore the Samsung Galaxy Z Flip 5 online, which introducеs you to a rеmarkablе dеvicе packed with
+            standout features. Imaginе having a powerful phonе with 8 GB RAM and a suitable storagе spacе, еnsuring
+            smooth pеrformancе and amplе room for all your apps, photos, and vidеos. It's likе having a pockеt-sizеd
+            powеrhousе rеady for anything. Thе phonе boasts a slееk 17.02 cm (6.7) display, providing a vibrant and
+            immеrsivе visual еxpеriеncе. Enjoy your favouritе moviеs, gamеs, or social mеdia on a scrееn that's both
+            compact and еxpansivе and can fit right in your pockеt. Capturе your momеnts in stunning dеtail with thе
+            12 MP dual rеar camеras for beautiful selfies. Whether it's a landscapе or a mеmorablе selfie, thе
+            Samsung
+            Z Flip 5's camera systеm еnsurеs your photos look imprеssivе. With a rеliablе 3700 mAh battеry, thе
+            phonе
+            kееps up with your busy day, еnsuring you stay connеctеd and еntеrtainеd without worrying about running
+            out of powеr. Powеrеd by thе Snapdragon 8 Gеn 2 Procеssor, thе Galaxy Z Flip 5 еnsurеs spееdy
+            pеrformancе,
+            making multitasking and navigating through apps a seamless еxpеriеncе. So, buy the Samsung Galaxy Z Flip
+            5
+            online and get it delivered to your doorstep with just a few clicks and swipes.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Samsung Galaxy Z Fold 5</h2>
+            Get ready to unfold a new chapter in smartphone technology with the Samsung Galaxy Z Fold 5. Crafted
+            with
+            precision, the device exudes sophistication with its sleek design and premium materials. Whether you're
+            watching your favourite movies, multitasking with multiple apps, or diving into the latest mobile games,
+            the foldable display effortlessly adapts to your needs. The immersive visuals are complemented by a
+            buttery-smooth 120 Hz refresh rate, ensuring every swipe and scroll is as fluid as it is mesmerising.
+            Furthermore, the device boasts a robust yet lightweight frame that effortlessly folds and unfolds,
+            making
+            it a suitable companion for those who demand versatility without compromising on style. The Gorilla
+            Glass
+            Victus on the cover and display ensures durability, while the sleek aluminium frame adds a touch of
+            sophistication. The Multi-active Window feature allows you to run multiple apps simultaneously,
+            transforming your device into a powerful productivity tool. Be it working on a presentation, responding
+            to
+            emails, or conducting a video call, the Samsung Z Fold 5 adapts to your workflow, making every task a
+            breeze. So shop online now and unfold a world of infinite possibilities to elevate your mobile
+            experience
+            like never before!
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Pixel 7a</h2>
+            Make the Google Pixel 7a your first smartphone or your upgrade from your old model. This phone can
+            capture
+            and immortalise your precious moments, provide a calling experience with minimal issues, keep your
+            information secure, and do more. The Tensor G2 processor ensures that these tasks are completed with
+            minimal lag. The Pixel smartphone also makes sure that hours of screen time does not drain your battery
+            quickly. The 4300 mAh battery offers almost 24 hours of battery life, while the extreme battery saver
+            mode
+            can give you nearly three days of battery life. Additionally, you can also quickly charge the battery
+            thanks to Fast Charge when needed. The long battery life helps you click photographs and videos using
+            the
+            64 MP main camera and 13 MP ultra-wide camera endlessly. You can also click a selfie with the 13 MP
+            front
+            camera, which has a 95-degree wide field of view. Check the Google Pixel 7a price and pick from colours
+            like Charcoal, Sea, and Snow. Shop for the Google Pixel 7a (in) India model, which has a
+            scratch-resistant
+            Corning Gorilla Glass 3 cover, an IP67 rating, and a fingerprint-resistant coating that can keep the
+            aesthetics of the Pixel 7a unharmed. Explore various other features of the smartphone and purchase it to
+            experience the Google interface.
+
+            <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Oppo Find N2 Flip</h2>
+            Get the Oppo Find N2 Flip mobile phone to bring home a whole range of exciting features. Fitted with a
+            Flexion Hinge the Oppo Find N2 folds in half to let you view calls, notifications, reminders, and more
+            on
+            a 8.28 cm (3.26) screen. When not using the cover screen, this phone uses its 17.27 cm (6.8) Full HD
+            display for visuals. Made using high-grade steel and a polymer, the hinge can be folded around 400,000
+            times without wearing out. The phone is powered by a 4300 mAh battery that offers backup for up to 20
+            hours of video playback, 6 hours of video calling, and around 16 hours of internet browsing. This
+            powerful
+            battery can be charged to up to 50% in just 23 minutes thanks to the 44 W SUPERVOOC Flash Charge. All of
+            these features are tied together by the MediaTek Dimensity 9000+ processor that is more than able to
+            handle multiple operations simultaneously. The phone runs on ColorOS that compliments the aesthetic
+            design
+            of the phone and makes the UI clean and intuitive. Get your hands on the Oppo Find N2 Flip online and
+            have
+            it safely delivered to your door.
+          </div>
+          <div class="fotmdtble mt-3">
+            <!-- table 1 -->
+            <h2 style="font-size: 14px; margin-bottom: 10px;">Mobile Brands:</h2>
+            <table class="table table-bordered"
+              style="margin: 10px 0; width: 50%; border-collapse: collapse; padding: 8px 25px;">
+              <tbody>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">Asus Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Realme Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone</a></td>
+                  <td><a class="text-decoration-none" href="#">Lenovo Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Google Pixel Mobile</a></td>
+                </tr>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">Poco Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">HTC Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Mi Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Motorola Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">LG Mobile</a></td>
+                </tr>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">Nokia Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Iqoo Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Panasonic Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Samsung Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Micromax Mobile</a></td>
+                </tr>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">Oneplus Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Gionee Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Vivo Mobile</a></td>
+                  <td><a class="text-decoration-none" href="#">Nothing Phone</a></td>
+                  <td><a class="text-decoration-none" href="#">OPPO Mobile</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- table 2 -->
+          <div class="fotmdtble mt-3">
+            <h2 style="font-size: 14px; margin-bottom: 10px;">Mobile By Screen Sizes:</h2>
+            <table class="table table-bordered"
+              style="margin: 10px 0; width: 50%; border-collapse: collapse; padding: 8px 25px;">
+              <tbody>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">4 Inch Mobiles</a></td>
+                  <td><a class="text-decoration-none" href="#">5.5 Inch Mobiles</a></td>
+                  <td><a class="text-decoration-none" href="#">4.5 Inch Mobiles</a></td>
+                  <td><a class="text-decoration-none" href="#">5.2 Inch Mobiles</a></td>
+                </tr>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">3.5 Inch Mobiles</a></td>
+                  <td><a class="text-decoration-none" href="#">6 Inch Mobiles</a></td>
+                  <td><a class="text-decoration-none" href="#">3 Inch Mobiles</a></td>
+                  <td><a class="text-decoration-none" href="#">5 Inch Mobiles</a></td>
+                </tr>
+            </table>
+          </div>
+          <!-- table 3 -->
+          <div class="fotmdtble mt-3">
+            <h2 style="font-size: 14px; margin-bottom: 10px;">Mobile By RAM:</h2>
+            <table class="table table-bordered"
+              style="margin: 10px 0; width: 50%; border-collapse: collapse; padding: 8px 25px;">
+              <tbody>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">3 GB RAM Mobiles</a></td>
+                  <td><a class="text-decoration-none" href="#">2 GB RAM Mobiles</a></td>
+                  <td><a class="text-decoration-none" href="#">4 GB RAM Mobiles</a></td>
+                  <td><a class="text-decoration-none" href="#">1 GB RAM Mobiles</a></td>
+                </tr>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">6 GB RAM Mobiles</a></td>
+                </tr>
+            </table>
+          </div>
+          <!-- table 4 -->
+          <div class="fotmdtble mt-3">
+            <h2 style="font-size: 14px; margin-bottom: 10px;">Apple iPhones</h2>
+            <table class="table table-bordered"
+              style="margin: 10px 0; width: 50%; border-collapse: collapse; padding: 8px 25px;">
+              <tbody>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">iPhone 16</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 16 Plus</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 16 Pro</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 16 Pro Max</a></td>
+                </tr>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">iPhone 15</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 15 Plus</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 15 Pro</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 15 Pro Max</a></td>
+                </tr>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">iPhone 14</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 14 Plus</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 14 Pro</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 14 Pro Max</a></td>
+                </tr>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">iPhone 13</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 13 Plus</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 13 Pro</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 13 Pro Max</a></td>
+                </tr>
+                <tr>
+                  <td><a class="text-decoration-none" href="#">iPhone 12</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 12 Plus</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 12 Pro</a></td>
+                  <td><a class="text-decoration-none" href="#">iPhone 12 Pro Max</a></td>
+                </tr>
+            </table>
+          </div>
+          <br>
+          <p>Looking to upgrade? Easily <a href="#" class="text-decoration-none"> sell old phone</a> and switch to the
+            latest models on Flipkart.</p>
+        </div>
+        <div class="footmd2" style="color: #000;">
+          <h2 class="Qlipc"><span>Questions & Answers</span></h2>
+          <ol>
+            <!-- q1 -->
+            <li class="qTa">
+              <div class="qustion">
+                <span>Q.What are the different display options available on smartphones?</span>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="footmid">
-          <div class="footmd1">
-            <div class="fotmdtxt">
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 16</h2>
-              Enjoy the blend of smooth performance and stylish designs with the iPhone 16. This device comes with an
-              A18 chip that features smart camera control. It also has an action button that provides seamless access
-              to
-              useful features, making your work easier. Whether you are in an important meeting or frequently
-              travelling, this device can come in handy. The iPhone 16 in India helps you to enjoy the easy-to-use
-              artificial intelligence system. Built for Apple Intelligence, the device can appeal to the tech-head in
-              you. Additionally, the iPhone 16 offers a 48 MP + 12 MP primary camera so that you can click vibrant
-              photos and record engaging videos. You also get a 12 MP front camera, allowing you to click selfies and
-              group pictures. The camera of the iPhone 16 can, thus, enable you to relive life’s precious memories.
-              Moreover, with systemwide writing tools built into the iOS, you can rewrite, proofread, and summarise
-              text
-              with ease. These tools help you with mail, notes, and third-party apps. Before adding this device to
-              your
-              shopping cart, check the iPhone 16’s price and the unique features it offers. Buy the iPhone 16 online
-              with a few clicks and make a secure payment to get doorstep delivery.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 16 Plus</h2>
-              Enjoy the seamless performance of the iPhone 16 Plus while playing games or multitasking on several
-              applications. It has features with advanced technology to deliver exceptional experience while
-              navigating
-              through it. Equipped with an A18 chip and a 6-core processor, this iPhone 16 Plus offers seamless
-              performance whether you are working or streaming. You can also enjoy watching videos on its wide 17.02
-              cm
-              screen. The screen has a Super Retina XDR Display that makes the visuals appealing with stunning colour
-              schemes and exceptional clarity. You can have a cinematic experience while watching videos or playing
-              games on the phone. Additionally, this iPhone 16 Plus in India has a built-in stereo speaker that
-              produces
-              high-quality audio that elevates your media experience. You can also enjoy your passion for photography
-              and videography on the iPhone 16 Plus with its dual camera setup. It has an ultra-wide 48 MP lens on the
-              front camera and a 12 MP secondary camera. You can capture macro shots and intimate moments in the
-              selfie
-              mode with family and friends. The iPhone 16 Plus price is also an attractive feature, considering its
-              advanced features. Check out the iPhone 16 Plus online and order it for a hassle-free delivery.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 16 Pro</h2>
-              Shake up your tech life and day-to-day style with the stunning Apple iPhone 16 Pro. This smartphone's
-              gorgeous 16 cm (6.3) Super Retina XDR display performs an amazing job of preserving all the colours and
-              intricacies of the images displayed on the screen. This smartphone has a three-camera set-up: a 48 MP
-              Ultra Wide camera, a 48 MP Fusion Camera, and a 12 MP 5X telephoto camera. Its fun three-camera setup is
-              ideal for capturing the minute details in the images you click. Additionally, a 12 MP front camera is
-              included for taking selfies, making calls, and other activities. There is dual SIM functionality
-              available
-              with the iPhone 16 Pro (India). Depending on your mode of payment you can get access to additional
-              iPhone
-              16 Pro offers while purchasing your iPhone 16 Pro online. You can also trade in your old to make the
-              iPhone 16 Pro’s price more favourable. You can also check out the ratings and reviews left by other
-              customers to help you make up your mind. Shop now for the iPhone 16 Pro and get it delivered straight to
-              your home.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 16 Pro Max</h2>
-              With the Apple iPhone 16 Pro Max, you can get your hands on the next generation of smartphones. The
-              phone
-              has a 17.53 cm (6.9) Super Retina XDR display, which provides clear details and realistic colors. The
-              iPhone 16 Pro Max (India) comes with Dual SIM support to let you stay connected wherever you are.
-              Additionally, it has a three-camera configuration that produces incredibly detailed images with a
-              resolution of up to 4K. With ease, high-resolution images and films may be captured with the three
-              cameras
-              in this setup: a 12 MP 5X telephoto, a 48 MP Ultra Wide, and a 48 MP Fusion camera. It also has a 12 MP
-              front camera, which allows you to take pictures and participate in calls. The phone's 256 GB of internal
-              storage, which makes it simple to save movies, images, and any other data you would want to keep
-              private,
-              is also helpful. Flipkart offers a price check for the iPhone 16 Pro Max online. A wide range of iPhone
-              16
-              Pro Max deals and discounts are available to you, contingent upon your preferred payment method.
-              Purchasing an iPhone 16 Pro Max online is made simple by all of these deals and the availability of free
-              EMIs.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 16e</h2>
-              Get your hands on one of Apple’s latest offerings the iPhone 16e to upgrade your phone. The iPhone 16e
-              (India) comes with a large 15.49 cm (6.1) Super Retina XDR display that lets you view visuals and images
-              in crystal clear clarity. It also comes with a 48 MP + 12 MP camera to capture images and videos in high
-              resolution. The phone also features a 12 MP front camera to enable video calls and capturing selfies.
-              The
-              A18 chip that powers this phone is more than enough when it comes to handling multiple processes and
-              tasks, making this phone ideal for people who tend to get a lot done while they're on the move. The
-              iPhone
-              16e prices can vary slightly depending on your method of payment. You can get various iPhone 16e offers
-              and discounts depending on the card you are paying with. You can also exchange your old phone in return
-              for a new one to get an additional discount on your new phone.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">CMF by Nohing Phone 2 Pro</h2>
-              Have a look at the CMF Phone 2 Pro that can appeal to the tech enthusiast in you. Powered by a MediaTek
-              Dimensity 7300 Pro 5G processor, the mobile offers accelerated CPU performance and improved graphics
-              output. Moreover, the processor also supports enhanced AI computing. Therefore, the phone can utilise
-              artificial intelligence to organise your notes, voice notes, reminders, and even offer personalised
-              summaries. Moreover, this device is also notable for its camera setup. Its triple rear-camera design
-              allows you to click stunning pictures to capture the special moments of your life. With a 50 MP main
-              camera, a 50 MP telephoto camera, and an 8 MP ultra-wide camera, the CMF Phone 2 Pro can redefine how
-              you
-              take your shots. Thanks to the AI-driven image processing system called TrueLens Engine 3, the camera’s
-              performance can be elevated to a new level. In addition to that, the phone also has a 16 MP front
-              camera.
-              Therefore, you can click spontaneous self-portraits in style. Moreover, the phone also allows you to
-              record videos in Full HD resolution. Thus, the captured footage can get a professional and cinematic
-              touch.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Nothing 3a</h2>
-              With its sleek design and numerous user-friendly features, the Nothing Phone (3a) is a useful
-              combination
-              of fashionability and functionality. Due to its 50 MP + 50 MP + 8 MP primary camera setup, you can get
-              stunning snaps with ease. The camera also supports 30x zoom, helping you to capture your subjects in
-              vivid
-              detail. In addition, the phone is also equipped with a 32 MP front camera. As a result, you can take
-              selfies and group photos to keep the special moments alive. Moreover, the Snapdragon chipset of this
-              device ensures efficient performance and improved responsiveness of your phone. The processor can also
-              increase the power efficiency of the Nothing Phone (3a). Furthermore, this device is also equipped with
-              Qualcomm Adreno 810 GPU. Therefore, it can offer immersive visuals and increased clarity when you play
-              games on it. The 17.2 cm (6.77) screen size also makes the phone suitable for streaming films and series
-              or making video calls. With its Full HD+ resolution and AMOLED display, the phone can redefine how you
-              consume multimedia content. Refer to the product description to learn more about Nothing Phone (3a)
-              price
-              and other features.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Samsung Galaxy S25</h2>
-              Are you looking for a new smartphone to cater to your diverse needs? If so, you can have a look at the
-              Samsung Galaxy S25. With its sleek look and numerous practical features, this device effectively
-              combines
-              style with substance. The 15.75 cm (6.2) screen size ensures that you can stream your favourite films or
-              play online games on your mobile with ease. The Full HD+ display can provide crystal-clear visuals,
-              making
-              the viewing experience even more immersive. So, check out the Samsung Galaxy S25 online and read the
-              product description carefully to learn more about its specifications. Equipped with Galaxy AI, the
-              smartphone can streamline your professional and personal projects. Moreover, the device also has an
-              Audio
-              Eraser, helping you to remove unwanted noise from your videos. With a 4000 mAh battery capacity, the
-              mobile can ensure hours of screen-on time. Therefore, you do not have to worry about unwarranted
-              interruptions or the need for frequent recharging. Thanks to the aluminium frame and Corning Gorilla
-              Glass, the Samsung Galaxy S25 can also stay protected from rapid wear. So, check the Samsung Galaxy S25
-              price and attributes, and add it to your virtual cart. With a few simple clicks, you can buy Samsung
-              Galaxy S25s online and get them delivered to your doorstep.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Samsung Galaxy S25 Plus</h2>
-              Are you looking for a smartphone that can help you get stunning pictures and videos? If s, you can have
-              a
-              look at the Samsung Galaxy S25 Plus. This mobile phone is equipped with a 50 MP + 10 MP + 12 MP rear
-              camera setup, helping you get crystal-clear clicks. Moreover, the device also has a 12 MP front camera
-              so
-              that you can get spontaneous self-portraits. You can refer to the specifications of the Samsung Galaxy
-              S25
-              Plus online to learn more about its photography and videography capabilities. The ultra-wide angle and
-              optical zooming feature of the device can provide a professional touch to your pictures. Moreover, the
-              device is also powered by the ProVisual Engine. As a result, you can click and edit pictures with
-              enhanced
-              precision. Furthermore, the Samsung Galaxy S25 Plus allows you to shoot in an improved 10-bit HDR to
-              capture lifelike footage. In addition, the phone also has an advanced AP that can remove excess noise
-              from
-              the footage and improve nighttime videography. Moreover, you can also use the Audio Eraser feature,
-              which
-              utilises artificial intelligence to remove unwanted background sound from the recorded videos. So, check
-              the Samsung Galaxy S25 Plus’s price and attributes at your convenience. Buy Samsung Galaxy S25 Plus
-              online
-              for hassle-free doorstep delivery.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Samsung Galaxy S25 Ultra</h2>
-              If you are considering buying a new smartphone, the Samsung Galaxy S25 Ultra can come in handy for you.
-              The 17.53 cm (6.9) display size of the device can offer an engaging feel, whether you are gaming online
-              or
-              streaming a series. With a significantly higher primary clock speed of 4.47 GHz, this phone can process
-              and execute instructions seamlessly. When you are shopping for the Samsung Galaxy S25 Ultra online, you
-              can check the specifications to learn more about the device’s attributes. If you use graphics-intensive
-              applications, then this device can have an additional appeal to you. Equipped with an Adreno 830 GPU,
-              the
-              Samsung Galaxy S25 Ultra can ensure an enhanced user experience. The device is also powered by Galaxy
-              AI,
-              helping you with everyday tasks. Moreover, the device also has an S-pen, so you can take notes or draw
-              with ease. In addition, If you edit videos on your phone, this device’s Audio Eraser feature can be
-              especially useful. It uses artificial intelligence to detect unwanted noise in your video and can remove
-              it adequately. So, check the Samsung Galaxy S25 Ultra’s price and features, and place your order. Buy
-              Samsung Galaxy S25 Ultra online and get it delivered to your doorstep.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">OPPO Reno 12</h2>
-              Are you looking for a new smartphone to suit all your tech needs and requirements? If yes, then the OPPO
-              Reno 12 can be an ideal option for you. The smartphone is available with expandable memory of upto 1 TB
-              to
-              fit all your files and memories safely. Additionally, it is also enabled with BeaconLink. This feature
-              allows you to make voice calls even when there's no mobile signal. Also, the smart technology used in
-              this
-              phone boosts Bluetooth power, so you can still reach out to those nearby. Moreover, this smartphone is
-              incorporated with 5G as well as a 5000 mAh battery to add functionality. If you are a photography lover,
-              the device with a 50 MP main camera OIS and a 32 MP selfie camera will be an ideal option. In addition,
-              the smartphone’s exterior body has a 3D fluid design that mimics the look of waves, giving it a stellar
-              appearance. To add more to the device’s neverending features, the smartphone also has various AI
-              functions. It includes AI Eraser 2.0, AI Best Face, AI Clear Face, AI Studio, AI Smart Image Matting
-              2.0,
-              AI Recording Summary, and more. Buy OPPO Reno 12 online and enjoy its various futuristic features and
-              benefits.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 15</h2>
-              Are you looking to buy a new phone from Apple? If yes, then you can have a look at the iPhone 15. Made
-              of
-              aerospace-grade aluminium and infused glass, the design of this phone has a robust finish, ensuring you
-              can use the device securely. Featuring 128 GB ROM, the device can offer faster response and processing
-              capacity, ensuring you have a smooth and hassle-free digital experience. The iPhone is also
-              well-equipped
-              with a 15.49 cm (6.1) Super Retina XDR display that can ensure an immersive experience when watching a
-              film or series or participating in an online gaming session. If you are interested in photography, this
-              phone can also become your go-to choice. With a 48 MP main camera, the device allows you to click
-              crystal-clear pictures with absolute ease. The device also has a 12 MP front camera that makes sure that
-              you can click stunning selfies that can capture your special moments. This device is also compatible
-              with
-              USB-C, ensuring that phone charging becomes a breeze. So, read the product descriptions of the iPhone 15
-              carefully and confirm your order to get hassle-free delivery.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 15 Plus</h2>
-              Ready to elevate your smartphone еxpеriеncе with thе Apple iPhonе 15 Plus? Equippеd with fеaturеs like
-              face ID, baromеtеr, and high dynamic rangе gyro, it ensures a seamless and sеcurе usеr еxpеriеncе.
-              Morеovеr, with proximity sеnsor, dual ambiеnt light sеnsors, and high-G accеlеromеtеr, еvеry interaction
-              becomes intuitivе and еffortlеss. Dual ambiеnt light sеnsors continuously monitor thе surrounding light
-              conditions, allowing the dеvicе to dynamically adjust thе scrееn brightnеss for optimal visibility. In
-              addition to its imprеssivе tеchnical spеcifications, thе device offеrs you a world of options online.
-              Whether you prefer thе sleek sophistication of black or thе vibrant allurе of bluе, this dеvicе is
-              designed to cater to your prеfеrеncеs. Look into thе storagе capacity, еnsuring that you havе amplе
-              spacе
-              for all your photos, vidеos, and apps. Morеovеr, look into thе advanced sensors and functionalitiеs that
-              elevate your smartphone еxpеriеncе to new heights. With doorstеp dеlivеry service, you can enjoy the
-              еasе
-              of having your nеw dеvicе arrivе right at your preferred location. Additionally, you can enjoy the
-              sеcurе
-              paymеnt options for a hasslе-frее shopping еxpеriеncе. Shop Applе iPhonе 15 Plus now and еxpеriеncе thе
-              futurе of mobilе tеchnology firsthand.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 15 Pro</h2>
-              Explorе thе nеw еra in mobilе tеchnology with thе iPhonе 15 Pro. With its sleek appearance and advancеd
-              fеaturеs, this dеvicе stands as a tеstamеnt to sophistication and pеrformancе. Thе dеvicе allows you to
-              toggle between ring and silеnt modеs еffortlеssly with thе action button. With a control cеntrе, you can
-              swiftly accеss vital functions to customisе your dеvicе. This puts the power of customisation directly
-              into your hands. Additionally, take advantage of USB 3 support for lightning-fast data transfer spееds
-              and
-              seamless connеctivity across your Applе systеm. With Dual SIM (Nano + еSIM) capability and thе
-              convеniеncе
-              of a supеr rеtina XDR display, thе dеvicе offеrs unparalleled versatility and functionality. Whеthеr
-              you'rе drawn to thе classic allurе of black or thе striking vibrancy of bluе, thе iPhonе 15 Pro offеrs a
-              palеttе of options to suit your stylе. In addition to its impressive fеaturеs, consider the еasе and
-              convenience of doorstep delivery. Simply check the various payment options available online. Enjoy thе
-              pеacе of mind knowing that your dеvicе will be delivered directly to your prеfеrrеd location. Elеvatе
-              your
-              mobilе еxpеriеncе today with thе iPhonе 15 Pro. Shop now and embrace the future of technology with
-              confidence.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">iPhone 15 Pro Max</h2>
-              Stеp into thе futurе with thе all-new iPhone 15 Pro Max, where innovation meets elegancе. With its sleek
-              titanium dеsign and cеramic shiеld front, this dеvicе is engineered to imprеss. Thе tеxturеd matte glass
-              back adds a premium touch to your device. Additionally, it еnsurеs a sеcurе grip in your hand. In
-              addition, this device supports MagSafe wireless charging technology for seamless charging еxpеriеncеs.
-              It
-              dеlivеrs up to 15W of power. Whеrеas, Qi wirеlеss charging providеs up to 7.5 W. Morеovеr, its fast
-              chargе
-              capability еnsurеs that you can gеt up to 50% chargе in around 30 minutes. Whеn you chеck out thе
-              options
-              availablе onlinе, you will find thе iPhonе in stunning shadеs of black and bluе. It offers you thе
-              freedom
-              to choose a shadе that matchеs your stylе. Explorе other features like advanced camеra capabilities and
-              immеrsivе display. By purchasing iPhonе 15 Pro Max online, you can enjoy the ease of doorstеp dеlivеry
-              service. Simply place your order onlinе, and your chosen dеvicе will be delivered to your prеfеrrеd
-              location. Additionally, onlinе shopping offеrs you a sеcurе paymеnt option. Shop now and stеp into a
-              world
-              of innovation and sophistication.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Redmi Note 13 Pro Plus</h2>
-              Redefine your photography skills with the help of Redmi Note 13 Pro+. With the help of the stunning
-              camera
-              settings of the device, you can capture the special moments of your life with absolute ease. The phone
-              is
-              well-equipped with a rear camera setting of 200 MP (OIS) + 8 MP + 2 MP that allows you to take crystal
-              clear photos without any additional hassle. Features like depth control and long exposure can also help
-              you to get sharp clicks with your smartphone. Moreover, if you are someone who enjoys taking
-              self-portraits, this device can also come in handy for you. With its 16 MP front camera, you can click
-              remarkable selfies. In addition to photography, the device might have added appeal to you if you also
-              enjoy videography. The camera settings of the phone allow video recording up to 4 K resolution, giving
-              them an unmatched cinematic feel. You also do not have to worry about running out of phone memory when
-              it
-              comes to storing these videos and photos taken. The mobile has a storage capacity of 256 GB, ensuring
-              that
-              your multimedia files can be saved easily. So, place your order for the Redmi Note 13 Pro+ online and
-              enjoy the benefits of getting it delivered right to your doorstep.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Samsung Galaxy Z Flip 5</h2>
-              Explore the Samsung Galaxy Z Flip 5 online, which introducеs you to a rеmarkablе dеvicе packed with
-              standout features. Imaginе having a powerful phonе with 8 GB RAM and a suitable storagе spacе, еnsuring
-              smooth pеrformancе and amplе room for all your apps, photos, and vidеos. It's likе having a pockеt-sizеd
-              powеrhousе rеady for anything. Thе phonе boasts a slееk 17.02 cm (6.7) display, providing a vibrant and
-              immеrsivе visual еxpеriеncе. Enjoy your favouritе moviеs, gamеs, or social mеdia on a scrееn that's both
-              compact and еxpansivе and can fit right in your pockеt. Capturе your momеnts in stunning dеtail with thе
-              12 MP dual rеar camеras for beautiful selfies. Whether it's a landscapе or a mеmorablе selfie, thе
-              Samsung
-              Z Flip 5's camera systеm еnsurеs your photos look imprеssivе. With a rеliablе 3700 mAh battеry, thе
-              phonе
-              kееps up with your busy day, еnsuring you stay connеctеd and еntеrtainеd without worrying about running
-              out of powеr. Powеrеd by thе Snapdragon 8 Gеn 2 Procеssor, thе Galaxy Z Flip 5 еnsurеs spееdy
-              pеrformancе,
-              making multitasking and navigating through apps a seamless еxpеriеncе. So, buy the Samsung Galaxy Z Flip
-              5
-              online and get it delivered to your doorstep with just a few clicks and swipes.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Samsung Galaxy Z Fold 5</h2>
-              Get ready to unfold a new chapter in smartphone technology with the Samsung Galaxy Z Fold 5. Crafted
-              with
-              precision, the device exudes sophistication with its sleek design and premium materials. Whether you're
-              watching your favourite movies, multitasking with multiple apps, or diving into the latest mobile games,
-              the foldable display effortlessly adapts to your needs. The immersive visuals are complemented by a
-              buttery-smooth 120 Hz refresh rate, ensuring every swipe and scroll is as fluid as it is mesmerising.
-              Furthermore, the device boasts a robust yet lightweight frame that effortlessly folds and unfolds,
-              making
-              it a suitable companion for those who demand versatility without compromising on style. The Gorilla
-              Glass
-              Victus on the cover and display ensures durability, while the sleek aluminium frame adds a touch of
-              sophistication. The Multi-active Window feature allows you to run multiple apps simultaneously,
-              transforming your device into a powerful productivity tool. Be it working on a presentation, responding
-              to
-              emails, or conducting a video call, the Samsung Z Fold 5 adapts to your workflow, making every task a
-              breeze. So shop online now and unfold a world of infinite possibilities to elevate your mobile
-              experience
-              like never before!
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Pixel 7a</h2>
-              Make the Google Pixel 7a your first smartphone or your upgrade from your old model. This phone can
-              capture
-              and immortalise your precious moments, provide a calling experience with minimal issues, keep your
-              information secure, and do more. The Tensor G2 processor ensures that these tasks are completed with
-              minimal lag. The Pixel smartphone also makes sure that hours of screen time does not drain your battery
-              quickly. The 4300 mAh battery offers almost 24 hours of battery life, while the extreme battery saver
-              mode
-              can give you nearly three days of battery life. Additionally, you can also quickly charge the battery
-              thanks to Fast Charge when needed. The long battery life helps you click photographs and videos using
-              the
-              64 MP main camera and 13 MP ultra-wide camera endlessly. You can also click a selfie with the 13 MP
-              front
-              camera, which has a 95-degree wide field of view. Check the Google Pixel 7a price and pick from colours
-              like Charcoal, Sea, and Snow. Shop for the Google Pixel 7a (in) India model, which has a
-              scratch-resistant
-              Corning Gorilla Glass 3 cover, an IP67 rating, and a fingerprint-resistant coating that can keep the
-              aesthetics of the Pixel 7a unharmed. Explore various other features of the smartphone and purchase it to
-              experience the Google interface.
-
-              <h2 style="font-size: 14px; margin-bottom: 10px;" class="mt-3">Oppo Find N2 Flip</h2>
-              Get the Oppo Find N2 Flip mobile phone to bring home a whole range of exciting features. Fitted with a
-              Flexion Hinge the Oppo Find N2 folds in half to let you view calls, notifications, reminders, and more
-              on
-              a 8.28 cm (3.26) screen. When not using the cover screen, this phone uses its 17.27 cm (6.8) Full HD
-              display for visuals. Made using high-grade steel and a polymer, the hinge can be folded around 400,000
-              times without wearing out. The phone is powered by a 4300 mAh battery that offers backup for up to 20
-              hours of video playback, 6 hours of video calling, and around 16 hours of internet browsing. This
-              powerful
-              battery can be charged to up to 50% in just 23 minutes thanks to the 44 W SUPERVOOC Flash Charge. All of
-              these features are tied together by the MediaTek Dimensity 9000+ processor that is more than able to
-              handle multiple operations simultaneously. The phone runs on ColorOS that compliments the aesthetic
-              design
-              of the phone and makes the UI clean and intuitive. Get your hands on the Oppo Find N2 Flip online and
-              have
-              it safely delivered to your door.
-            </div>
-            <div class="fotmdtble mt-3">
-              <!-- table 1 -->
-              <h2 style="font-size: 14px; margin-bottom: 10px;">Mobile Brands:</h2>
-              <table class="table table-bordered"
-                style="margin: 10px 0; width: 50%; border-collapse: collapse; padding: 8px 25px;">
-                <tbody>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">Asus Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Realme Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone</a></td>
-                    <td><a class="text-decoration-none" href="#">Lenovo Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Google Pixel Mobile</a></td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">Poco Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">HTC Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Mi Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Motorola Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">LG Mobile</a></td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">Nokia Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Iqoo Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Panasonic Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Samsung Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Micromax Mobile</a></td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">Oneplus Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Gionee Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Vivo Mobile</a></td>
-                    <td><a class="text-decoration-none" href="#">Nothing Phone</a></td>
-                    <td><a class="text-decoration-none" href="#">OPPO Mobile</a></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <!-- table 2 -->
-            <div class="fotmdtble mt-3">
-              <h2 style="font-size: 14px; margin-bottom: 10px;">Mobile By Screen Sizes:</h2>
-              <table class="table table-bordered"
-                style="margin: 10px 0; width: 50%; border-collapse: collapse; padding: 8px 25px;">
-                <tbody>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">4 Inch Mobiles</a></td>
-                    <td><a class="text-decoration-none" href="#">5.5 Inch Mobiles</a></td>
-                    <td><a class="text-decoration-none" href="#">4.5 Inch Mobiles</a></td>
-                    <td><a class="text-decoration-none" href="#">5.2 Inch Mobiles</a></td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">3.5 Inch Mobiles</a></td>
-                    <td><a class="text-decoration-none" href="#">6 Inch Mobiles</a></td>
-                    <td><a class="text-decoration-none" href="#">3 Inch Mobiles</a></td>
-                    <td><a class="text-decoration-none" href="#">5 Inch Mobiles</a></td>
-                  </tr>
-              </table>
-            </div>
-            <!-- table 3 -->
-            <div class="fotmdtble mt-3">
-              <h2 style="font-size: 14px; margin-bottom: 10px;">Mobile By RAM:</h2>
-              <table class="table table-bordered"
-                style="margin: 10px 0; width: 50%; border-collapse: collapse; padding: 8px 25px;">
-                <tbody>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">3 GB RAM Mobiles</a></td>
-                    <td><a class="text-decoration-none" href="#">2 GB RAM Mobiles</a></td>
-                    <td><a class="text-decoration-none" href="#">4 GB RAM Mobiles</a></td>
-                    <td><a class="text-decoration-none" href="#">1 GB RAM Mobiles</a></td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">6 GB RAM Mobiles</a></td>
-                  </tr>
-              </table>
-            </div>
-            <!-- table 4 -->
-            <div class="fotmdtble mt-3">
-              <h2 style="font-size: 14px; margin-bottom: 10px;">Apple iPhones</h2>
-              <table class="table table-bordered"
-                style="margin: 10px 0; width: 50%; border-collapse: collapse; padding: 8px 25px;">
-                <tbody>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">iPhone 16</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 16 Plus</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 16 Pro</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 16 Pro Max</a></td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">iPhone 15</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 15 Plus</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 15 Pro</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 15 Pro Max</a></td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">iPhone 14</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 14 Plus</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 14 Pro</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 14 Pro Max</a></td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">iPhone 13</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 13 Plus</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 13 Pro</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 13 Pro Max</a></td>
-                  </tr>
-                  <tr>
-                    <td><a class="text-decoration-none" href="#">iPhone 12</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 12 Plus</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 12 Pro</a></td>
-                    <td><a class="text-decoration-none" href="#">iPhone 12 Pro Max</a></td>
-                  </tr>
-              </table>
-            </div>
-            <br>
-            <p>Looking to upgrade? Easily <a href="#" class="text-decoration-none"> sell old phone</a> and switch to the
-              latest models on Flipkart.</p>
-          </div>
-          <div class="footmd2" style="color: #000;">
-            <h2 class="Qlipc"><span>Questions & Answers</span></h2>
-            <ol>
-              <!-- q1 -->
-              <li class="qTa">
-                <div class="qustion">
-                  <span>Q.What are the different display options available on smartphones?</span>
-                </div>
-                <div class="Answer"><span>A.Capacitive touchscreen LCD, IPS-LCD, AMOLED, OLED, and Super AMOLED are the
-                    different display types available in smart mobile phones.</span></div>
-              </li>
-              <!-- q2 -->
-              <li class="qTa">
-                <div class="qustion">
-                  <span>Q.What are the best display resolutions available on smartphones?</span>
-                </div>
-                <div class="Answer">
-                  <span>
-                    A.You can find smartphones with HD, FHD, and HD+ resolutions. The higher the display resolution, the
-                    sharper the displayed content will appear on the screen.
-                  </span>
-                </div>
-              </li>
-              <!-- q3 -->
-              <li class="qTa">
-                <div class="qustion">
-                  <span>Q.What is the benefit of fast charging in mobile phones?</span>
-                </div>
-                <div class="Answer"><span>
-                    A.Fast charging enables the mobile phone to charge faster than the current charging standard, and it
-                    can significantly reduce the time you would typically require to charge your phone.
-                  </span> </div>
-              </li>
-              <!-- q4 -->
-              <li class="qTa">
-                <div class="qustion">
-                  <span>Q.What are some important features to consider when buying a mobile phone?</span>
-                </div>
-                <div class="Answer">
-                  <span>A.Capacitive touchscreen LCD, IPS-LCD, AMOLED, OLED, and Super AMOLED are the
+              <div class="Answer"><span>A.Capacitive touchscreen LCD, IPS-LCD, AMOLED, OLED, and Super AMOLED are the
                   different display types available in smart mobile phones.</span></div>
-              </li>
-              <!-- q5 -->
-              <li class="qTa border-0">
-                <div class="qustion">
-                  <span>Q.What are the latest mobile models in 2025?</span>
-                </div>
-                <div class="Answer"><span>A.
-iPhone 16, iPhone 16 Plus, iPhone 16 Pro, iPhone 16 Pro Max, Moto G05, Oppo Reno13 pro, Oppo Reno13, POCO X7 pro, Poco X7, realme 14 Pro, realme 14 Pro Plus, Infinix Smart 9 HD, samsung galaxy s25 5g, samsung galaxy s25 plus 5g, samsung galaxy s25 ultra 5g</span></div>
-              </li>
-            </ol>
-          </div>
+            </li>
+            <!-- q2 -->
+            <li class="qTa">
+              <div class="qustion">
+                <span>Q.What are the best display resolutions available on smartphones?</span>
+              </div>
+              <div class="Answer">
+                <span>
+                  A.You can find smartphones with HD, FHD, and HD+ resolutions. The higher the display resolution, the
+                  sharper the displayed content will appear on the screen.
+                </span>
+              </div>
+            </li>
+            <!-- q3 -->
+            <li class="qTa">
+              <div class="qustion">
+                <span>Q.What is the benefit of fast charging in mobile phones?</span>
+              </div>
+              <div class="Answer"><span>
+                  A.Fast charging enables the mobile phone to charge faster than the current charging standard, and it
+                  can significantly reduce the time you would typically require to charge your phone.
+                </span> </div>
+            </li>
+            <!-- q4 -->
+            <li class="qTa">
+              <div class="qustion">
+                <span>Q.What are some important features to consider when buying a mobile phone?</span>
+              </div>
+              <div class="Answer">
+                <span>A.Capacitive touchscreen LCD, IPS-LCD, AMOLED, OLED, and Super AMOLED are the
+                  different display types available in smart mobile phones.</span>
+              </div>
+            </li>
+            <!-- q5 -->
+            <li class="qTa border-0">
+              <div class="qustion">
+                <span>Q.What are the latest mobile models in 2025?</span>
+              </div>
+              <div class="Answer"><span>A.
+                  iPhone 16, iPhone 16 Plus, iPhone 16 Pro, iPhone 16 Pro Max, Moto G05, Oppo Reno13 pro, Oppo Reno13,
+                  POCO X7 pro, Poco X7, realme 14 Pro, realme 14 Pro Plus, Infinix Smart 9 HD, samsung galaxy s25 5g,
+                  samsung galaxy s25 plus 5g, samsung galaxy s25 ultra 5g</span></div>
+            </li>
+          </ol>
         </div>
-        </div>
-         <div class="footer-bottom mt-2 p-4 m-0 m-auto row justify-content-start">
+      </div>
+    </div>
+    <div class="footer-bottom mt-2 p-4 m-0 m-auto row justify-content-start">
       <!-- About -->
       <div class="col-12 col-md-6 col-lg-2 mb-4">
         <ul class="unl">
