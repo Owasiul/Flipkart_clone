@@ -20,49 +20,71 @@ header nav .nav_lower_text {
 header nav .nav_lower_text:hover {
   text-decoration: underline;
 }
-header nav .nav_lower_text img.Plus:hover {
-  text-decoration: none;
-}
 header nav .search_Bar {
   width: 450px;
   height: 40px;
 }
-@media screen and (max-width: 768px) {
-  header nav .search_Bar .search-box {
-    width: 100%;
-    height: 40px;
-  }
-}
-header nav .search_Bar .search-box {
+header nav .search-box {
   height: 100%;
 }
-header nav .search_Bar .search-box .form-control {
+header nav .search-box .form-control {
   padding: 0 5px;
   font-size: 14px;
 }
-header nav .search_Bar .search-box .form-control:focus {
+header nav .search-box .form-control:focus {
   box-shadow: none;
   border-color: transparent;
 }
-header nav .search_Bar .search-box .input-group-text {
+header nav .search-box .input-group-text {
   border-radius: 0 4px 4px 0;
   padding: 0 10px;
 }
-header nav .navbar-nav .nav-item {
+header .navbar-nav .nav-item {
   font-size: 16px;
   font-weight: 500;
 }
-header nav .navbar-nav .nav-item.dropdown .btn {
+header .navbar-nav .nav-item.dropdown .btn {
   padding: 8px 20px;
   font-weight: 500;
 }
-header nav .navbar-nav .nav-item .nav-link {
+header .navbar-nav .nav-item .nav-link {
   padding: 8px 15px;
 }
-header nav .navbar-nav .nav-item .nav-link:hover {
+header .navbar-nav .nav-item .nav-link:hover {
   color: #e0e0e0;
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  header .nav_lower_text {
+    font-size: 12px;
+  }
+  header .search_Bar {
+    margin: 10px;
+    width: 90% !important;
+    height: 40px;
+  }
+  header .navbar-nav .nav-item {
+    font-size: 14px;
+    padding: 5px;
+  }
+  header .navbar-nav .login {
+    background: none !important;
+  }
+  header .navbar-nav .login span.cl2ms {
+    color: white;
+  }
+  header .navbar-nav .login ul.drpno {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ah4id {
+    display: none;
+  }
+}
+.nav-bottom .nav_bottom .nvb9t {
+  margin: 0 auto;
+}
 .nav-bottom .nav_bottom .nvb9t .El55op span.e0phov {
   font-size: 15px;
 }

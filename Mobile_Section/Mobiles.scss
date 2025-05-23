@@ -21,23 +21,14 @@ header {
       &:hover {
         text-decoration: underline;
       }
-      img.Plus {
-        &:hover {
-          text-decoration: none;
-        }
-      }
     }
 
 
     .search_Bar {
       width: 450px ; // Adjusted to better match the image
       height: 40px;
- @media  screen and (max-width: 768px) {
-    .search-box{
-      width: 100%;
-      height: 40px;
-    }
  }
+
       .search-box {
         height: 100%;
         .form-control {
@@ -77,11 +68,45 @@ header {
       }
     }
   }
-}
+  //nav-top responsive
+  @media screen and (min-width: 320px) and (max-width: 768px) {
+    header {
+      .nav_lower_text {
+        font-size: 12px;
+      }
+      .search_Bar {
+        margin: 10px;
+        width: 90%!important;
+        height: 40px;
+      }
+      .navbar-nav {
+        .nav-item {
+          font-size: 14px;
+          padding: 5px;
+        }
+        .login{
+          background: none!important;
+          span.cl2ms{
+            color: white;
+          }
+          ul.drpno{
+            display: none!important;
+          }
+        }
+      }
+    }
+    
+  }
+ @media  screen and (max-width: 1024px) {
+    .ah4id{
+      display: none
+    }
+ }
 //nav-bottom
 .nav-bottom{
   .nav_bottom{
     .nvb9t{
+      margin: 0 auto;
       .El55op{
         span.e0phov{
           font-size: 15px;
