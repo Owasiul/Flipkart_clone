@@ -91,6 +91,11 @@ header .navbar-nav .nav-item .nav-link:hover {
 .nav-bottom .nav_bottom .nvb9t .El55op span.e0phov:hover {
   color: #2874f0;
 }
+@media screen and (min-width: 1080px) and (max-width: 1399.98px) {
+  .nav-bottom .nav_bottom .nvb9t .El55op span.e0phov {
+    font-size: 13px;
+  }
+}
 
 main .hero_area .htoptxt {
   width: 100%;
