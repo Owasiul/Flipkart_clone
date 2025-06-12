@@ -14,7 +14,6 @@ body {
   width: 100%;
   max-width: 98%;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 @media screen and (max-width: 768px) {
@@ -77,14 +76,14 @@ header .dropdown-menu-end {
 
 /* catalog */
 .ctl-item {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
 }
 
 .ctl-card {
   text-align: center;
-  margin: 10px;
+  margin: 12px;
 }
 
 .ctl-card img {
@@ -111,6 +110,12 @@ header .dropdown-menu-end {
   margin: 0 auto;
 }
 
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgb(192, 29, 29);
@@ -119,9 +124,8 @@ header .dropdown-menu-end {
 }
 
 /* e-itm */
-.e-product-card {
-  margin-bottom: 15px;
-  border-bottom: 1px solid #e0e0e0;
+.card .e-img {
+  margin: 0 auto;
 }
 
 img.e-img {
@@ -166,7 +170,8 @@ img.e-img:hover {
      object-fit: contain;
 }
 
-.triple-section img, .double-section img {
+.triple-section img,
+.double-section img {
   width: 150px;
   height: 150px;
   -o-object-fit: contain;

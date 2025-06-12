@@ -5,17 +5,16 @@
   box-sizing: border-box;
   font-family: "Inter", serif;
 }
-body{
+body {
   overflow-x: hidden;
 }
 // general container
-.contain{
+.contain {
   width: 100%;
   max-width: 98%;
   margin: 0 auto;
-  padding: 0 15px;
 }
-  
+
 @media screen and (max-width: 768px) {
   .contain {
     padding: 0 10px;
@@ -23,15 +22,13 @@ body{
 }
 
 @media screen and (max-width: 1024px) {
-    .contain {
-      padding: 0 5px;
-    }
+  .contain {
+    padding: 0 5px;
+  }
 }
 /* nav */
-header{
-
-
-  @media screen and (min-width:992px) {
+header {
+  @media screen and (min-width: 992px) {
     .navbar {
       max-width: 1600px;
       margin: 0 auto;
@@ -41,13 +38,12 @@ header{
   .navbar-nav {
     align-items: center;
     justify-content: space-between;
-    
+
     .nav-item {
       padding: 0 20px;
       font-size: 16px;
-      ;
     }
-    
+
     @media screen and (max-width: 768px) {
       .nav-item {
         padding: 10px 20px;
@@ -65,12 +61,12 @@ header{
     }
   }
 
-  .search_Bar{
+  .search_Bar {
     position: relative;
     border-radius: 8px;
     background-color: #f0f5ff;
   }
-  .search-box{
+  .search-box {
     height: 40px;
   }
   //  dropdown
@@ -78,7 +74,7 @@ header{
     right: 0;
     left: auto;
   }
-  
+
   @media screen and (max-width: 992px) {
     .navbar-collapse {
       padding: 15px 0;
@@ -86,28 +82,27 @@ header{
   }
 }
 
-
 /* catalog */
 
 .ctl-item {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
 }
 .ctl-card {
   text-align: center;
-  margin: 10px;
+  margin: 12px;
 }
 .ctl-card img {
-  width: 64px; 
+  width: 64px;
   height: 64px;
-  object-fit: contain; 
+  object-fit: contain;
 }
 .ctl-card h6 {
   font-size: 14px;
   font-weight: 500;
   margin-top: 10px;
-  color: #333; 
+  color: #333;
 }
 .ctl-card a {
   text-decoration: none;
@@ -117,6 +112,11 @@ header{
   width: 98%;
   margin: 0 auto;
 }
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(192, 29, 29, 1);
@@ -124,11 +124,12 @@ header{
   padding: 10px;
 }
 /* e-itm */
-.e-product-card {
-  margin-bottom: 15px; 
-  border-bottom: 1px solid #e0e0e0; 
+.card {
+  .e-img {
+    margin: 0 auto;
+  }
 }
-img.e-img{
+img.e-img {
   width: 180px;
   height: 180px;
   object-fit: contain;
@@ -143,26 +144,27 @@ img.e-img:hover {
   width: 250px;
   height: 250px;
 }
-  .banner-part img {
-    width: 350px;
-    height: max-content;
-    object-fit: cover ;
-    border-radius: 8px;
-  }
+.banner-part img {
+  width: 350px;
+  height: max-content;
+  object-fit: cover;
+  border-radius: 8px;
+}
 /*double-section with banner */
-.double-section_with_banner{
-  img.ds-img{
+.double-section_with_banner {
+  img.ds-img {
     width: 150px;
     height: 150px;
     object-fit: contain;
   }
 }
-  .banner-part {
-    margin: 0 auto;
-    object-fit: contain;
-  }
+.banner-part {
+  margin: 0 auto;
+  object-fit: contain;
+}
 // triple-section
-.triple-section , .double-section{
+.triple-section,
+.double-section {
   img {
     width: 150px;
     height: 150px;
@@ -188,14 +190,14 @@ footer {
   .footer-bottom {
     background-color: #212121; //  footer background color
     color: #fff;
-  
+
     .unl {
       list-style: none;
       padding: 0;
-  
+
       li {
         margin-bottom: 10px;
-  
+
         .head {
           color: #878787; // heading color for footer
           font-size: 14px;
@@ -204,21 +206,21 @@ footer {
           display: block;
           margin-bottom: 15px;
         }
-  
+
         a.text-white {
           font-size: 14px;
           text-decoration: none;
           &:hover {
-            color: #2874f0; 
+            color: #2874f0;
           }
         }
-  
+
         address {
           font-size: 14px;
           line-height: 1.5;
           color: #fff;
         }
-  
+
         .ts {
           font-size: 14px;
           line-height: 1.5;
@@ -226,7 +228,6 @@ footer {
       }
     }
   }
-  
 
   a.head {
     color: #696a77;
@@ -243,7 +244,7 @@ footer {
 
   .Xtae {
     border-right: 1px solid #454d5e;
-    @media screen  and (max-width:425px) {
+    @media screen and (max-width: 425px) {
       border: none;
     }
   }
@@ -255,7 +256,7 @@ footer {
 
 // responcive for section of triple and double (small devices)
 @media screen and (min-width: 320px) and (max-width: 425px) {
-  .mt2smd{
-    margin-top: 10px!important;
+  .mt2smd {
+    margin-top: 10px !important;
   }
 }
