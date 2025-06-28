@@ -14,7 +14,7 @@
     <title>Men's Tshirts</title>
 </head>
 
-<body>
+<body style="font-size: 14px; font-weight: 400; color: #212121; line-height: 1.4; background-color: #f1f3f6;">
     <!-- Mentshirts section this will be link with index.html  -->
     <!-- Menshirts section header -->
     <header class="sticky-top "> <!--Issue in md and sm screens-->
@@ -119,7 +119,7 @@
             </nav>
         </div>
     </header>
-    <!-- ...existing code... -->
+
     <div class="nav-bottom bg-white shadow-sm h-100 w-100 d-none d-lg-block">
         <div class="container ">
             <nav class="nav_bottom ">
@@ -592,583 +592,1748 @@
     <!-- header end -->
     <!-- main-starts -->
     <main class="mt-3">
-        <div class="container-sm row row-cols-2 g-5">
-            <section class="side-bar col-sm-3 col-5 bg-white">
-                <!-- top-side-bar -->
-                <div class="top-side-bar shadow-sm pb-3 mb-3" style="border: 1px solid green;">
-                    <div class="top-side-img">
-                        <img class="img-fluid" src="Men's-tshirts_img/side-bar/img-1.jpg" alt="">
+        <div class="container-fluid ">
+            <!-- aside + main content -->
+            <div class="as++min5cont3b row gx-4">
+                <!-- aside -->
+                <aside class="side-bar bg-white col-lg-2 d-none d-lg-block" style="border: 1px solid #1ead59;">
+                    <!-- top-side-bar -->
+                    <div class="top-side-bar shadow-sm pb-3 mb-3">
+                        <div class="top-side-img">
+                            <img class="img-fluid" src="Men's-tshirts_img/side-bar/img-1.jpg" alt="">
+                        </div>
+                        <div class="top-sidebar-text mx-2 my-4">
+                            <h3 style="font-weight: 500; line-height: 1.2;" class="fs-5 fw-bold">Polo Tees, Shirts &
+                                more
+                            </h3>
+                            <p class="mt-1 fs-6"
+                                style="overflow: hidden; text-overflow: ellipsis; word-wrap: break-word;">
+                                From ₹249+ Extra 15% Off</p>
+                        </div>
                     </div>
-                    <div class="top-sidebar-text mx-2 my-4">
-                        <h3 style="font-weight: 500; line-height: 1.2;" class="fs-5 fw-bold">Polo Tees, Shirts & more
-                        </h3>
-                        <p class="mt-1 fs-6" style="overflow: hidden; text-overflow: ellipsis; word-wrap: break-word;">
-                            From ₹249+ Extra 15% Off</p>
+                    <!-- bottom-side-bar -->
+                    <div class="bottom-side-bar shadow-sm">
+                        <div class="RQvRm"> <!-- Filters -->
+                            <div class="rgHxCQ">
+                                <span>Filtes</span>
+                            </div>
+                        </div>
+                        <div class="GscM5e RQvRm"> <!-- catagories -->
+                            <div class="kCY4R">
+                                <span>catagories</span>
+                            </div>
+                            <!-- item-1 -->
+                            <div class="WCyB2K LB9tH mb-2" style="color: #212121 ;">
+                                <a href="#" class="text-decoration-none" style="color: #878787;">
+                                    <span class="mx-1" class="fs-6">
+                                        <i class="fa-solid fa-less-than" width="10px" height="5px"></i>
+                                    </span>
+                                    <span class="ClS88">Clothing <br class="d-lg-none d-block m-auto"> and
+                                        Accessories</span>
+
+                                </a>
+                            </div>
+                            <!-- item-2 -->
+                            <div class="WCyB2K mb-2" style="color: #212121 ;">
+                                <a href="#" class="text-decoration-none" style="color: #878787;">
+                                    <span class="mx-1" class="fs-6">
+                                        <i class="fa-solid fa-less-than" width="10px" height="5px"></i>
+                                    </span> Topwear
+
+                                </a>
+                            </div>
+                            <!-- item-3 -->
+                            <div class="WCyB2K" style="color: #212121 ;">
+                                <a href="#" class="text-decoration-none" style="color: #878787;">
+                                    <span class="mx-1" class="fs-6">
+                                        <i class="fa-solid fa-less-than" width="10px" height="5px"></i>
+                                    </span> T-shirts
+
+                                </a>
+                            </div>
+
+                            <div class="WCyB2K esFpML mt-3">
+                                <span class="ms-sm-3 fs-6 fw-semibold">Men's T-shirts</span>
+                            </div>
+
+                        </div>
+                        <div class="Pr8Rl RQvRm"> <!-- Price -->
+                            <div class="rgHxCQ mt-2">
+                                <span class="text-uppercase">Price</span>
+                            </div>
+                            <div class="PrbAr">
+                                <input type="range" class="range mx-1 mt-1 w-100 h-auto " id="priceRange" min="0"
+                                    max="1000" value="0">
+                            </div>
+                            <div class="pBtn">
+                                <div
+                                    class="price-labels d-flex flex-column justify-content-center align-items-center flex-sm-row ">
+                                    <select class="form-select w-50 me-sm-1" id="minPrice">
+                                        <option value="0">Min</option>
+                                        <option value="200">₹200</option>
+                                        <option value="100">₹300</option>
+                                        <option value="100">₹400</option>
+                                        <option value="100">₹500</option>
+                                        <option value="100">₹700</option>
+
+                                    </select>
+                                    <span class="fs-5">to</span>
+                                    <select class="form-select w-50 ms-sm-1" id="maxPrice">
+                                        <option value="1000">₹1000+</option>
+                                        <option value="900">₹900</option>
+                                        <option value="800">₹800</option>
+                                        <option value="100">₹500</option>
+                                        <option value="100">₹400</option>
+                                        <option value="100">₹300</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Barnd-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#brandFilter" role="button" aria-expanded="false"
+                                    aria-controls="brandFilter">
+                                    BRAND
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="collapse mt-2" id="brandFilter">
+                                    <input type="text" class=" w-100 border-top-0  border-start-0 border-end-0  mb-3"
+                                        placeholder="Search Brand">
+
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand1">
+                                        <label class="form-check-label" for="brand1">U.S. POLO ASSN.</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand2">
+                                        <label class="form-check-label" for="brand2">PUMA</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand3">
+                                        <label class="form-check-label" for="brand3">Allen Solly</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand4">
+                                        <label class="form-check-label" for="brand4">PETER ENGLAND</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand5">
+                                        <label class="form-check-label" for="brand5">WROGN</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">ADIDAS</label>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <a class="more-link text-decoration-none">3712 MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Gender-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#genderFilter" role="button" aria-expanded="false"
+                                    aria-controls="genderFilter">
+                                    GANDER
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+                                <div class="collapse mt-2" id="genderFilter">
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="gender1">
+                                        <label class="form-check-label" for="gender1">Men</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Discount-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#discountFilter" role="button" aria-expanded="false"
+                                    aria-controls="discountFilter">
+                                    DISCOUNT
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="collapse mt-2" id="discountFilter">
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="discount1">
+                                        <label class="form-check-label" for="discount1">30% or more</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="discount1">
+                                        <label class="form-check-label" for="discount1">40% or more</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="discount1">
+                                        <label class="form-check-label" for="discount1">50% or more</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="discount1">
+                                        <label class="form-check-label" for="discount1">60% or more</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="discount1">
+                                        <label class="form-check-label" for="discount1">70% or more</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Size-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#sizeFilter" role="button" aria-expanded="false"
+                                    aria-controls="sizeFilter">
+                                    SIZE
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="collapse mt-2" id="sizeFilter">
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="size1">
+                                        <label class="form-check-label" for="size1">2XS</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="size1">
+                                        <label class="form-check-label" for="size1">XS</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="size1">
+                                        <label class="form-check-label" for="size1">S</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="size1">
+                                        <label class="form-check-label" for="size1">M</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="size1">
+                                        <label class="form-check-label" for="size1">L</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="size1">
+                                        <label class="form-check-label" for="size1">XL </label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <a class="more-link text-decoration-none">10 MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Fabrics-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#fabricsFilter" role="button" aria-expanded="false"
+                                    aria-controls="fabricsFilter">
+                                    FABRIC
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="collapse mt-2" id="fabricsFilter">
+
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand1">
+                                        <label class="form-check-label" for="brand1">Cotton Blend</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand2">
+                                        <label class="form-check-label" for="brand2">Elastane</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand3">
+                                        <label class="form-check-label" for="brand3">Modal</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand4">
+                                        <label class="form-check-label" for="brand4">Nylon</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand5">
+                                        <label class="form-check-label" for="brand5">Organic Cotton</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Poly Cotton</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Polycotton</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Polyester</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Pure Cotton</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Viscose Rayon</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Wool Blend</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--pattern-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#PatternFilter" role="button" aria-expanded="false"
+                                    aria-controls="PatternFilter">
+                                    PATTERN
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="collapse mt-2" id="PatternFilter">
+
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand1">
+                                        <label class="form-check-label" for="brand1">Abstract</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand2">
+                                        <label class="form-check-label" for="brand2">Animal Print</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand3">
+                                        <label class="form-check-label" for="brand3">Cartoon</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand4">
+                                        <label class="form-check-label" for="brand4">Checkered</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand5">
+                                        <label class="form-check-label" for="brand5">Colorblock</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Conversational</label>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <a class="more-link text-decoration-none">19 MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Occasion-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#OccasionFilter" role="button" aria-expanded="false"
+                                    aria-controls="OccasionFilter">
+                                    OCCASION
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="collapse mt-2" id="OccasionFilter">
+
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand1">
+                                        <label class="form-check-label" for="brand1">Beach Wear</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand2">
+                                        <label class="form-check-label" for="brand2">Casual</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand3">
+                                        <label class="form-check-label" for="brand3">Formal</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand4">
+                                        <label class="form-check-label" for="brand4">Lounge Wear</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand5">
+                                        <label class="form-check-label" for="brand5">Party</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Sports</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Wedding</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Color-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#colorFilter" role="button" aria-expanded="false"
+                                    aria-controls="colorFilter">
+                                    COLOR
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="collapse mt-2" id="colorFilter">
+
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand1">
+                                        <label class="form-check-label" for="brand1">Beige</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand2">
+                                        <label class="form-check-label" for="brand2">Black</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand3">
+                                        <label class="form-check-label" for="brand3">Blue</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand4">
+                                        <label class="form-check-label" for="brand4">Brown</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand5">
+                                        <label class="form-check-label" for="brand5">Dark Blue</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Dark Green</label>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <a class="more-link text-decoration-none">15 MORE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Ratings-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" href="#ratingsCollapse" role="button" aria-expanded="true"
+                                    aria-controls="ratingsCollapse">
+                                    CUSTOMER RATINGS
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+                                <div class="collapse show mt-2 fs-5" id="ratingsCollapse">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rating4">
+                                        <label class="form-check-label " for="rating4">4★ & above</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rating3">
+                                        <label class="form-check-label " for="rating3">3★ & above</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="RQvRm"> <!-- Accured -->
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="fs-5 d-flex align-items-center ">
+                                    <input class="form-check-input d-lg-block d-none" type="checkbox" id="rating4">
+                                    <img class="img-LE4 ms-1 ms-sm-3 img-fluid" src="Men's-tshirts_img/logo/logo-2.png"
+                                        alt="">
+                                </div>
+                                <div class="icon d-none d-lg-block">
+                                    <i class="fa-solid fa-question"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Sleve-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#SleveFilter" role="button" aria-expanded="false"
+                                    aria-controls="sleverFilter">
+                                    SLEVE TYPE
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="collapse mt-2" id="SleveFilter">
+
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand1">
+                                        <label class="form-check-label" for="brand1">3/4 Sleeve</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand2">
+                                        <label class="form-check-label" for="brand2">Full Sleeve</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand3">
+                                        <label class="form-check-label" for="brand3">Half Sleeve</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand4">
+                                        <label class="form-check-label" for="brand4">Layered Sleeve</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand5">
+                                        <label class="form-check-label" for="brand5">Raglan</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Roll-up Sleeve</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Short Sleeve</label>
+                                    </div>
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand6">
+                                        <label class="form-check-label" for="brand6">Sleeveless</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Offers-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" href="#offersCollapse" role="button" aria-expanded="true"
+                                    aria-controls="ratingsCollapse">
+                                    OFFERS
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+                                <div class="collapse show mt-2 fs-5" id="ratingsCollapse">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rating4">
+                                        <label class="form-check-label " for="offer1">Buy More, Save More</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="rating3">
+                                        <label class="form-check-label " for="offer2">Special Price</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="BR4Nd RQvRm"> <!--Availability-->
+                            <div class="filter-section">
+                                <div class="filter-title d-flex align-items-center justify-content-between"
+                                    data-bs-toggle="collapse" href="#availabilityFilter" role="button"
+                                    aria-expanded="false" aria-controls="availabilityFilter">
+                                    AVAILABILITY
+                                    <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="collapse mt-2" id="availabilityFilter">
+
+                                    <div class="form-check fs-5 ">
+                                        <input class="form-check-input" type="checkbox" id="brand1">
+                                        <label class="form-check-label" for="brand1">Include Out of Stock</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <!-- main-conten -->
+                <section class="main-content col-12 col-lg-10 " style="border: 1px solid #ad1e1e;">
+                    <div class="bg-white w-100">
+                        <!-- top-contents -->
+                        <div class="top-contents d-sm-block d-none">
+                            <div class="_7dPnhA">
+                                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                                    aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item " aria-current="page"><a href="#"
+                                                class="text-decoration-none">Clothing & Accessories</a></li>
+                                        <li class="breadcrumb-item " aria-current="page"><a href="#"
+                                                class="text-decoration-none">Topwear</a></li>
+                                        <li class="breadcrumb-item " aria-current="page"><a href="#"
+                                                class="text-decoration-none">T-shirts</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page"><a href="#"
+                                                class="text-decoration-none">Men's T-shirts</a></li>
+                                    </ol>
+                                </nav>
+                            </div>
+                            <span class="BUOuZu">Showing 1 40 of 21,160 results for "<span>t shirt</span>"</span>
+                            <div class="sHCOk2 border-bottom w-100">
+                                <div class="d-flex align-items-center fw-bold">
+                                    <ul class="nav nav-pills nav-underline " id="pills-tab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link chclr21 " href="#">Sort By</a>
+                                        </li>
+                                        <li class="nav-item " style="font-weight:600;">
+                                            <a class="nav-link" aria-current="page" href="#">Relevance</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link chclr21" href="#">Popularity</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link chclr21" href="#">Price -- Low to High</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link chclr21" href="#">Price -- High to Low</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link chclr21" href="#">Newest First</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product-list -->
+                        <div class="product-box mb-sm-2 border-bottom">
+                            <div class="product-card">
+                                <div class="_1sdMkc LFEi7Z">
+                                    <!-- 1st row -->
+                                    <div class="fst-2grd row row-cols-md-2 row-rows-12">
+                                        <!-- card-1 -->
+                                        <div class="col-sm-2 card-wrapper card-image-title-description"
+                                            style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img1.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">geetaffasion</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Printed Rou.</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹191</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹599</span>
+                                                        <span class="text-success ms-2">68% off</span>
+                                                    </div>
+                                                    <p class="mb-1" style="color: #cc1664;">Only few left</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-2 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img2.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">VeBNor</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Solid Rou.</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹254</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹999</span>
+                                                        <span class="text-success ms-2">74% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 2nd row -->
+                                    <div class="2nd-2grd row row-cols-md-2 row-rows-12">
+                                        <!-- card-1 -->
+                                        <div class="col-sm-2 card-wrapper card-image-title-description"
+                                            style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img3 (1).jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">VeBNoR</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Printed Rou.</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹254</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹999</span>
+                                                        <span class="text-success ms-2">74% off</span>
+                                                    </div>
+                                                    <p class="mb-1" style="color: #cc1664;">Only few left</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-2 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img4.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">METRONUAT PLUS</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Plus Size Men Str...</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹349</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹1499</span>
+                                                        <span class="text-success ms-2">76% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Lowest price in the year</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> XXL, 3XL,
+                                                        4XL,
+                                                        5XL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 3rd row -->
+                                    <div class="3rd-3grd row row-cols-md-2 row-rows-12">
+                                        <!-- card-1 -->
+                                        <div class="col-sm-2 card-wrapper card-image-title-description"
+                                            style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img5.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">KAJARU</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Self Design...</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹294</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹999</span>
+                                                        <span class="text-success ms-2">70% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> M, L, XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-2 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img6.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">TB Blue</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Striped Polo Neck cotton...
+                                                        </p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹349</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹1499</span>
+                                                        <span class="text-success ms-2">77% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 4th row -->
+                                    <div class="4rd-4grd row row-cols-md-5 row-rows-12">
+                                        <!-- card-1 -->
+                                        <div class="col-sm-2 card-wrapper card-image-title-description"
+                                            style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img7.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">KAJARU</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Self Design..</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹200</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹999</span>
+                                                        <span class="text-success ms-2">70% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> M, L, XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-2 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img8.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">TB Blue</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Striped Polo Neck cotton...
+                                                        </p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹400</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹599</span>
+                                                        <span class="text-success ms-2">42% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-3 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img9.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">Lropn5</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Striped Polo Neck cotton...
+                                                        </p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹350</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹250</span>
+                                                        <span class="text-success ms-2">80% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-4 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img10.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">D9MoK</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Striped Polo Neck cotton...
+                                                        </p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹499</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹1099</span>
+                                                        <span class="text-success ms-2">90% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5th row -->
+                                    <div class="fst-2grd row row-cols-md-2 row-rows-12">
+                                        <!-- card-1 -->
+                                        <div class="col-sm-2 card-wrapper card-image-title-description"
+                                            style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img11.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">geetaffasion</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Printed Rou.</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹191</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹599</span>
+                                                        <span class="text-success ms-2">68% off</span>
+                                                    </div>
+                                                    <p class="mb-1" style="color: #cc1664;">Only few left</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-2 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img12.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">VeBNor</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Solid Rou.</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹254</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹999</span>
+                                                        <span class="text-success ms-2">74% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 6th row -->
+                                    <div class="2nd-2grd row row-cols-md-2 row-rows-12">
+                                        <!-- card-1 -->
+                                        <div class="col-sm-2 card-wrapper card-image-title-description"
+                                            style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img13.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">VeBNoR</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Printed Rou.</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹254</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹999</span>
+                                                        <span class="text-success ms-2">74% off</span>
+                                                    </div>
+                                                    <p class="mb-1" style="color: #cc1664;">Only few left</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-2 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img14.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">METRONUAT PLUS</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Plus Size Men Str...</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹349</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹1499</span>
+                                                        <span class="text-success ms-2">76% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Lowest price in the year</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> XXL, 3XL,
+                                                        4XL,
+                                                        5XL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 7th row -->
+                                    <div class="3rd-3grd row row-cols-md-2 row-rows-12">
+                                        <!-- card-1 -->
+                                        <div class="col-sm-2 card-wrapper card-image-title-description"
+                                            style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img15.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">KAJARU</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Self Design...</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹294</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹999</span>
+                                                        <span class="text-success ms-2">70% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> M, L, XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-2 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img16.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">TB Blue</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Striped Polo Neck cotton...
+                                                        </p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹349</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹1499</span>
+                                                        <span class="text-success ms-2">77% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 8th row -->
+                                    <div class="4rd-4grd row row-cols-md-5 row-rows-12">
+                                        <!-- card-1 -->
+                                        <div class="col-sm-2 card-wrapper card-image-title-description"
+                                            style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img17.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">KAJARU</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Self Design..</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹200</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹999</span>
+                                                        <span class="text-success ms-2">70% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> M, L, XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-2 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img18.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">TB Blue</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Striped Polo Neck cotton...
+                                                        </p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹400</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹599</span>
+                                                        <span class="text-success ms-2">42% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-3 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img20.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">Lropn5</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Striped Polo Neck cotton...
+                                                        </p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹350</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹250</span>
+                                                        <span class="text-success ms-2">80% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-4 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img21.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">D9MoK</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Striped Polo Neck cotton...
+                                                        </p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹499</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹1099</span>
+                                                        <span class="text-success ms-2">90% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 9th row -->
+                                    <div class="3rd-3grd row row-cols-md-2 row-rows-12">
+                                        <!-- card-1 -->
+                                        <div class="col-sm-2 card-wrapper card-image-title-description"
+                                            style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img22.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">KAJARU</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Self Design...</p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹294</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹999</span>
+                                                        <span class="text-success ms-2">70% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> M, L, XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- card-2 -->
+                                        <div class="col card-wrapper card-image-title-description" style="width: 25%;">
+                                            <div class="Card border-0">
+                                                <div class="card-img-wrapper position-relative">
+                                                    <i class="fa-solid fa-heart position-absolute top-0 end-0 m-2"
+                                                        style="font-size: 2rem; color: #50505063; cursor: pointer;"></i>
+                                                    <img class="card-img-top img-fluid d-relative"
+                                                        src="Men's-tshirts_img/t-shirts_img/img23.jpeg"
+                                                        alt="Card image cap">
+                                                </div>
+                                                <div class="card-body ">
+                                                    <h5 class="card-title text-secondary mb-1">TB Blue</h5>
+                                                    <div class="d-flex flex-row align-items-center mb-2">
+                                                        <p class="card-text mb-0 me-2">Men Striped Polo Neck cotton...
+                                                        </p>
+                                                        <img src="Men's-tshirts_img/logo/logo-2.png" alt=""
+                                                            style="height: 18px;">
+                                                    </div>
+                                                    <div class="price-discount mb-2">
+                                                        <span class="fw-bold">₹349</span>
+                                                        <span
+                                                            class="text-decoration-line-through text-muted ms-2">₹1499</span>
+                                                        <span class="text-success ms-2">77% off</span>
+                                                    </div>
+                                                    <p class="mb-1 p-1"
+                                                        style="color: #28a642; background-color: #e7f8ec; width: fit-content;">
+                                                        Hot Deal</p>
+                                                    <p class="mb-0"><span class="text-secondary">Size</span> S, M, L,
+                                                        XL,
+                                                        XXL
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- page -->
+                        <div class="_1G0WLw d-flex justify-content-between align-items-center"><span>Page 1 of
+                                614</span>
+                            <nav class="WSL9JP d-flex "><a class="cn-Ap mx-md-3 A1msZJ" href="">1</a><a
+                                    class="cn_Ap mx-md-3" href="#">2</a><a class="cn_Ap mx-md-3" href="#">3</a><a
+                                    class="cn_Ap mx-md-3" href="#">4</a><a class="cn_Ap mx-md-3" href="#">5</a><a
+                                    class="cn_Ap" href="#">6</a><a class="cn_Ap mx-md-3" href="#">7</a><a
+                                    class="cn_Ap mx-md-3" href="#">8</a><a class="cn_Ap mx-md-3" href="#">9</a><a
+                                    class="cn_Ap mx-md-3" href="#">10</a> <a class="_9QVEpD d-inline-block fw-semibold"
+                                    href="#"><span>Next</span></a>
+                            </nav>
+                            <span class="TEAQU1"></span>
+                        </div>
+                    </div>
+
+                    <!-- find -->
+                    <div class="fin4ik bg-white mt-md-3 d-flex flex-row align-items-center justify-content-start">
+                        <span class="fw-bold fs-5 me-3">Did you find what you looking for?</span>
+                        <button class="l0Yfe">Yes</button>
+                        <button class="l0Yfe">No</button>
+                    </div>
+                </section>
+            </div>
+            <!-- Reviews for Popular Men's T Shirts -->
+            <div class="Rev8bs bg-white" style="border: #cc1664;">
+                <div class="rev8_header w-100">
+                    <h2>Reviews for Popular Men's T Shirts</h2>
+                </div>
+                <div class="rev8_body bg-white">
+                    <!-- box-1 -->
+                    <div class="card-box d-flex flex-row align-items-center justify-content-between ">
+                        <!-- Product Image -->
+                        <div class="img_box flex-shrink-0">
+                            <img class="DByuf4 img-fluid rounded" src="Men's-tshirts_img/t-shirts_img/Rev1.jpeg" alt=""
+                                style="width: 150px; height: 150px; object-fit: contain;">
+                        </div>
+                        <!-- Product Info -->
+                        <div class="text_box flex-grow-1" style="min-width: 250px;">
+                            <h2 class="h0ve9 fs-5 fw-semibold mb-1">1. VeBNoR Solid Men Polo Neck ...</h2>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">4 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="text-secondary" style="font-size: 14px;">5,518 Ratings & 284 Reviews</span>
+                            </div>
+                            <div class="fw-bold" style="font-size: 16px;">₹254 <span class="text-success ms-2"
+                                    style="font-size: 14px;">74% off</span></div>
+                            <div class="text-secondary" style="font-size: 14px;">Fabric: Polyester</div>
+                            <div class="text-secondary" style="font-size: 14px;">Regular Fit Polo Neck T-shirt</div>
+                            <div class="text-secondary" style="font-size: 14px;">Pattern: Solid</div>
+                        </div>
+                        <!-- Most Helpful Review -->
+                        <div class="review_box flex-grow-1" style="min-width: 250px;">
+                            <div class="text-secondary mb-1" style="font-size: 13px;">Most Helpful Review</div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">4 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="fw-semibold" style="font-size: 15px;">Nice product</span>
+                            </div>
+                            <div style="font-size: 14px;">This is my 5th order. Loved this T Shirt. No colour fading and
+                                very very comfortable to wear. Just go for it.</div>
+                            <div class="text-secondary mt-1" style="font-size: 13px;">
+                                Banjigra Narzary <i class="fa-solid fa-circle-check text-primary ms-1"></i> Certified
+                                Buyer 9 months ago
+                            </div>
+                        </div>
+                        <!-- Recent Review -->
+                        <div class="review_box flex-grow-1" style="min-width: 220px;">
+                            <div class="text-secondary mb-1" style="font-size: 13px;">Recent Review</div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">5 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="fw-semibold" style="font-size: 15px;">Must buy!</span>
+                            </div>
+                            <div style="font-size: 14px;">Super quality best quality best varieties</div>
+                            <div class="text-secondary mt-1" style="font-size: 13px;">
+                                Flipkart Customer <i class="fa-solid fa-circle-check text-primary ms-1"></i> Certified
+                                Buyer 2 days ago
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box-2 -->
+                    <div class="card-box d-flex flex-row align-items-center justify-content-between ">
+                        <!-- Product Image -->
+                        <div class="img_box flex-shrink-0">
+                            <img class="DByuf4 img-fluid rounded" src="Men's-tshirts_img/t-shirts_img/Rev2.jpeg" alt=""
+                                style="width: 150px; height: 150px; object-fit: contain;">
+                        </div>
+                        <!-- Product Info -->
+                        <div class="text_box flex-grow-1" style="min-width: 250px;">
+                            <h2 class="h0ve9 fs-5 fw-semibold mb-1">2. VeBNoR Self Design Men Roun ...</h2>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">4.1
+                                    <i class="fa-solid fa-star fs-6"></i></span>
+                                <span class="text-secondary" style="font-size: 14px;">22,409 Ratings & 862
+                                    Reviews</span>
+                            </div>
+                            <div class="fw-bold" style="font-size: 16px;">₹390 <span class="text-success ms-2"
+                                    style="font-size: 14px;">60% off</span></div>
+                            <div class="text-secondary" style="font-size: 14px;">Fabric: Polyester</div>
+                            <div class="text-secondary" style="font-size: 14px;">Regular Fit Polo Neck T-shirt</div>
+                            <div class="text-secondary" style="font-size: 14px;">Pattern: Self Design</div>
+                        </div>
+                        <!-- Most Helpful Review -->
+                        <div class="review_box flex-grow-1" style="min-width: 250px;">
+                            <div class="text-secondary mb-1" style="font-size: 13px;">Most Helpful Review</div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">5 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="fw-semibold" style="font-size: 15px;">Simply awasome</span>
+                            </div>
+                            <div style="font-size: 14px;">What an amazing colours....
+                                Fabric is really good and soft....
+                                Neon Colour Sticker is very attractive...
+                                So Comfortable....
+                                Thanks Flipkart....😍😍🥰😍🥰👍🏻...</div>
+                            <div class="text-secondary mt-1" style="font-size: 13px;">
+                                Diolor Merznry <i class="fa-solid fa-circle-check text-primary ms-1"></i> Certified
+                                Buyer 2 months ago
+                            </div>
+                        </div>
+                        <!-- Recent Review -->
+                        <div class="review_box flex-grow-1" style="min-width: 220px;">
+                            <div class="text-secondary mb-1" style="font-size: 13px;">Recent Review</div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">5 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="fw-semibold" style="font-size: 15px;">Excellent</span>
+                            </div>
+                            <div style="font-size: 14px;">Good Quality product 💯👍😇 Must Buy</div>
+                            <div class="text-secondary mt-1" style="font-size: 13px;">
+                                Flipkart Customer <i class="fa-solid fa-circle-check text-primary ms-1"></i> Certified
+                                Buyer 1 days ago
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box-3 -->
+                    <div class="card-box d-flex flex-row align-items-center justify-content-between ">
+                        <!-- Product Image -->
+                        <div class="img_box flex-shrink-0">
+                            <img class="DByuf4 img-fluid rounded" src="Men's-tshirts_img/t-shirts_img/Rev3.jpeg" alt=""
+                                style="width: 150px; height: 150px; object-fit: contain;">
+                        </div>
+                        <!-- Product Info -->
+                        <div class="text_box flex-grow-1" style="min-width: 250px;">
+                            <h2 class="h0ve9 fs-5 fw-semibold mb-1">3. SOLSTICE Solid Men Round Ne...</h2>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">4
+                                    <i class="fa-solid fa-star fs-6"></i></span>
+                                <span class="text-secondary" style="font-size: 14px;">490 Ratings & 31
+                                    Reviews</span>
+                            </div>
+                            <div class="fw-bold" style="font-size: 16px;">₹286 <span class="text-success ms-2"
+                                    style="font-size: 14px;">71% off</span></div>
+                            <div class="text-secondary" style="font-size: 14px;">Fabric: Elastane</div>
+                            <div class="text-secondary" style="font-size: 14px;">Regular Fit Round Neck T-shirt</div>
+                            <div class="text-secondary" style="font-size: 14px;">Pattern: Solid</div>
+                        </div>
+                        <!-- Most Helpful Review -->
+                        <div class="review_box flex-grow-1" style="min-width: 250px;">
+                            <div class="text-secondary mb-1" style="font-size: 13px;">Most Helpful Review</div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">5 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="fw-semibold" style="font-size: 15px;">Perfect Product</span>
+                            </div>
+                            <div style="font-size: 14px;">nyc look and best quality</div>
+                            <div class="text-secondary mt-1" style="font-size: 13px;">
+                                Vishal Mitra <i class="fa-solid fa-circle-check text-primary ms-1"></i> Certified
+                                Buyer 6 months ago
+                            </div>
+                        </div>
+                        <!-- Recent Review -->
+                        <div class="review_box flex-grow-1" style="min-width: 220px;">
+                            <div class="text-secondary mb-1" style="font-size: 13px;">Recent Review</div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">5 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="fw-semibold" style="font-size: 15px;">Perfect Product</span>
+                            </div>
+                            <div style="font-size: 14px;">Good Quality product</div>
+                            <div class="text-secondary mt-1" style="font-size: 13px;">
+                                Flipkart Customer <i class="fa-solid fa-circle-check text-primary ms-1"></i> Certified
+                                Buyer 3 days ago
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box-4 -->
+                    <div class="card-box d-flex flex-row align-items-center justify-content-between ">
+                        <!-- Product Image -->
+                        <div class="img_box flex-shrink-0">
+                            <img class="DByuf4 img-fluid rounded" src="Men's-tshirts_img/t-shirts_img/Rev4.jpeg" alt=""
+                                style="width: 150px; height: 150px; object-fit: contain;">
+                        </div>
+                        <!-- Product Info -->
+                        <div class="text_box flex-grow-1" style="min-width: 250px;">
+                            <h2 class="h0ve9 fs-5 fw-semibold mb-1">4. VeBNoR Solid Men Polo Neck ...</h2>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">4.5
+                                    <i class="fa-solid fa-star fs-6"></i></span>
+                                <span class="text-secondary" style="font-size: 14px;">20,250 Ratings & 625
+                                    Reviews</span>
+                            </div>
+                            <div class="fw-bold" style="font-size: 16px;">₹400 <span class="text-success ms-2"
+                                    style="font-size: 14px;">30% off</span></div>
+                            <div class="text-secondary" style="font-size: 14px;">Fabric: Polyester</div>
+                            <div class="text-secondary" style="font-size: 14px;">Regular Fit Polo Neck T-shirt</div>
+                            <div class="text-secondary" style="font-size: 14px;">Pattern: Printed </div>
+                        </div>
+                        <!-- Most Helpful Review -->
+                        <div class="review_box flex-grow-1" style="min-width: 250px;">
+                            <div class="text-secondary mb-1" style="font-size: 13px;">Most Helpful Review</div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">3.8 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="fw-semibold" style="font-size: 15px;">Great Product</span>
+                            </div>
+                            <div style="font-size: 14px;">Good Quality product</div>
+                            <div class="text-secondary mt-1" style="font-size: 13px;">
+                                Kaimor Shah <i class="fa-solid fa-circle-check text-primary ms-1"></i> Certified
+                                Buyer 2 months ago
+                            </div>
+                        </div>
+                        <!-- Recent Review -->
+                        <div class="review_box flex-grow-1" style="min-width: 220px;">
+                            <div class="text-secondary mb-1" style="font-size: 13px;">Recent Review</div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">4.5 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="fw-semibold" style="font-size: 15px;">Excellent</span>
+                            </div>
+                            <div style="font-size: 14px;">Good Quality product Must Buy</div>
+                            <div class="text-secondary mt-1" style="font-size: 13px;">
+                                Flipkart Customer <i class="fa-solid fa-circle-check text-primary ms-1"></i> Certified
+                                Buyer 2 days ago
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box-5 -->
+                    <div class="card-box d-flex flex-row align-items-center justify-content-between ">
+                        <!-- Product Image -->
+                        <div class="img_box flex-shrink-0">
+                            <img class="DByuf4 img-fluid rounded" src="Men's-tshirts_img/t-shirts_img/img14.jpeg" alt=""
+                                style="width: 150px; height: 150px; object-fit: contain;">
+                        </div>
+                        <!-- Product Info -->
+                        <div class="text_box flex-grow-1" style="min-width: 250px;">
+                            <h2 class="h0ve9 fs-5 fw-semibold mb-1">5. BLIVE Printed Men Ne...</h2>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">4.1
+                                    <i class="fa-solid fa-star fs-6"></i></span>
+                                <span class="text-secondary" style="font-size: 14px;">22,409 Ratings & 862
+                                    Reviews</span>
+                            </div>
+                            <div class="fw-bold" style="font-size: 16px;">₹390 <span class="text-success ms-2"
+                                    style="font-size: 14px;">60% off</span></div>
+                            <div class="text-secondary" style="font-size: 14px;">Fabric: Polyester</div>
+                            <div class="text-secondary" style="font-size: 14px;">Regular Fit Polo Neck T-shirt</div>
+                            <div class="text-secondary" style="font-size: 14px;">Pattern: Self Design</div>
+                        </div>
+                        <!-- Most Helpful Review -->
+                        <div class="review_box flex-grow-1" style="min-width: 250px;">
+                            <div class="text-secondary mb-1" style="font-size: 13px;">Most Helpful Review</div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">5 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="fw-semibold" style="font-size: 15px;">Simply awasome</span>
+                            </div>
+                            <div style="font-size: 14px;">What an amazing colours....
+                                Fabric is really good and soft....
+                                Neon Colour Sticker is very attractive...
+                                So Comfortable....
+                                Thanks Flipkart....😍😍🥰😍🥰👍🏻...</div>
+                            <div class="text-secondary mt-1" style="font-size: 13px;">
+                                Diolor Merznry <i class="fa-solid fa-circle-check text-primary ms-1"></i> Certified
+                                Buyer 2 months ago
+                            </div>
+                        </div>
+                        <!-- Recent Review -->
+                        <div class="review_box flex-grow-1" style="min-width: 220px;">
+                            <div class="text-secondary mb-1" style="font-size: 13px;">Recent Review</div>
+                            <div class="d-flex align-items-center mb-1">
+                                <span class="p-1 px-2 bg-success text-white rounded me-2" style="font-size: 14px;">5 <i
+                                        class="fa-solid fa-star fs-6"></i></span>
+                                <span class="fw-semibold" style="font-size: 15px;">Excellent</span>
+                            </div>
+                            <div style="font-size: 14px;">Good Quality product 💯👍😇 Must Buy</div>
+                            <div class="text-secondary mt-1" style="font-size: 13px;">
+                                Flipkart Customer <i class="fa-solid fa-circle-check text-primary ms-1"></i> Certified
+                                Buyer 1 days ago
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- bottom-side-bar -->
-                <div class="bottom-side-bar shadow-sm" style="border: 1px solid red;">
-                    <div class="RQvRm"> <!-- Filters -->
-                        <div class="rgHxCQ">
-                            <span>Filtes</span>
-                        </div>
-                    </div>
-                    <div class="GscM5e RQvRm"> <!-- catagories -->
-                        <div class="kCY4R">
-                            <span>catagories</span>
-                        </div>
-                        <!-- item-1 -->
-                        <div class="WCyB2K LB9tH mb-2" style="color: #212121 ;">
-                            <a href="#" class="text-decoration-none" style="color: #878787;">
-                                <span class="mx-1" class="fs-6">
-                                    <i class="fa-solid fa-less-than" width="10px" height="5px"></i>
-                                </span>
-                                <span class="ClS88">Clothing <br class="d-lg-none d-block m-auto"> and
-                                    Accessories</span>
-
-                            </a>
-                        </div>
-                        <!-- item-2 -->
-                        <div class="WCyB2K mb-2" style="color: #212121 ;">
-                            <a href="#" class="text-decoration-none" style="color: #878787;">
-                                <span class="mx-1" class="fs-6">
-                                    <i class="fa-solid fa-less-than" width="10px" height="5px"></i>
-                                </span> Topwear
-
-                            </a>
-                        </div>
-                        <!-- item-3 -->
-                        <div class="WCyB2K" style="color: #212121 ;">
-                            <a href="#" class="text-decoration-none" style="color: #878787;">
-                                <span class="mx-1" class="fs-6">
-                                    <i class="fa-solid fa-less-than" width="10px" height="5px"></i>
-                                </span> T-shirts
-
-                            </a>
-                        </div>
-
-                        <div class="WCyB2K esFpML mt-3">
-                            <span class="ms-sm-3 fs-6 fw-semibold">Men's T-shirts</span>
-                        </div>
-
-                    </div>
-                    <div class="Pr8Rl RQvRm"> <!-- Price -->
-                        <div class="rgHxCQ mt-2">
-                            <span class="text-uppercase">Price</span>
-                        </div>
-                        <div class="PrbAr">
-                            <input type="range" class="range mx-1 mt-1 w-100 h-auto " id="priceRange" min="0" max="1000"
-                                value="0">
-                        </div>
-                        <div class="pBtn">
-                            <div
-                                class="price-labels d-flex flex-column justify-content-center align-items-center flex-sm-row ">
-                                <select class="form-select w-50 me-sm-1" id="minPrice">
-                                    <option value="0">Min</option>
-                                    <option value="200">₹200</option>
-                                    <option value="100">₹300</option>
-                                    <option value="100">₹400</option>
-                                    <option value="100">₹500</option>
-                                    <option value="100">₹700</option>
-
-                                </select>
-                                <span class="fs-5">to</span>
-                                <select class="form-select w-50 ms-sm-1" id="maxPrice">
-                                    <option value="1000">₹1000+</option>
-                                    <option value="900">₹900</option>
-                                    <option value="800">₹800</option>
-                                    <option value="100">₹500</option>
-                                    <option value="100">₹400</option>
-                                    <option value="100">₹300</option>
-
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Barnd-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#brandFilter" role="button" aria-expanded="false"
-                                aria-controls="brandFilter">
-                                BRAND
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-
-                            <div class="collapse mt-2" id="brandFilter">
-                                <input type="text" class=" w-100 border-top-0  border-start-0 border-end-0  mb-3"
-                                    placeholder="Search Brand">
-
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand1">
-                                    <label class="form-check-label" for="brand1">U.S. POLO ASSN.</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand2">
-                                    <label class="form-check-label" for="brand2">PUMA</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand3">
-                                    <label class="form-check-label" for="brand3">Allen Solly</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand4">
-                                    <label class="form-check-label" for="brand4">PETER ENGLAND</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand5">
-                                    <label class="form-check-label" for="brand5">WROGN</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">ADIDAS</label>
-                                </div>
-
-                                <div class="mt-2">
-                                    <a class="more-link text-decoration-none">3712 MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Gender-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#genderFilter" role="button" aria-expanded="false"
-                                aria-controls="genderFilter">
-                                GANDER
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-                            <div class="collapse mt-2" id="genderFilter">
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="gender1">
-                                    <label class="form-check-label" for="gender1">Men</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Discount-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#discountFilter" role="button" aria-expanded="false"
-                                aria-controls="discountFilter">
-                                DISCOUNT
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-
-                            <div class="collapse mt-2" id="discountFilter">
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="discount1">
-                                    <label class="form-check-label" for="discount1">30% or more</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="discount1">
-                                    <label class="form-check-label" for="discount1">40% or more</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="discount1">
-                                    <label class="form-check-label" for="discount1">50% or more</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="discount1">
-                                    <label class="form-check-label" for="discount1">60% or more</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="discount1">
-                                    <label class="form-check-label" for="discount1">70% or more</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Size-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#sizeFilter" role="button" aria-expanded="false"
-                                aria-controls="sizeFilter">
-                                SIZE
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-
-                            <div class="collapse mt-2" id="sizeFilter">
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="size1">
-                                    <label class="form-check-label" for="size1">2XS</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="size1">
-                                    <label class="form-check-label" for="size1">XS</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="size1">
-                                    <label class="form-check-label" for="size1">S</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="size1">
-                                    <label class="form-check-label" for="size1">M</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="size1">
-                                    <label class="form-check-label" for="size1">L</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="size1">
-                                    <label class="form-check-label" for="size1">XL </label>
-                                </div>
-                                <div class="mt-2">
-                                    <a class="more-link text-decoration-none">10 MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Fabrics-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#fabricsFilter" role="button" aria-expanded="false"
-                                aria-controls="fabricsFilter">
-                                FABRIC
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-
-                            <div class="collapse mt-2" id="fabricsFilter">
-
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand1">
-                                    <label class="form-check-label" for="brand1">Cotton Blend</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand2">
-                                    <label class="form-check-label" for="brand2">Elastane</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand3">
-                                    <label class="form-check-label" for="brand3">Modal</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand4">
-                                    <label class="form-check-label" for="brand4">Nylon</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand5">
-                                    <label class="form-check-label" for="brand5">Organic Cotton</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Poly Cotton</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Polycotton</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Polyester</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Pure Cotton</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Viscose Rayon</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Wool Blend</label>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--pattern-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#PatternFilter" role="button" aria-expanded="false"
-                                aria-controls="PatternFilter">
-                                PATTERN
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-
-                            <div class="collapse mt-2" id="PatternFilter">
-
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand1">
-                                    <label class="form-check-label" for="brand1">Abstract</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand2">
-                                    <label class="form-check-label" for="brand2">Animal Print</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand3">
-                                    <label class="form-check-label" for="brand3">Cartoon</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand4">
-                                    <label class="form-check-label" for="brand4">Checkered</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand5">
-                                    <label class="form-check-label" for="brand5">Colorblock</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Conversational</label>
-                                </div>
-
-                                <div class="mt-2">
-                                    <a class="more-link text-decoration-none">19 MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Occasion-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#OccasionFilter" role="button" aria-expanded="false"
-                                aria-controls="OccasionFilter">
-                                OCCASION
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-
-                            <div class="collapse mt-2" id="OccasionFilter">
-
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand1">
-                                    <label class="form-check-label" for="brand1">Beach Wear</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand2">
-                                    <label class="form-check-label" for="brand2">Casual</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand3">
-                                    <label class="form-check-label" for="brand3">Formal</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand4">
-                                    <label class="form-check-label" for="brand4">Lounge Wear</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand5">
-                                    <label class="form-check-label" for="brand5">Party</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Sports</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Wedding</label>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Color-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#colorFilter" role="button" aria-expanded="false"
-                                aria-controls="colorFilter">
-                                COLOR
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-
-                            <div class="collapse mt-2" id="colorFilter">
-
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand1">
-                                    <label class="form-check-label" for="brand1">Beige</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand2">
-                                    <label class="form-check-label" for="brand2">Black</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand3">
-                                    <label class="form-check-label" for="brand3">Blue</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand4">
-                                    <label class="form-check-label" for="brand4">Brown</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand5">
-                                    <label class="form-check-label" for="brand5">Dark Blue</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Dark Green</label>
-                                </div>
-
-                                <div class="mt-2">
-                                    <a class="more-link text-decoration-none">15 MORE</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Ratings-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex justify-content-between align-items-center"
-                                data-bs-toggle="collapse" href="#ratingsCollapse" role="button" aria-expanded="true"
-                                aria-controls="ratingsCollapse">
-                                CUSTOMER RATINGS
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-                            <div class="collapse show mt-2 fs-5" id="ratingsCollapse">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rating4">
-                                    <label class="form-check-label " for="rating4">4★ & above</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rating3">
-                                    <label class="form-check-label " for="rating3">3★ & above</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="RQvRm"> <!-- Accured -->
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div class="fs-5 d-flex align-items-center ">
-                                <input class="form-check-input d-lg-block d-none" type="checkbox" id="rating4">
-                                <img class="img-LE4 ms-1 ms-sm-3 img-fluid" src="Men's-tshirts_img/logo/logo-2.png"
-                                    alt="">
-                            </div>
-                            <div class="icon d-none d-lg-block">
-                                <i class="fa-solid fa-question"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Sleve-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#SleveFilter" role="button" aria-expanded="false"
-                                aria-controls="sleverFilter">
-                                SLEVE TYPE
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-
-                            <div class="collapse mt-2" id="SleveFilter">
-
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand1">
-                                    <label class="form-check-label" for="brand1">3/4 Sleeve</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand2">
-                                    <label class="form-check-label" for="brand2">Full Sleeve</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand3">
-                                    <label class="form-check-label" for="brand3">Half Sleeve</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand4">
-                                    <label class="form-check-label" for="brand4">Layered Sleeve</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand5">
-                                    <label class="form-check-label" for="brand5">Raglan</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Roll-up Sleeve</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Short Sleeve</label>
-                                </div>
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand6">
-                                    <label class="form-check-label" for="brand6">Sleeveless</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Offers-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex justify-content-between align-items-center"
-                                data-bs-toggle="collapse" href="#offersCollapse" role="button" aria-expanded="true"
-                                aria-controls="ratingsCollapse">
-                                OFFERS
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-                            <div class="collapse show mt-2 fs-5" id="ratingsCollapse">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rating4">
-                                    <label class="form-check-label " for="offer1">Buy More, Save More</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="rating3">
-                                    <label class="form-check-label " for="offer2">Special Price</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="BR4Nd RQvRm"> <!--Availability-->
-                        <div class="filter-section">
-                            <div class="filter-title d-flex align-items-center justify-content-between"
-                                data-bs-toggle="collapse" href="#availabilityFilter" role="button" aria-expanded="false"
-                                aria-controls="availabilityFilter">
-                                AVAILABILITY
-                                <span class="ms-auto"><i class="fa-solid fa-angle-down"></i></span>
-                            </div>
-
-                            <div class="collapse mt-2" id="availabilityFilter">
-
-                                <div class="form-check fs-5 ">
-                                    <input class="form-check-input" type="checkbox" id="brand1">
-                                    <label class="form-check-label" for="brand1">Include Out of Stock</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="main-content col-sm-9 col-7">
-                <div class="top-contents">
-                <div class="_7dPnhA">
-                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-                        aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
-                            <li class="breadcrumb-item " aria-current="page"><a href="#"
-                                    class="text-decoration-none">Clothing & Accessories</a></li>
-                            <li class="breadcrumb-item " aria-current="page"><a href="#"
-                                    class="text-decoration-none">Topwear</a></li>
-                            <li class="breadcrumb-item " aria-current="page"><a href="#"
-                                    class="text-decoration-none">T-shirts</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><a href="#"
-                                    class="text-decoration-none">Men's T-shirts</a></li>
-                        </ol>
-                    </nav>
-                </div>
-                <span class="BUOuZu">Showing 1 40 of 21,160 results for "<span>t shirt</span>"</span>
-
-                <div class="sHCOk2 mb-3">
-                    <div class="d-flex align-items-center fw-bold">
-                        <span class="me-3" style="font-weight:600;">Sort By</span>
-                        <ul class="nav nav-underline">
-                            <li class="nav-item">
-                                <a class="nav-link active text-primary" aria-current="page" href="#">Relevance</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Popularity</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Price -- Low to High</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Price -- High to Low</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Newest First</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-
-            </section>
+            </div>
         </div>
     </main>
+    <!-- footer -->
+     <footer class="footer mt-5 p-4 m-0 m-auto row justify-content-start">
+      <!-- About -->
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <ul class="unl">
+          <li><a class="head" href="#">About</a></li>
+          <li><a class="text-white" href="#">Contact Us</a></li>
+          <li><a class="text-white" href="#">Careers</a></li>
+          <li><a class="text-white" href="#">Flipkart Stories</a></li>
+          <li><a class="text-white" href="#">Press</a></li>
+          <li><a class="text-white" href="#">Corporate Information</a></li>
+        </ul>
+      </div>
+
+      <!-- Group Companies -->
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <ul class="unl">
+          <li><a class="head" href="#">GROUP COMPANIES</a></li>
+          <li><a class="text-white" href="#">Myntra</a></li>
+          <li><a class="text-white" href="#">Cleartrip</a></li>
+          <li><a class="text-white" href="#">Shopsy</a></li>
+        </ul>
+      </div>
+
+      <!-- Help -->
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <ul class="unl">
+          <li><a class="head" href="#">HELP</a></li>
+          <li><a class="text-white" href="#">Payments</a></li>
+          <li><a class="text-white" href="#">Shipping</a></li>
+          <li><a class="text-white" href="#">Cancellation & Returns</a></li>
+          <li><a class="text-white" href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Consumer Policy -->
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <ul class="unl Xtae">
+          <li><a class="head" href="#">CONSUMER POLICY</a></li>
+          <li><a class="text-white" href="#">Cancellation & Returns</a></li>
+          <li><a class="text-white" href="#">Terms Of Use</a></li>
+          <li><a class="text-white" href="#">Security</a></li>
+          <li><a class="text-white" href="#">Privacy</a></li>
+          <li><a class="text-white" href="#">Sitemap</a></li>
+          <li><a class="text-white" href="#">Grievance Redressal</a></li>
+          <li><a class="text-white" href="#">EPR Compliance</a></li>
+        </ul>
+      </div>
+
+      <!-- Mail Us -->
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <ul class="unl">
+          <li><a class="head text-decoration-none" href="#">Mail Us:</a></li>
+          <li>
+            <address class="mt-2 text-white">
+              Flipkart Internet Private Limited, Buildings Alyssa, Begonia &
+              Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli
+              Village, Bengaluru, 560103, Karnataka, India
+            </address>
+          </li>
+        </ul>
+        <div class="social fs-5 mt-3">
+          <a href="#"><i class="fa-brands text-white me-2 fa-facebook" aria-label="Facebook"></i></a>
+          <a href="#"><i class="fa-brands text-white me-2 fa-x-twitter" aria-label="Twitter"></i></a>
+          <a href="#"><i class="fa-brands text-white me-2 fa-youtube" aria-label="YouTube"></i></a>
+          <a href="#"><i class="fa-brands text-white me-2 fa-instagram" aria-label="Instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Registered Office Address -->
+      <div class="col-12 col-md-6 col-lg-2 mb-4">
+        <ul class="unl h6">
+          <li>
+            <a class="head text-decoration-none" href="#">Registered Office Address:</a>
+          </li>
+          <li>
+            <address class="mt-2 text-white">
+              Flipkart Internet Private Limited, Buildings Alyssa, Begonia &
+              Clove Embassy Tech Village, Outer Ring Road, Devarabeesanahalli
+              Village, Bengaluru, 560103, Karnataka, India
+            </address>
+          </li>
+          <li>
+            <p class="text-white ts">CIN: U51109KA2012PTC066107</p>
+          </li>
+          <li>
+            <p class="text-white ts">
+              Telephone: <span class="text-primary">044-45614700</span> /
+              <span class="text-primary">044-67415800</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
