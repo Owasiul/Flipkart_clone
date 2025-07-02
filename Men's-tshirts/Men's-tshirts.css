@@ -190,16 +190,16 @@ main .main-content .sHCOk2 ul.nav-tabs:hover {
 main .main-content .sHCOk2 a.chclr21 {
   color: #212121;
 }
-main .main-content .product-card .LFEi7Z._1sdMkc {
+main .main-content .LFEi7Z._1sdMkc .product-card {
   overflow: hidden;
 }
-main .main-content .product-card ._1sdMkc {
+main .main-content .LFEi7Z._1sdMkc ._1sdMkc {
   margin: 0 10px;
   position: relative;
   filter: none !important;
   height: 100%;
 }
-main .main-content .product-card .Card {
+main .main-content .LFEi7Z._1sdMkc .Card {
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -209,33 +209,33 @@ main .main-content .product-card .Card {
   font-size: 14px;
   padding: 5px;
 }
-main .main-content .product-card .Card:hover {
+main .main-content .LFEi7Z._1sdMkc .Card:hover {
   box-shadow: 8px 12px 31px -10px rgba(171, 152, 171, 0.8);
 }
-main .main-content .product-card .Card:hover .card-body {
+main .main-content .LFEi7Z._1sdMkc .Card:hover .card-body {
   height: 50%;
 }
-main .main-content .product-card .Card:hover .card-body .card-title {
+main .main-content .LFEi7Z._1sdMkc .Card:hover .card-body .card-title {
   margin-bottom: 0.75rem;
 }
-main .main-content .product-card .Card:hover .card-content {
+main .main-content .LFEi7Z._1sdMkc .Card:hover .card-content {
   bottom: 0;
 }
-main .main-content .product-card .Card .card-img-wrapper {
+main .main-content .LFEi7Z._1sdMkc .Card .card-img-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 75% !important;
   overflow: hidden;
 }
-main .main-content .product-card .Card .card-img-wrapper img {
+main .main-content .LFEi7Z._1sdMkc .Card .card-img-wrapper img {
   transition: transform 1.5s ease;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .main-content .product-card .Card .card-body {
+main .main-content .LFEi7Z._1sdMkc .Card .card-body {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -245,11 +245,11 @@ main .main-content .product-card .Card .card-body {
   transition: height 1.5s ease;
   padding: 5px 16px 8px;
 }
-main .main-content .product-card .Card .card-body .card-title {
+main .main-content .LFEi7Z._1sdMkc .Card .card-body .card-title {
   margin-bottom: calc(40% + 20px);
   transition: margin-bottom 1.5s ease;
 }
-main .main-content .product-card .Card .card-content {
+main .main-content .LFEi7Z._1sdMkc .Card .card-content {
   left: 0;
   right: 0;
   overflow: hidden;
@@ -257,31 +257,31 @@ main .main-content .product-card .Card .card-content {
   height: auto;
   transition: opacity 1.5s ease;
 }
-main .main-content .product-card .Card .card-image .card .card-img-wrapper {
+main .main-content .LFEi7Z._1sdMkc .Card .card-image .card .card-img-wrapper {
   height: 100%;
 }
-main .main-content .product-card .Card .card-image .card .card-body {
+main .main-content .LFEi7Z._1sdMkc .Card .card-image .card .card-body {
   display: none;
 }
-main .main-content .product-card .Card .card-image-title-description .card {
+main .main-content .LFEi7Z._1sdMkc .Card .card-image-title-description .card {
   position: relative;
   min-height: 300px;
   min-height: 250px;
 }
-main .main-content .product-card .Card .card-image-title-description .card .card-img-wrapper {
+main .main-content .LFEi7Z._1sdMkc .Card .card-image-title-description .card .card-img-wrapper {
   max-height: 160px;
 }
-main .main-content .product-card .Card .card-image-title-description .card .card-body {
+main .main-content .LFEi7Z._1sdMkc .Card .card-image-title-description .card .card-body {
   height: auto;
   position: relative;
   top: 0;
   margin-bottom: -70px;
   transition: top 1.5s ease;
 }
-main .main-content .product-card .Card .card-image-title-description .card:hover .card-body {
+main .main-content .LFEi7Z._1sdMkc .Card .card-image-title-description .card:hover .card-body {
   top: -70px;
 }
-main .main-content .product-card .Card .card-image-title-description .card .card-title {
+main .main-content .LFEi7Z._1sdMkc .Card .card-image-title-description .card .card-title {
   margin-bottom: 0.75rem;
 }
 main .main-content ._1G0WLw {
@@ -373,6 +373,11 @@ main .main-content .fin4ik .l0Yfe {
   min-width: 0;
 }
 
+.ratings i.fa-star,
+.ratings i.fa-star-half {
+  width: 7px;
+}
+
 .footer {
   background-color: #172337;
   color: #fff;
@@ -409,9 +414,19 @@ main .main-content .fin4ik .l0Yfe {
   line-height: 1.5;
 }
 
-@media screen and (min-width: 320px) and (max-width: 617.3px) {
-  .RQvRm {
-    padding: 5px !important;
-    font-size: 5px !important;
+@media screen and (min-width: 319px) and (max-width: 618px) {
+  .Card {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-wrapper {
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  br.g_awf6 {
+    display: block;
   }
 }/*# sourceMappingURL=Men's-tshirts.css.map */
